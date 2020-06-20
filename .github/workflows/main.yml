@@ -26,19 +26,19 @@ jobs:
           - {OS_NAME: ubuntu,
              OS_CODE_NAME: xenial,
              ROS_DISTRO: kinetic,
-             ROSDEP_SKIP_KEYS: nvidia-cuda-dev libpcl-all-dev,
+             ROSDEP_SKIP_KEYS: nvidia-cuda-dev,
              BADGE: xenial,
              TARGET_CMAKE_ARGS: "-DCMAKE_LIBRARY_PATH=/usr/local/cuda/lib64/stubs/",
              DOCKER_PULL: false,
-             DOCKER_IMAGE: "schornakj/yak-1:xenial-cuda10.2"}
+             DOCKER_IMAGE: "schornakj/yak-1:xenial-cuda10.2-nopcl"}
           - {OS_NAME: ubuntu,
              OS_CODE_NAME: xenial,
              ROS_DISTRO: kinetic,
-             ROSDEP_SKIP_KEYS: nvidia-cuda-dev libpcl-all-dev,
+             ROSDEP_SKIP_KEYS: nvidia-cuda-dev,
              BADGE: xenial,
              TARGET_CMAKE_ARGS: "-DCMAKE_LIBRARY_PATH=/usr/local/cuda/lib64/stubs/",
              DOCKER_PULL: false,
-             DOCKER_IMAGE: "schornakj/yak-1:xenial-cuda9.2"}
+             DOCKER_IMAGE: "schornakj/yak-1:xenial-cuda9.2-nopcl"}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
