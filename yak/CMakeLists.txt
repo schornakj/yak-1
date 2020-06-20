@@ -35,6 +35,8 @@ if(NOT TARGET Eigen3::Eigen)
                  PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${EIGEN3_INCLUDE_DIRS})
 endif()
 
+list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
+
 # Macro to sanitize and separate a mixed list of options and definitions and add them to the specified target
 macro(target_add_options_and_definitions TARGET)
   set(DEFINITIONS "${ARGN}")

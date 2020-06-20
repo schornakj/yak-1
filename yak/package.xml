@@ -9,6 +9,7 @@
   <license>MIT</license>
 
   <depend>libpcl-all-dev</depend>
+  <depend>libproj-dev</depend>
   <depend>eigen</depend>
   <depend>nvidia-cuda-dev</depend>
   <depend>libopencv-dev</depend>
