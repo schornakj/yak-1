@@ -16,6 +16,14 @@ jobs:
              CLANG_FORMAT_VERSION: 8,
              }
           - {OS_NAME: ubuntu,
+             OS_CODE_NAME: focal,
+             ROS_DISTRO: foxy,
+             ROSDEP_SKIP_KEYS: nvidia-cuda-dev,
+             BADGE: bionic,
+             TARGET_CMAKE_ARGS: "-DCMAKE_LIBRARY_PATH=/usr/local/cuda/lib64/stubs/",
+             DOCKER_PULL: false,
+             DOCKER_IMAGE: "schornakj/yak-1:focal-cuda11.0"}
+          - {OS_NAME: ubuntu,
              OS_CODE_NAME: bionic,
              ROS_DISTRO: melodic,
              ROSDEP_SKIP_KEYS: nvidia-cuda-dev,
