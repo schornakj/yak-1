@@ -1,0 +1,484 @@
+\hypertarget{namespacekfusion_1_1device}{}\doxysection{kfusion\+::device Namespace Reference}
+\label{namespacekfusion_1_1device}\index{kfusion::device@{kfusion::device}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Block}{Block}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper}{Compute\+Icp\+Helper}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Eigen33}{Eigen33}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Emulation}{Emulation}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1float12}{float12}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1float8}{float8}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1gmem}{gmem}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1numeric__limits}{numeric\+\_\+limits}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1numeric__limits_3_01float_01_4}{numeric\+\_\+limits$<$ float $>$}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1numeric__limits_3_01unsigned_01short_01_4}{numeric\+\_\+limits$<$ unsigned short $>$}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1plus}{plus}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Projector}{Projector}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Warp}{Warp}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float4 \mbox{\hyperlink{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}{Normal}}
+\item 
+typedef float4 \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}}
+\item 
+typedef unsigned short \mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{ushort}}
+\item 
+typedef unsigned char \mbox{\hyperlink{namespacekfusion_1_1device_a02b3bea1259e6123a42eaa127b365806}{uchar}}
+\item 
+typedef \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStepSz}{Ptr\+Step\+Sz}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{ushort}} $>$ \mbox{\hyperlink{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}{Dists}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{ushort}} $>$ \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}{Normal}} $>$ \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}} $>$ \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ uchar4 $>$ \mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{Image}}
+\item 
+typedef int3 \mbox{\hyperlink{namespacekfusion_1_1device_ac1d4c1230e744822ec2f521905b7e044}{Vec3i}}
+\item 
+typedef float3 \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \mbox{\hyperlink{namespacekfusion_1_1device_ab132ef25f53ffe9580c3c5c384de7503}{operator$\ast$}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}} \&m, const \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \mbox{\hyperlink{namespacekfusion_1_1device_a2a1e7025a5c9e6cf24a03121944e261a}{operator$\ast$}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&a, const \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \mbox{\hyperlink{namespacekfusion_1_1device_a38a87e1d3182e319f82d42b7bc31895b}{tr}} (const float4 \&v)
+\item 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} void \mbox{\hyperlink{namespacekfusion_1_1device_a3a009788e72422187bd2ec8b7500b944}{swap}} (T \&a, T \&b)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_a8878eb5bc635f82894e043bedcd9bf3b}{dot}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \& \mbox{\hyperlink{namespacekfusion_1_1device_ab145120cf7f8655a4d1c3cf371dcdd3d}{operator+=}} (float3 \&vec, const float \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \& \mbox{\hyperlink{namespacekfusion_1_1device_a23da4a008086bc05e6f2f4e56d136424}{operator+=}} (float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_a84e721638b43515f22024163c6252670}{operator+}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_ad14b3b69d250f1d4ba0389ef81e0fcfd}{operator$\ast$}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_a2c20cf73765961f7cf272f85eb38d6e9}{operator$\ast$}} (const float3 \&v1, const int3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_aa5eb7e5d7db6ec1aa5a8cf8e785536f7}{operator/}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_ab4d76dfd6478af958379e3de53943d85}{operator/}} (const float \&v, const float3 \&vec)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \& \mbox{\hyperlink{namespacekfusion_1_1device_a59863874cef15dbbebb6c8411ba6e7ea}{operator$\ast$=}} (float3 \&vec, const float \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_a798b80e3f9357fbed6cca9ffccd49d18}{operator-\/}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_af26a18373777205eb74bc18a11120047}{operator$\ast$}} (const float3 \&v1, const float \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_aeb2fcbbcc11ce29e1f7f69cf6191f9d6}{operator$\ast$}} (const float \&v, const float3 \&v1)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_a52994b51fb7bacb1cbac06d547848fbd}{norm}} (const float3 \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_aba0ddf779838652fa114fce3a4bb87f9}{norm\+\_\+sqr}} (const float3 \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_a271164ae2acc0e3c7333ca6942eb90ed}{normalized}} (const float3 \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_afa06ac32ad8ea05caf69b2c33b32c804}{cross}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void \mbox{\hyperlink{namespacekfusion_1_1device_a4a995618bf4bbd851f6b16020e5b1e8c}{compute\+Roots2}} (const float \&b, const float \&c, float3 \&roots)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void \mbox{\hyperlink{namespacekfusion_1_1device_a2ca37e1a189576003605f2299f1e3c10}{compute\+Roots3}} (float c0, float c1, float c2, float3 \&roots)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a7e9489116dcc61e9341c1c29be3f767c}{clear\+\_\+volume}} (\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} volume)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a35c21721aa5968bfca99b0806c9fa84b}{integrate}} (const \mbox{\hyperlink{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}{Dists}} \&depth, \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&volume, const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&aff, const \mbox{\hyperlink{structkfusion_1_1device_1_1Projector}{Projector}} \&proj)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a13f778a3f483c8aa69374f27f8546593}{raycast}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&volume, const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&aff, const \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}} \&Rinv, const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&reproj, \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals, float step\+\_\+factor, float delta\+\_\+factor)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a41d5cb4d77ffd7ad62476e492e8adce4}{raycast}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&volume, const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&aff, const \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}} \&Rinv, const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&reproj, \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&points, \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals, float step\+\_\+factor, float delta\+\_\+factor)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{Tsdf\+Volume\+::elem\+\_\+type}} \mbox{\hyperlink{namespacekfusion_1_1device_a86e9f8b34a2deafd1d0cb3cd83bf226b}{pack\+\_\+tsdf}} (float tsdf, int weight)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_ab27c8c20bfb4d6be71bd7a927bdee1be}{unpack\+\_\+tsdf}} (\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{Tsdf\+Volume\+::elem\+\_\+type}} value, int \&weight)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_aac8343c5ae06f6ca7ee500bd4b48edb0}{unpack\+\_\+tsdf}} (\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{Tsdf\+Volume\+::elem\+\_\+type}} value)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_af53c44835ad74f4d837e9e23c4e5da65}{compute\+\_\+dists}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}{Dists}} dists, float2 f, float2 c)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_ae213aff9423027535c6a4304141a7819}{truncate\+Depth}} (\mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&depth, float max\+\_\+dist)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a48cb062243c892dab9ac075ed526411a}{bilateral\+Filter}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&src, \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&dst, int kernel\+\_\+size, float sigma\+\_\+spatial, float sigma\+\_\+depth)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_aba18fbeed1c3ac73af8fa0da2aea1b98}{depth\+Pyr}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&source, \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&pyramid, float sigma\+\_\+depth)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a90b970a57535ac54627ce88ccdb9f6d4}{resize\+Depth\+Normals}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&depth, const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals, \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&depth\+\_\+out, \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals\+\_\+out)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a7555c9fc52b631ae64d8616731b5735a}{resize\+Points\+Normals}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&points, const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals, \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&points\+\_\+out, \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals\+\_\+out)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a83fb94d108d71ea96f606fe83cc76fd7}{compute\+Normals\+And\+Mask\+Depth}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&reproj, \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a9d82d6f1743de079d36e7e6a6b547aec}{compute\+Point\+Normals}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&reproj, const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&points, \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a575fb0666534dce72e131a9ea8724c58}{render\+Image}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&depth, const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals, const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&reproj, const \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \&light\+\_\+pose, \mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{Image}} \&image)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a69ccfb3c8993370c9301ad8a56e2e25a}{render\+Image}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&points, const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals, const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&reproj, const \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \&light\+\_\+pose, \mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{Image}} \&image)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a53c6f818a90dbcdfa47e1dc0357abd8c}{render\+Tangent\+Colors}} (const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&normals, \mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{Image}} \&image)
+\item 
+size\+\_\+t \mbox{\hyperlink{namespacekfusion_1_1device_af145e7c0eddfa948010de0a0f5517fce}{extract\+Cloud}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&volume, const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&aff, \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrSz}{Ptr\+Sz}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}} $>$ output)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a2f8a815f6e3bd6e81e1ce15375c97506}{extract\+Normals}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&volume, const \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrSz}{Ptr\+Sz}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}} $>$ \&points, const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&aff, const \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}} \&Rinv, float gradient\+\_\+delta\+\_\+factor, float4 $\ast$output)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a6863159cf771c829daa9aaa9af3eb7e9}{merge\+Point\+Normal}} (const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}} $>$ \&cloud, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1device_1_1float8}{float8}} $>$ \&normals, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1device_1_1float12}{float12}} $>$ \&output)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}\label{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}} 
+\index{kfusion::device@{kfusion::device}!Depth@{Depth}}
+\index{Depth@{Depth}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Depth}{Depth}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$\mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{ushort}}$>$ \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{kfusion\+::device\+::\+Depth}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}\label{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}} 
+\index{kfusion::device@{kfusion::device}!Dists@{Dists}}
+\index{Dists@{Dists}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Dists}{Dists}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStepSz}{Ptr\+Step\+Sz}}$<$\mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{ushort}}$>$ \mbox{\hyperlink{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}{kfusion\+::device\+::\+Dists}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}\label{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}} 
+\index{kfusion::device@{kfusion::device}!Image@{Image}}
+\index{Image@{Image}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Image}{Image}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$uchar4$>$ \mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{kfusion\+::device\+::\+Image}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}\label{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}} 
+\index{kfusion::device@{kfusion::device}!Normal@{Normal}}
+\index{Normal@{Normal}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Normal}{Normal}}
+{\footnotesize\ttfamily typedef float4 \mbox{\hyperlink{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}{kfusion\+::device\+::\+Normal}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}\label{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}} 
+\index{kfusion::device@{kfusion::device}!Normals@{Normals}}
+\index{Normals@{Normals}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Normals}{Normals}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$\mbox{\hyperlink{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}{Normal}}$>$ \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{kfusion\+::device\+::\+Normals}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}\label{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}} 
+\index{kfusion::device@{kfusion::device}!Point@{Point}}
+\index{Point@{Point}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Point}{Point}}
+{\footnotesize\ttfamily typedef float4 \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{kfusion\+::device\+::\+Point}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}\label{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}} 
+\index{kfusion::device@{kfusion::device}!Points@{Points}}
+\index{Points@{Points}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Points}{Points}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$\mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}}$>$ \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{kfusion\+::device\+::\+Points}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a02b3bea1259e6123a42eaa127b365806}\label{namespacekfusion_1_1device_a02b3bea1259e6123a42eaa127b365806}} 
+\index{kfusion::device@{kfusion::device}!uchar@{uchar}}
+\index{uchar@{uchar}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{uchar}{uchar}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{namespacekfusion_1_1device_a02b3bea1259e6123a42eaa127b365806}{kfusion\+::device\+::uchar}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}\label{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}} 
+\index{kfusion::device@{kfusion::device}!ushort@{ushort}}
+\index{ushort@{ushort}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{ushort}{ushort}}
+{\footnotesize\ttfamily typedef unsigned short \mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{kfusion\+::device\+::ushort}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}\label{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}} 
+\index{kfusion::device@{kfusion::device}!Vec3f@{Vec3f}}
+\index{Vec3f@{Vec3f}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Vec3f}{Vec3f}}
+{\footnotesize\ttfamily typedef float3 \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{kfusion\+::device\+::\+Vec3f}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_ac1d4c1230e744822ec2f521905b7e044}\label{namespacekfusion_1_1device_ac1d4c1230e744822ec2f521905b7e044}} 
+\index{kfusion::device@{kfusion::device}!Vec3i@{Vec3i}}
+\index{Vec3i@{Vec3i}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{Vec3i}{Vec3i}}
+{\footnotesize\ttfamily typedef int3 \mbox{\hyperlink{namespacekfusion_1_1device_ac1d4c1230e744822ec2f521905b7e044}{kfusion\+::device\+::\+Vec3i}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacekfusion_1_1device_a48cb062243c892dab9ac075ed526411a}\label{namespacekfusion_1_1device_a48cb062243c892dab9ac075ed526411a}} 
+\index{kfusion::device@{kfusion::device}!bilateralFilter@{bilateralFilter}}
+\index{bilateralFilter@{bilateralFilter}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{bilateralFilter()}{bilateralFilter()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::bilateral\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{src,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{dst,  }\item[{int}]{kernel\+\_\+size,  }\item[{float}]{sigma\+\_\+spatial,  }\item[{float}]{sigma\+\_\+depth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a7e9489116dcc61e9341c1c29be3f767c}\label{namespacekfusion_1_1device_a7e9489116dcc61e9341c1c29be3f767c}} 
+\index{kfusion::device@{kfusion::device}!clear\_volume@{clear\_volume}}
+\index{clear\_volume@{clear\_volume}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{clear\_volume()}{clear\_volume()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::clear\+\_\+volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}}}]{volume }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_af53c44835ad74f4d837e9e23c4e5da65}\label{namespacekfusion_1_1device_af53c44835ad74f4d837e9e23c4e5da65}} 
+\index{kfusion::device@{kfusion::device}!compute\_dists@{compute\_dists}}
+\index{compute\_dists@{compute\_dists}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{compute\_dists()}{compute\_dists()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::compute\+\_\+dists (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}{Dists}}}]{dists,  }\item[{float2}]{f,  }\item[{float2}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a83fb94d108d71ea96f606fe83cc76fd7}\label{namespacekfusion_1_1device_a83fb94d108d71ea96f606fe83cc76fd7}} 
+\index{kfusion::device@{kfusion::device}!computeNormalsAndMaskDepth@{computeNormalsAndMaskDepth}}
+\index{computeNormalsAndMaskDepth@{computeNormalsAndMaskDepth}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{computeNormalsAndMaskDepth()}{computeNormalsAndMaskDepth()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::compute\+Normals\+And\+Mask\+Depth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&}]{reproj,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a9d82d6f1743de079d36e7e6a6b547aec}\label{namespacekfusion_1_1device_a9d82d6f1743de079d36e7e6a6b547aec}} 
+\index{kfusion::device@{kfusion::device}!computePointNormals@{computePointNormals}}
+\index{computePointNormals@{computePointNormals}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{computePointNormals()}{computePointNormals()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::compute\+Point\+Normals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&}]{reproj,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&}]{points,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a4a995618bf4bbd851f6b16020e5b1e8c}\label{namespacekfusion_1_1device_a4a995618bf4bbd851f6b16020e5b1e8c}} 
+\index{kfusion::device@{kfusion::device}!computeRoots2@{computeRoots2}}
+\index{computeRoots2@{computeRoots2}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{computeRoots2()}{computeRoots2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void kfusion\+::device\+::compute\+Roots2 (\begin{DoxyParamCaption}\item[{const float \&}]{b,  }\item[{const float \&}]{c,  }\item[{float3 \&}]{roots }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a2ca37e1a189576003605f2299f1e3c10}\label{namespacekfusion_1_1device_a2ca37e1a189576003605f2299f1e3c10}} 
+\index{kfusion::device@{kfusion::device}!computeRoots3@{computeRoots3}}
+\index{computeRoots3@{computeRoots3}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{computeRoots3()}{computeRoots3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void kfusion\+::device\+::compute\+Roots3 (\begin{DoxyParamCaption}\item[{float}]{c0,  }\item[{float}]{c1,  }\item[{float}]{c2,  }\item[{float3 \&}]{roots }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_afa06ac32ad8ea05caf69b2c33b32c804}\label{namespacekfusion_1_1device_afa06ac32ad8ea05caf69b2c33b32c804}} 
+\index{kfusion::device@{kfusion::device}!cross@{cross}}
+\index{cross@{cross}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{cross()}{cross()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 kfusion\+::device\+::cross (\begin{DoxyParamCaption}\item[{const float3 \&}]{v1,  }\item[{const float3 \&}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_aba18fbeed1c3ac73af8fa0da2aea1b98}\label{namespacekfusion_1_1device_aba18fbeed1c3ac73af8fa0da2aea1b98}} 
+\index{kfusion::device@{kfusion::device}!depthPyr@{depthPyr}}
+\index{depthPyr@{depthPyr}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{depthPyr()}{depthPyr()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::depth\+Pyr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{source,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{pyramid,  }\item[{float}]{sigma\+\_\+depth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a8878eb5bc635f82894e043bedcd9bf3b}\label{namespacekfusion_1_1device_a8878eb5bc635f82894e043bedcd9bf3b}} 
+\index{kfusion::device@{kfusion::device}!dot@{dot}}
+\index{dot@{dot}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float kfusion\+::device\+::dot (\begin{DoxyParamCaption}\item[{const float3 \&}]{v1,  }\item[{const float3 \&}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_af145e7c0eddfa948010de0a0f5517fce}\label{namespacekfusion_1_1device_af145e7c0eddfa948010de0a0f5517fce}} 
+\index{kfusion::device@{kfusion::device}!extractCloud@{extractCloud}}
+\index{extractCloud@{extractCloud}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{extractCloud()}{extractCloud()}}
+{\footnotesize\ttfamily size\+\_\+t kfusion\+::device\+::extract\+Cloud (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&}]{volume,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&}]{aff,  }\item[{\mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrSz}{Ptr\+Sz}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}} $>$}]{output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a2f8a815f6e3bd6e81e1ce15375c97506}\label{namespacekfusion_1_1device_a2f8a815f6e3bd6e81e1ce15375c97506}} 
+\index{kfusion::device@{kfusion::device}!extractNormals@{extractNormals}}
+\index{extractNormals@{extractNormals}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{extractNormals()}{extractNormals()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::extract\+Normals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&}]{volume,  }\item[{const \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrSz}{Ptr\+Sz}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}} $>$ \&}]{points,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&}]{aff,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}} \&}]{Rinv,  }\item[{float}]{gradient\+\_\+delta\+\_\+factor,  }\item[{float4 $\ast$}]{output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a35c21721aa5968bfca99b0806c9fa84b}\label{namespacekfusion_1_1device_a35c21721aa5968bfca99b0806c9fa84b}} 
+\index{kfusion::device@{kfusion::device}!integrate@{integrate}}
+\index{integrate@{integrate}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{integrate()}{integrate()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::integrate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}{Dists}} \&}]{depth,  }\item[{\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&}]{volume,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&}]{aff,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Projector}{Projector}} \&}]{proj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a6863159cf771c829daa9aaa9af3eb7e9}\label{namespacekfusion_1_1device_a6863159cf771c829daa9aaa9af3eb7e9}} 
+\index{kfusion::device@{kfusion::device}!mergePointNormal@{mergePointNormal}}
+\index{mergePointNormal@{mergePointNormal}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{mergePointNormal()}{mergePointNormal()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::merge\+Point\+Normal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}} $>$ \&}]{cloud,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1device_1_1float8}{float8}} $>$ \&}]{normals,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1device_1_1float12}{float12}} $>$ \&}]{output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a52994b51fb7bacb1cbac06d547848fbd}\label{namespacekfusion_1_1device_a52994b51fb7bacb1cbac06d547848fbd}} 
+\index{kfusion::device@{kfusion::device}!norm@{norm}}
+\index{norm@{norm}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{norm()}{norm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float kfusion\+::device\+::norm (\begin{DoxyParamCaption}\item[{const float3 \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_aba0ddf779838652fa114fce3a4bb87f9}\label{namespacekfusion_1_1device_aba0ddf779838652fa114fce3a4bb87f9}} 
+\index{kfusion::device@{kfusion::device}!norm\_sqr@{norm\_sqr}}
+\index{norm\_sqr@{norm\_sqr}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{norm\_sqr()}{norm\_sqr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float kfusion\+::device\+::norm\+\_\+sqr (\begin{DoxyParamCaption}\item[{const float3 \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a271164ae2acc0e3c7333ca6942eb90ed}\label{namespacekfusion_1_1device_a271164ae2acc0e3c7333ca6942eb90ed}} 
+\index{kfusion::device@{kfusion::device}!normalized@{normalized}}
+\index{normalized@{normalized}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{normalized()}{normalized()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 kfusion\+::device\+::normalized (\begin{DoxyParamCaption}\item[{const float3 \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a2a1e7025a5c9e6cf24a03121944e261a}\label{namespacekfusion_1_1device_a2a1e7025a5c9e6cf24a03121944e261a}} 
+\index{kfusion::device@{kfusion::device}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} kfusion\+::device\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&}]{a,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_aeb2fcbbcc11ce29e1f7f69cf6191f9d6}\label{namespacekfusion_1_1device_aeb2fcbbcc11ce29e1f7f69cf6191f9d6}} 
+\index{kfusion::device@{kfusion::device}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 kfusion\+::device\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const float \&}]{v,  }\item[{const float3 \&}]{v1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_af26a18373777205eb74bc18a11120047}\label{namespacekfusion_1_1device_af26a18373777205eb74bc18a11120047}} 
+\index{kfusion::device@{kfusion::device}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 kfusion\+::device\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const float3 \&}]{v1,  }\item[{const float \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_ad14b3b69d250f1d4ba0389ef81e0fcfd}\label{namespacekfusion_1_1device_ad14b3b69d250f1d4ba0389ef81e0fcfd}} 
+\index{kfusion::device@{kfusion::device}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 kfusion\+::device\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const float3 \&}]{v1,  }\item[{const float3 \&}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a2c20cf73765961f7cf272f85eb38d6e9}\label{namespacekfusion_1_1device_a2c20cf73765961f7cf272f85eb38d6e9}} 
+\index{kfusion::device@{kfusion::device}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 kfusion\+::device\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const float3 \&}]{v1,  }\item[{const int3 \&}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_ab132ef25f53ffe9580c3c5c384de7503}\label{namespacekfusion_1_1device_ab132ef25f53ffe9580c3c5c384de7503}} 
+\index{kfusion::device@{kfusion::device}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} kfusion\+::device\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}} \&}]{m,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a59863874cef15dbbebb6c8411ba6e7ea}\label{namespacekfusion_1_1device_a59863874cef15dbbebb6c8411ba6e7ea}} 
+\index{kfusion::device@{kfusion::device}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3\& kfusion\+::device\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{float3 \&}]{vec,  }\item[{const float \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a84e721638b43515f22024163c6252670}\label{namespacekfusion_1_1device_a84e721638b43515f22024163c6252670}} 
+\index{kfusion::device@{kfusion::device}!operator+@{operator+}}
+\index{operator+@{operator+}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 kfusion\+::device\+::operator+ (\begin{DoxyParamCaption}\item[{const float3 \&}]{v1,  }\item[{const float3 \&}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a23da4a008086bc05e6f2f4e56d136424}\label{namespacekfusion_1_1device_a23da4a008086bc05e6f2f4e56d136424}} 
+\index{kfusion::device@{kfusion::device}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3\& kfusion\+::device\+::operator+= (\begin{DoxyParamCaption}\item[{float3 \&}]{v1,  }\item[{const float3 \&}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_ab145120cf7f8655a4d1c3cf371dcdd3d}\label{namespacekfusion_1_1device_ab145120cf7f8655a4d1c3cf371dcdd3d}} 
+\index{kfusion::device@{kfusion::device}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3\& kfusion\+::device\+::operator+= (\begin{DoxyParamCaption}\item[{float3 \&}]{vec,  }\item[{const float \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a798b80e3f9357fbed6cca9ffccd49d18}\label{namespacekfusion_1_1device_a798b80e3f9357fbed6cca9ffccd49d18}} 
+\index{kfusion::device@{kfusion::device}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 kfusion\+::device\+::operator-\/ (\begin{DoxyParamCaption}\item[{const float3 \&}]{v1,  }\item[{const float3 \&}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_ab4d76dfd6478af958379e3de53943d85}\label{namespacekfusion_1_1device_ab4d76dfd6478af958379e3de53943d85}} 
+\index{kfusion::device@{kfusion::device}!operator/@{operator/}}
+\index{operator/@{operator/}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 kfusion\+::device\+::operator/ (\begin{DoxyParamCaption}\item[{const float \&}]{v,  }\item[{const float3 \&}]{vec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_aa5eb7e5d7db6ec1aa5a8cf8e785536f7}\label{namespacekfusion_1_1device_aa5eb7e5d7db6ec1aa5a8cf8e785536f7}} 
+\index{kfusion::device@{kfusion::device}!operator/@{operator/}}
+\index{operator/@{operator/}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 kfusion\+::device\+::operator/ (\begin{DoxyParamCaption}\item[{const float3 \&}]{v1,  }\item[{const float3 \&}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a86e9f8b34a2deafd1d0cb3cd83bf226b}\label{namespacekfusion_1_1device_a86e9f8b34a2deafd1d0cb3cd83bf226b}} 
+\index{kfusion::device@{kfusion::device}!pack\_tsdf@{pack\_tsdf}}
+\index{pack\_tsdf@{pack\_tsdf}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{pack\_tsdf()}{pack\_tsdf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{kfusion\+::device\+::\+Tsdf\+Volume\+::elem\+\_\+type}} kfusion\+::device\+::pack\+\_\+tsdf (\begin{DoxyParamCaption}\item[{float}]{tsdf,  }\item[{int}]{weight }\end{DoxyParamCaption})}
+
+packing/unpacking tsdf volume element for C\+U\+DA $>$= 9.\+0 use short else use ushort \mbox{\Hypertarget{namespacekfusion_1_1device_a13f778a3f483c8aa69374f27f8546593}\label{namespacekfusion_1_1device_a13f778a3f483c8aa69374f27f8546593}} 
+\index{kfusion::device@{kfusion::device}!raycast@{raycast}}
+\index{raycast@{raycast}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{raycast()}{raycast()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void kfusion\+::device\+::raycast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&}]{volume,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&}]{aff,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}} \&}]{Rinv,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&}]{reproj,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals,  }\item[{float}]{step\+\_\+factor,  }\item[{float}]{delta\+\_\+factor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a41d5cb4d77ffd7ad62476e492e8adce4}\label{namespacekfusion_1_1device_a41d5cb4d77ffd7ad62476e492e8adce4}} 
+\index{kfusion::device@{kfusion::device}!raycast@{raycast}}
+\index{raycast@{raycast}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{raycast()}{raycast()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void kfusion\+::device\+::raycast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&}]{volume,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \&}]{aff,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{Mat3f}} \&}]{Rinv,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&}]{reproj,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&}]{points,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals,  }\item[{float}]{step\+\_\+factor,  }\item[{float}]{delta\+\_\+factor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a575fb0666534dce72e131a9ea8724c58}\label{namespacekfusion_1_1device_a575fb0666534dce72e131a9ea8724c58}} 
+\index{kfusion::device@{kfusion::device}!renderImage@{renderImage}}
+\index{renderImage@{renderImage}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{renderImage()}{renderImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void kfusion\+::device\+::render\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{depth,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&}]{reproj,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \&}]{light\+\_\+pose,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{Image}} \&}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a69ccfb3c8993370c9301ad8a56e2e25a}\label{namespacekfusion_1_1device_a69ccfb3c8993370c9301ad8a56e2e25a}} 
+\index{kfusion::device@{kfusion::device}!renderImage@{renderImage}}
+\index{renderImage@{renderImage}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{renderImage()}{renderImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void kfusion\+::device\+::render\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&}]{points,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals,  }\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{Reprojector}} \&}]{reproj,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} \&}]{light\+\_\+pose,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{Image}} \&}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a53c6f818a90dbcdfa47e1dc0357abd8c}\label{namespacekfusion_1_1device_a53c6f818a90dbcdfa47e1dc0357abd8c}} 
+\index{kfusion::device@{kfusion::device}!renderTangentColors@{renderTangentColors}}
+\index{renderTangentColors@{renderTangentColors}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{renderTangentColors()}{renderTangentColors()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::render\+Tangent\+Colors (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{Image}} \&}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a90b970a57535ac54627ce88ccdb9f6d4}\label{namespacekfusion_1_1device_a90b970a57535ac54627ce88ccdb9f6d4}} 
+\index{kfusion::device@{kfusion::device}!resizeDepthNormals@{resizeDepthNormals}}
+\index{resizeDepthNormals@{resizeDepthNormals}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{resizeDepthNormals()}{resizeDepthNormals()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::resize\+Depth\+Normals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{depth,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{depth\+\_\+out,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a7555c9fc52b631ae64d8616731b5735a}\label{namespacekfusion_1_1device_a7555c9fc52b631ae64d8616731b5735a}} 
+\index{kfusion::device@{kfusion::device}!resizePointsNormals@{resizePointsNormals}}
+\index{resizePointsNormals@{resizePointsNormals}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{resizePointsNormals()}{resizePointsNormals()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::resize\+Points\+Normals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&}]{points,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&}]{points\+\_\+out,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{normals\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a3a009788e72422187bd2ec8b7500b944}\label{namespacekfusion_1_1device_a3a009788e72422187bd2ec8b7500b944}} 
+\index{kfusion::device@{kfusion::device}!swap@{swap}}
+\index{swap@{swap}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} void kfusion\+::device\+::swap (\begin{DoxyParamCaption}\item[{T \&}]{a,  }\item[{T \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_a38a87e1d3182e319f82d42b7bc31895b}\label{namespacekfusion_1_1device_a38a87e1d3182e319f82d42b7bc31895b}} 
+\index{kfusion::device@{kfusion::device}!tr@{tr}}
+\index{tr@{tr}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{tr()}{tr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{Vec3f}} kfusion\+::device\+::tr (\begin{DoxyParamCaption}\item[{const float4 \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_ae213aff9423027535c6a4304141a7819}\label{namespacekfusion_1_1device_ae213aff9423027535c6a4304141a7819}} 
+\index{kfusion::device@{kfusion::device}!truncateDepth@{truncateDepth}}
+\index{truncateDepth@{truncateDepth}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{truncateDepth()}{truncateDepth()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::truncate\+Depth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{depth,  }\item[{float}]{max\+\_\+dist }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_aac8343c5ae06f6ca7ee500bd4b48edb0}\label{namespacekfusion_1_1device_aac8343c5ae06f6ca7ee500bd4b48edb0}} 
+\index{kfusion::device@{kfusion::device}!unpack\_tsdf@{unpack\_tsdf}}
+\index{unpack\_tsdf@{unpack\_tsdf}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{unpack\_tsdf()}{unpack\_tsdf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float kfusion\+::device\+::unpack\+\_\+tsdf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{Tsdf\+Volume\+::elem\+\_\+type}}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1device_ab27c8c20bfb4d6be71bd7a927bdee1be}\label{namespacekfusion_1_1device_ab27c8c20bfb4d6be71bd7a927bdee1be}} 
+\index{kfusion::device@{kfusion::device}!unpack\_tsdf@{unpack\_tsdf}}
+\index{unpack\_tsdf@{unpack\_tsdf}!kfusion::device@{kfusion::device}}
+\doxysubsubsection{\texorpdfstring{unpack\_tsdf()}{unpack\_tsdf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float kfusion\+::device\+::unpack\+\_\+tsdf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{Tsdf\+Volume\+::elem\+\_\+type}}}]{value,  }\item[{int \&}]{weight }\end{DoxyParamCaption})}
+

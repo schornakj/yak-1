@@ -1,0 +1,210 @@
+\hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP}{}\doxysection{kfusion\+::cuda\+::Projective\+I\+CP Class Reference}
+\label{classkfusion_1_1cuda_1_1ProjectiveICP}\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+
+
+{\ttfamily \#include $<$projective\+\_\+icp.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper}{Stream\+Helper}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper}{Projective\+I\+C\+P\+::\+Stream\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af91f6381324dbf69141e92a7cc7606e0a9b7a577c5c2596dec51acbdbede6dca0}{M\+A\+X\+\_\+\+P\+Y\+R\+A\+M\+I\+D\+\_\+\+L\+E\+V\+E\+LS}} = 4
+ \}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} $>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af094d1f90861b59f5e0f45556bfba6e1}{Depth\+Pyr}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} $>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a547eee42b68e1b2259a04e83293b94d0}{Points\+Pyr}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} $>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ab83d7667ca77eb799c7fad56eba27aff}{Projective\+I\+CP}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{Projective\+I\+CP}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a1fb4a19ada82fd269ba642f236e9106b}{$\sim$\+Projective\+I\+CP}} ()
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a392d273222aebc0ecb183fc8604acc61}{get\+Dist\+Threshold}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af4b3df19bce98f90aee7e68228db3398}{set\+Dist\+Threshold}} (float distance)
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a4a8c44eec45d4f0d4e8820aa6bae2bd5}{get\+Angle\+Threshold}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ad9a220a7030fee6c4f4a65c0bf04ec43}{set\+Angle\+Threshold}} (float angle)
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a6187ae825d64cb409c4db42cef7a7c99}{set\+Iterations\+Num}} (const std\+::vector$<$ int $>$ \&iters)
+\item 
+int \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ab4a8620ebc4bd28b01175ad1f32befad}{get\+Used\+Levels\+Num}} () const
+\item 
+virtual bool \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_adb36035f6c4f5087fe10a4f0b56c77db}{estimate\+Transform}} (\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&affine, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, const \mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{Frame}} \&curr, const \mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{Frame}} \&prev)
+\item 
+virtual bool \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae25ee61e8087b87c10b2fa335e8fc508}{estimate\+Transform}} (\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&affine, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af094d1f90861b59f5e0f45556bfba6e1}{Depth\+Pyr}} \&dcurr, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}} ncurr, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af094d1f90861b59f5e0f45556bfba6e1}{Depth\+Pyr}} dprev, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}} nprev)
+\item 
+virtual bool \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a3adb4540f0e44f32f99df937e6737759}{estimate\+Transform}} (const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&affine, \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&corrected\+Affine, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a547eee42b68e1b2259a04e83293b94d0}{Points\+Pyr}} \&vcurr, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}} ncurr, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a547eee42b68e1b2259a04e83293b94d0}{Points\+Pyr}} vprev, const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}} nprev)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af37ab4be61ff80afdc2516a63bd33280}{iters\+\_\+}}
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a1b2d9df650c82dc097d8cee4ea30485d}{angle\+\_\+thres\+\_\+}}
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a2a4baa71d7e6cb7f77124e6ef5184896}{dist\+\_\+thres\+\_\+}}
+\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ float $>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae71d9c0e1e37da40da774ec3d61aefdf}{buffer\+\_\+}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper}{Stream\+Helper}} $>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a853c94fef00e5a9f8240ca6f621565f3}{shelp\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_af094d1f90861b59f5e0f45556bfba6e1}\label{classkfusion_1_1cuda_1_1ProjectiveICP_af094d1f90861b59f5e0f45556bfba6e1}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!DepthPyr@{DepthPyr}}
+\index{DepthPyr@{DepthPyr}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{DepthPyr}{DepthPyr}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}}$>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af094d1f90861b59f5e0f45556bfba6e1}{kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Depth\+Pyr}}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}\label{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!NormalsPyr@{NormalsPyr}}
+\index{NormalsPyr@{NormalsPyr}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{NormalsPyr}{NormalsPyr}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}}$>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Normals\+Pyr}}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a547eee42b68e1b2259a04e83293b94d0}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a547eee42b68e1b2259a04e83293b94d0}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!PointsPyr@{PointsPyr}}
+\index{PointsPyr@{PointsPyr}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{PointsPyr}{PointsPyr}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}}$>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a547eee42b68e1b2259a04e83293b94d0}{kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Points\+Pyr}}}
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_af91f6381324dbf69141e92a7cc7606e0}\label{classkfusion_1_1cuda_1_1ProjectiveICP_af91f6381324dbf69141e92a7cc7606e0}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAX\_PYRAMID\_LEVELS@{MAX\_PYRAMID\_LEVELS}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!MAX\_PYRAMID\_LEVELS@{MAX\_PYRAMID\_LEVELS}}}\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_af91f6381324dbf69141e92a7cc7606e0a9b7a577c5c2596dec51acbdbede6dca0}\label{classkfusion_1_1cuda_1_1ProjectiveICP_af91f6381324dbf69141e92a7cc7606e0a9b7a577c5c2596dec51acbdbede6dca0}} 
+M\+A\+X\+\_\+\+P\+Y\+R\+A\+M\+I\+D\+\_\+\+L\+E\+V\+E\+LS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_ab83d7667ca77eb799c7fad56eba27aff}\label{classkfusion_1_1cuda_1_1ProjectiveICP_ab83d7667ca77eb799c7fad56eba27aff}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!ProjectiveICP@{ProjectiveICP}}
+\index{ProjectiveICP@{ProjectiveICP}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{ProjectiveICP()}{ProjectiveICP()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Projective\+I\+CP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{Projective\+I\+CP}}. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a1fb4a19ada82fd269ba642f236e9106b}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a1fb4a19ada82fd269ba642f236e9106b}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!````~ProjectiveICP@{$\sim$ProjectiveICP}}
+\index{````~ProjectiveICP@{$\sim$ProjectiveICP}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{$\sim$ProjectiveICP()}{~ProjectiveICP()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::$\sim$\+Projective\+I\+CP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_ae25ee61e8087b87c10b2fa335e8fc508}\label{classkfusion_1_1cuda_1_1ProjectiveICP_ae25ee61e8087b87c10b2fa335e8fc508}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!estimateTransform@{estimateTransform}}
+\index{estimateTransform@{estimateTransform}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{estimateTransform()}{estimateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::estimate\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{affine,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af094d1f90861b59f5e0f45556bfba6e1}{Depth\+Pyr}} \&}]{dcurr,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}}}]{ncurr,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_af094d1f90861b59f5e0f45556bfba6e1}{Depth\+Pyr}}}]{dprev,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}}}]{nprev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The function takes masked depth, i.\+e. it assumes for performance reasons that \char`\"{}if depth(y,x) is not zero, then normals(y,x) surely is not qnan\char`\"{} \mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_adb36035f6c4f5087fe10a4f0b56c77db}\label{classkfusion_1_1cuda_1_1ProjectiveICP_adb36035f6c4f5087fe10a4f0b56c77db}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!estimateTransform@{estimateTransform}}
+\index{estimateTransform@{estimateTransform}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{estimateTransform()}{estimateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::estimate\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{affine,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{const \mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{Frame}} \&}]{curr,  }\item[{const \mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{Frame}} \&}]{prev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a3adb4540f0e44f32f99df937e6737759}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a3adb4540f0e44f32f99df937e6737759}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!estimateTransform@{estimateTransform}}
+\index{estimateTransform@{estimateTransform}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{estimateTransform()}{estimateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::estimate\+Transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{affine,  }\item[{\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{corrected\+Affine,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a547eee42b68e1b2259a04e83293b94d0}{Points\+Pyr}} \&}]{vcurr,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}}}]{ncurr,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_a547eee42b68e1b2259a04e83293b94d0}{Points\+Pyr}}}]{vprev,  }\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP_ae8279a9a89d74cb59312ede2f930236b}{Normals\+Pyr}}}]{nprev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a4a8c44eec45d4f0d4e8820aa6bae2bd5}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a4a8c44eec45d4f0d4e8820aa6bae2bd5}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!getAngleThreshold@{getAngleThreshold}}
+\index{getAngleThreshold@{getAngleThreshold}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{getAngleThreshold()}{getAngleThreshold()}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::get\+Angle\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a392d273222aebc0ecb183fc8604acc61}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a392d273222aebc0ecb183fc8604acc61}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!getDistThreshold@{getDistThreshold}}
+\index{getDistThreshold@{getDistThreshold}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{getDistThreshold()}{getDistThreshold()}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::get\+Dist\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_ab4a8620ebc4bd28b01175ad1f32befad}\label{classkfusion_1_1cuda_1_1ProjectiveICP_ab4a8620ebc4bd28b01175ad1f32befad}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!getUsedLevelsNum@{getUsedLevelsNum}}
+\index{getUsedLevelsNum@{getUsedLevelsNum}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{getUsedLevelsNum()}{getUsedLevelsNum()}}
+{\footnotesize\ttfamily int kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::get\+Used\+Levels\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_ad9a220a7030fee6c4f4a65c0bf04ec43}\label{classkfusion_1_1cuda_1_1ProjectiveICP_ad9a220a7030fee6c4f4a65c0bf04ec43}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!setAngleThreshold@{setAngleThreshold}}
+\index{setAngleThreshold@{setAngleThreshold}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{setAngleThreshold()}{setAngleThreshold()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::set\+Angle\+Threshold (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_af4b3df19bce98f90aee7e68228db3398}\label{classkfusion_1_1cuda_1_1ProjectiveICP_af4b3df19bce98f90aee7e68228db3398}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!setDistThreshold@{setDistThreshold}}
+\index{setDistThreshold@{setDistThreshold}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{setDistThreshold()}{setDistThreshold()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::set\+Dist\+Threshold (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a6187ae825d64cb409c4db42cef7a7c99}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a6187ae825d64cb409c4db42cef7a7c99}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!setIterationsNum@{setIterationsNum}}
+\index{setIterationsNum@{setIterationsNum}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{setIterationsNum()}{setIterationsNum()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::set\+Iterations\+Num (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{iters }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a1b2d9df650c82dc097d8cee4ea30485d}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a1b2d9df650c82dc097d8cee4ea30485d}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!angle\_thres\_@{angle\_thres\_}}
+\index{angle\_thres\_@{angle\_thres\_}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{angle\_thres\_}{angle\_thres\_}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::angle\+\_\+thres\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_ae71d9c0e1e37da40da774ec3d61aefdf}\label{classkfusion_1_1cuda_1_1ProjectiveICP_ae71d9c0e1e37da40da774ec3d61aefdf}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!buffer\_@{buffer\_}}
+\index{buffer\_@{buffer\_}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{buffer\_}{buffer\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$float$>$ kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::buffer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a2a4baa71d7e6cb7f77124e6ef5184896}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a2a4baa71d7e6cb7f77124e6ef5184896}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!dist\_thres\_@{dist\_thres\_}}
+\index{dist\_thres\_@{dist\_thres\_}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{dist\_thres\_}{dist\_thres\_}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::dist\+\_\+thres\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_af37ab4be61ff80afdc2516a63bd33280}\label{classkfusion_1_1cuda_1_1ProjectiveICP_af37ab4be61ff80afdc2516a63bd33280}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!iters\_@{iters\_}}
+\index{iters\_@{iters\_}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{iters\_}{iters\_}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::iters\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1ProjectiveICP_a853c94fef00e5a9f8240ca6f621565f3}\label{classkfusion_1_1cuda_1_1ProjectiveICP_a853c94fef00e5a9f8240ca6f621565f3}} 
+\index{kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}!shelp\_@{shelp\_}}
+\index{shelp\_@{shelp\_}!kfusion::cuda::ProjectiveICP@{kfusion::cuda::ProjectiveICP}}
+\doxysubsubsection{\texorpdfstring{shelp\_}{shelp\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper}{Stream\+Helper}}$>$ kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::shelp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/cuda/\mbox{\hyperlink{projective__icp_8hpp}{projective\+\_\+icp.\+hpp}}\item 
+yak/src/kfusion/\mbox{\hyperlink{projective__icp_8cpp}{projective\+\_\+icp.\+cpp}}\end{DoxyCompactItemize}

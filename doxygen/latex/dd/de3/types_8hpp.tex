@@ -1,0 +1,62 @@
+\hypertarget{types_8hpp}{}\doxysection{yak/include/yak/kfusion/types.hpp File Reference}
+\label{types_8hpp}\index{yak/include/yak/kfusion/types.hpp@{yak/include/yak/kfusion/types.hpp}}
+{\ttfamily \#include \char`\"{}yak/kfusion/cuda/device\+\_\+array.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$opencv2/core/core.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/core/affine.\+hpp$>$}\newline
+{\ttfamily \#include $<$iosfwd$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1Intr}{kfusion\+::\+Intr}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1Point}{kfusion\+::\+Point}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1RGB}{kfusion\+::\+R\+GB}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1PixelRGB}{kfusion\+::\+Pixel\+R\+GB}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{kfusion\+::cuda\+::\+Frame}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1ScopeTime}{kfusion\+::\+Scope\+Time}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1SampledScopeTime}{kfusion\+::\+Sampled\+Scope\+Time}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacekfusion}{kfusion}}
+\begin{DoxyCompactList}\small\item\em Utility. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacekfusion_1_1cuda}{kfusion\+::cuda}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef cv\+::\+Matx33f \mbox{\hyperlink{namespacekfusion_ad207da04a98c4ba81ef46b10d7582044}{kfusion\+::\+Mat3f}}
+\item 
+typedef cv\+::\+Vec3f \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{kfusion\+::\+Vec3f}}
+\item 
+typedef cv\+::\+Vec3i \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{kfusion\+::\+Vec3i}}
+\item 
+typedef cv\+::\+Affine3f \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{kfusion\+::\+Affine3f}}
+\item 
+typedef Point \mbox{\hyperlink{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}{kfusion\+::\+Normal}}
+\item 
+typedef cuda\+::\+Device\+Memory \mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{kfusion\+::cuda\+::\+Cuda\+Data}}
+\item 
+typedef cuda\+::\+Device\+Array2D$<$ unsigned short $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{kfusion\+::cuda\+::\+Depth}}
+\item 
+typedef cuda\+::\+Device\+Array2D$<$ unsigned short $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{kfusion\+::cuda\+::\+Dists}}
+\item 
+typedef cuda\+::\+Device\+Array2D$<$ R\+GB $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{kfusion\+::cuda\+::\+Image}}
+\item 
+typedef cuda\+::\+Device\+Array2D$<$ Normal $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{kfusion\+::cuda\+::\+Normals}}
+\item 
+typedef cuda\+::\+Device\+Array2D$<$ Point $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{kfusion\+::cuda\+::\+Cloud}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} std\+::ostream \& \mbox{\hyperlink{namespacekfusion_aaad51ce7c355809c88678d715c1b2541}{kfusion\+::operator$<$$<$}} (std\+::ostream \&os, const Intr \&intr)
+\item 
+float \mbox{\hyperlink{namespacekfusion_a7847f32c5c2806dd9dcea7c36998697c}{kfusion\+::deg2rad}} (float alpha)
+\end{DoxyCompactItemize}

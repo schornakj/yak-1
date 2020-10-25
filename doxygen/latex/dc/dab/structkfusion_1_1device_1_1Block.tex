@@ -1,0 +1,51 @@
+\hypertarget{structkfusion_1_1device_1_1Block}{}\doxysection{kfusion\+::device\+::Block Struct Reference}
+\label{structkfusion_1_1device_1_1Block}\index{kfusion::device::Block@{kfusion::device::Block}}
+
+
+{\ttfamily \#include $<$temp\+\_\+utils.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} unsigned int \mbox{\hyperlink{structkfusion_1_1device_1_1Block_a13bcfa3153e0e185eac02dfcea4abd79}{stride}} ()
+\item 
+static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} int \mbox{\hyperlink{structkfusion_1_1device_1_1Block_ae5a4daac2bacebdd7b51c6ed5fbba47b}{flattened\+Thread\+Id}} ()
+\item 
+{\footnotesize template$<$int C\+T\+A\+\_\+\+S\+I\+ZE, typename T , class Bin\+Op $>$ }\\static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void \mbox{\hyperlink{structkfusion_1_1device_1_1Block_ac0c09e018928e9ed3ac7f300ec398f4b}{reduce}} (volatile T $\ast$buffer, Bin\+Op op)
+\item 
+{\footnotesize template$<$int C\+T\+A\+\_\+\+S\+I\+ZE, typename T , class Bin\+Op $>$ }\\static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} T \mbox{\hyperlink{structkfusion_1_1device_1_1Block_a866bc45acda810af09d7675848bc6cc1}{reduce}} (volatile T $\ast$buffer, T init, Bin\+Op op)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Block_ae5a4daac2bacebdd7b51c6ed5fbba47b}\label{structkfusion_1_1device_1_1Block_ae5a4daac2bacebdd7b51c6ed5fbba47b}} 
+\index{kfusion::device::Block@{kfusion::device::Block}!flattenedThreadId@{flattenedThreadId}}
+\index{flattenedThreadId@{flattenedThreadId}!kfusion::device::Block@{kfusion::device::Block}}
+\doxysubsubsection{\texorpdfstring{flattenedThreadId()}{flattenedThreadId()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} int kfusion\+::device\+::\+Block\+::flattened\+Thread\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Block_ac0c09e018928e9ed3ac7f300ec398f4b}\label{structkfusion_1_1device_1_1Block_ac0c09e018928e9ed3ac7f300ec398f4b}} 
+\index{kfusion::device::Block@{kfusion::device::Block}!reduce@{reduce}}
+\index{reduce@{reduce}!kfusion::device::Block@{kfusion::device::Block}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int C\+T\+A\+\_\+\+S\+I\+ZE, typename T , class Bin\+Op $>$ \\
+static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void kfusion\+::device\+::\+Block\+::reduce (\begin{DoxyParamCaption}\item[{volatile T $\ast$}]{buffer,  }\item[{Bin\+Op}]{op }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Block_a866bc45acda810af09d7675848bc6cc1}\label{structkfusion_1_1device_1_1Block_a866bc45acda810af09d7675848bc6cc1}} 
+\index{kfusion::device::Block@{kfusion::device::Block}!reduce@{reduce}}
+\index{reduce@{reduce}!kfusion::device::Block@{kfusion::device::Block}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int C\+T\+A\+\_\+\+S\+I\+ZE, typename T , class Bin\+Op $>$ \\
+static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} T kfusion\+::device\+::\+Block\+::reduce (\begin{DoxyParamCaption}\item[{volatile T $\ast$}]{buffer,  }\item[{T}]{init,  }\item[{Bin\+Op}]{op }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Block_a13bcfa3153e0e185eac02dfcea4abd79}\label{structkfusion_1_1device_1_1Block_a13bcfa3153e0e185eac02dfcea4abd79}} 
+\index{kfusion::device::Block@{kfusion::device::Block}!stride@{stride}}
+\index{stride@{stride}!kfusion::device::Block@{kfusion::device::Block}}
+\doxysubsubsection{\texorpdfstring{stride()}{stride()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} unsigned int kfusion\+::device\+::\+Block\+::stride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/cuda/\mbox{\hyperlink{temp__utils_8hpp}{temp\+\_\+utils.\+hpp}}\end{DoxyCompactItemize}

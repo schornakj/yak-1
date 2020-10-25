@@ -1,0 +1,69 @@
+\hypertarget{temp__utils_8hpp}{}\doxysection{yak/include/yak/kfusion/cuda/temp\+\_\+utils.hpp File Reference}
+\label{temp__utils_8hpp}\index{yak/include/yak/kfusion/cuda/temp\_utils.hpp@{yak/include/yak/kfusion/cuda/temp\_utils.hpp}}
+{\ttfamily \#include \char`\"{}cuda.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}yak/kfusion/cuda/kernel\+\_\+containers.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1numeric__limits_3_01float_01_4}{kfusion\+::device\+::numeric\+\_\+limits$<$ float $>$}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1numeric__limits_3_01unsigned_01short_01_4}{kfusion\+::device\+::numeric\+\_\+limits$<$ unsigned short $>$}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Eigen33}{kfusion\+::device\+::\+Eigen33}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Eigen33_1_1MiniMat}{kfusion\+::device\+::\+Eigen33\+::\+Mini\+Mat$<$ Rows $>$}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Warp}{kfusion\+::device\+::\+Warp}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Block}{kfusion\+::device\+::\+Block}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Emulation}{kfusion\+::device\+::\+Emulation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacekfusion}{kfusion}}
+\begin{DoxyCompactList}\small\item\em Utility. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacekfusion_1_1device}{kfusion\+::device}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} void \mbox{\hyperlink{namespacekfusion_1_1device_a3a009788e72422187bd2ec8b7500b944}{kfusion\+::device\+::swap}} (T \&a, T \&b)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_a8878eb5bc635f82894e043bedcd9bf3b}{kfusion\+::device\+::dot}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \& \mbox{\hyperlink{namespacekfusion_1_1device_ab145120cf7f8655a4d1c3cf371dcdd3d}{kfusion\+::device\+::operator+=}} (float3 \&vec, const float \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \& \mbox{\hyperlink{namespacekfusion_1_1device_a23da4a008086bc05e6f2f4e56d136424}{kfusion\+::device\+::operator+=}} (float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_a84e721638b43515f22024163c6252670}{kfusion\+::device\+::operator+}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_ad14b3b69d250f1d4ba0389ef81e0fcfd}{kfusion\+::device\+::operator$\ast$}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_a2c20cf73765961f7cf272f85eb38d6e9}{kfusion\+::device\+::operator$\ast$}} (const float3 \&v1, const int3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_aa5eb7e5d7db6ec1aa5a8cf8e785536f7}{kfusion\+::device\+::operator/}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_ab4d76dfd6478af958379e3de53943d85}{kfusion\+::device\+::operator/}} (const float \&v, const float3 \&vec)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \& \mbox{\hyperlink{namespacekfusion_1_1device_a59863874cef15dbbebb6c8411ba6e7ea}{kfusion\+::device\+::operator$\ast$=}} (float3 \&vec, const float \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_a798b80e3f9357fbed6cca9ffccd49d18}{kfusion\+::device\+::operator-\/}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_af26a18373777205eb74bc18a11120047}{kfusion\+::device\+::operator$\ast$}} (const float3 \&v1, const float \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_aeb2fcbbcc11ce29e1f7f69cf6191f9d6}{kfusion\+::device\+::operator$\ast$}} (const float \&v, const float3 \&v1)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_a52994b51fb7bacb1cbac06d547848fbd}{kfusion\+::device\+::norm}} (const float3 \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_aba0ddf779838652fa114fce3a4bb87f9}{kfusion\+::device\+::norm\+\_\+sqr}} (const float3 \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_a271164ae2acc0e3c7333ca6942eb90ed}{kfusion\+::device\+::normalized}} (const float3 \&v)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} float3 \mbox{\hyperlink{namespacekfusion_1_1device_afa06ac32ad8ea05caf69b2c33b32c804}{kfusion\+::device\+::cross}} (const float3 \&v1, const float3 \&v2)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void \mbox{\hyperlink{namespacekfusion_1_1device_a4a995618bf4bbd851f6b16020e5b1e8c}{kfusion\+::device\+::compute\+Roots2}} (const float \&b, const float \&c, float3 \&roots)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void \mbox{\hyperlink{namespacekfusion_1_1device_a2ca37e1a189576003605f2299f1e3c10}{kfusion\+::device\+::compute\+Roots3}} (float c0, float c1, float c2, float3 \&roots)
+\end{DoxyCompactItemize}

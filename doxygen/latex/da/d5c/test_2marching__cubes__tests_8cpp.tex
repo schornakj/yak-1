@@ -1,0 +1,142 @@
+\hypertarget{test_2marching__cubes__tests_8cpp}{}\doxysection{yak/test/marching\+\_\+cubes\+\_\+tests.cpp File Reference}
+\label{test_2marching__cubes__tests_8cpp}\index{yak/test/marching\_cubes\_tests.cpp@{yak/test/marching\_cubes\_tests.cpp}}
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$yak/mc/marching\+\_\+cubes.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/io/ply\+\_\+io.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/io/ascii\+\_\+io.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/octree/octree\+\_\+pointcloud\+\_\+changedetector.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{test_2marching__cubes__tests_8cpp_a881368fcc9bf8140a75d4c2c13a74045}{pack}} (const \mbox{\hyperlink{classhalf__float_1_1half}{half\+\_\+float\+::half}} \&dist, const uint16\+\_\+t \&weight, uint32\+\_\+t \&data)
+\begin{DoxyCompactList}\small\item\em Copy a 16-\/bit half-\/float distance value and a 16-\/bit unsigned int weight value into a 32-\/bit unsigned int. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test_2marching__cubes__tests_8cpp_a4c496e9f777e1860cfe81f3adaff7d09}{unpack}} (const uint32\+\_\+t data, \mbox{\hyperlink{classhalf__float_1_1half}{half\+\_\+float\+::half}} \&dist, uint16\+\_\+t \&weight)
+\item 
+\mbox{\hyperlink{test_2marching__cubes__tests_8cpp_ab08c047f09b9e62665e9ccb3221f8fe9}{T\+E\+ST}} (Marching\+Cubes, pack\+\_\+unpack)
+\begin{DoxyCompactList}\small\item\em Test that packing and unpacking T\+S\+DF voxels is symmetric. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_2marching__cubes__tests_8cpp_a12b2707e822984f5f4306a107d144c89}{T\+E\+ST}} (Marching\+Cubes, test\+\_\+simple\+\_\+meshing)
+\begin{DoxyCompactList}\small\item\em Test meshing a very simple T\+S\+DF voxel volume using marching cubes. Verify that vertices of new mesh match expected output. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{test_2marching__cubes__tests_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{test_2marching__cubes__tests_8cpp_abb4db29ec01bc3038e5a90c1f0c1c739}{O\+C\+T\+R\+E\+E\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+MM}} = 0.\+001
+\item 
+static const double \mbox{\hyperlink{test_2marching__cubes__tests_8cpp_afc4738e13e94449ed8b3bb2a961883c7}{D\+I\+P\+Y\+R\+A\+M\+I\+D\+\_\+\+M\+E\+S\+H\+\_\+\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+V\+O\+X\+E\+L\+\_\+\+S\+C\+A\+LE}} = 0.\+01
+\item 
+static const std\+::string \mbox{\hyperlink{test_2marching__cubes__tests_8cpp_ac969341912922ec656527ffe8c6158ef}{D\+I\+P\+Y\+R\+A\+M\+I\+D\+\_\+\+M\+E\+S\+H\+\_\+\+F\+I\+L\+E\+N\+A\+ME}} = \char`\"{}dipyramid\+\_\+ascii.\+ply\char`\"{}
+\item 
+static const std\+::string \mbox{\hyperlink{test_2marching__cubes__tests_8cpp_af21f25fa6d1986f1603ee3753e7152ab}{D\+I\+P\+Y\+R\+A\+M\+I\+D\+\_\+\+M\+E\+S\+H\+\_\+\+A\+S\+C\+II}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{test_2marching__cubes__tests_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!main@{main}}
+\index{main@{main}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_a881368fcc9bf8140a75d4c2c13a74045}\label{test_2marching__cubes__tests_8cpp_a881368fcc9bf8140a75d4c2c13a74045}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!pack@{pack}}
+\index{pack@{pack}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{pack()}{pack()}}
+{\footnotesize\ttfamily void pack (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classhalf__float_1_1half}{half\+\_\+float\+::half}} \&}]{dist,  }\item[{const uint16\+\_\+t \&}]{weight,  }\item[{uint32\+\_\+t \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Copy a 16-\/bit half-\/float distance value and a 16-\/bit unsigned int weight value into a 32-\/bit unsigned int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist} & 16-\/bit half-\/float distance \\
+\hline
+{\em weight} & 16-\/bit unsigned int weight \\
+\hline
+{\em data} & 32-\/bit unsigned int voxel value. First 16 bits are the distance, second 16 bits are the weight. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_ab08c047f09b9e62665e9ccb3221f8fe9}\label{test_2marching__cubes__tests_8cpp_ab08c047f09b9e62665e9ccb3221f8fe9}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Marching\+Cubes}]{,  }\item[{pack\+\_\+unpack}]{ }\end{DoxyParamCaption})}
+
+
+
+Test that packing and unpacking T\+S\+DF voxels is symmetric. 
+
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_a12b2707e822984f5f4306a107d144c89}\label{test_2marching__cubes__tests_8cpp_a12b2707e822984f5f4306a107d144c89}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Marching\+Cubes}]{,  }\item[{test\+\_\+simple\+\_\+meshing}]{ }\end{DoxyParamCaption})}
+
+
+
+Test meshing a very simple T\+S\+DF voxel volume using marching cubes. Verify that vertices of new mesh match expected output. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Add comparison of mesh faces. \end{DoxyRefDesc}
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_a4c496e9f777e1860cfe81f3adaff7d09}\label{test_2marching__cubes__tests_8cpp_a4c496e9f777e1860cfe81f3adaff7d09}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!unpack@{unpack}}
+\index{unpack@{unpack}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{unpack()}{unpack()}}
+{\footnotesize\ttfamily void unpack (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{data,  }\item[{\mbox{\hyperlink{classhalf__float_1_1half}{half\+\_\+float\+::half}} \&}]{dist,  }\item[{uint16\+\_\+t \&}]{weight }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_af21f25fa6d1986f1603ee3753e7152ab}\label{test_2marching__cubes__tests_8cpp_af21f25fa6d1986f1603ee3753e7152ab}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!DIPYRAMID\_MESH\_ASCII@{DIPYRAMID\_MESH\_ASCII}}
+\index{DIPYRAMID\_MESH\_ASCII@{DIPYRAMID\_MESH\_ASCII}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{DIPYRAMID\_MESH\_ASCII}{DIPYRAMID\_MESH\_ASCII}}
+{\footnotesize\ttfamily const std\+::string D\+I\+P\+Y\+R\+A\+M\+I\+D\+\_\+\+M\+E\+S\+H\+\_\+\+A\+S\+C\+II\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{stringliteral}{"{}ply\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{format ascii 1.0\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{comment VCGLIB generated\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{element vertex 6\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{property float x\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{property float y\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{property float z\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{element face 8\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{property list uchar int vertex\_indices\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{end\_header\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{0.01 0.005 0.01\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{0.005 0.01 0.01\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{0.01 0.01 0.005\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{0.015 0.01 0.01\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{0.01 0.01 0.015\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{0.01 0.015 0.01\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{3 0 1 2\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{3 3 0 2\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{3 0 4 1\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{3 2 1 5\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{3 3 4 0\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{3 5 1 4\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{3 2 5 3\(\backslash\)n\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{3 3 5 4\(\backslash\)n"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_afc4738e13e94449ed8b3bb2a961883c7}\label{test_2marching__cubes__tests_8cpp_afc4738e13e94449ed8b3bb2a961883c7}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!DIPYRAMID\_MESH\_EXPECTED\_VOXEL\_SCALE@{DIPYRAMID\_MESH\_EXPECTED\_VOXEL\_SCALE}}
+\index{DIPYRAMID\_MESH\_EXPECTED\_VOXEL\_SCALE@{DIPYRAMID\_MESH\_EXPECTED\_VOXEL\_SCALE}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{DIPYRAMID\_MESH\_EXPECTED\_VOXEL\_SCALE}{DIPYRAMID\_MESH\_EXPECTED\_VOXEL\_SCALE}}
+{\footnotesize\ttfamily const double D\+I\+P\+Y\+R\+A\+M\+I\+D\+\_\+\+M\+E\+S\+H\+\_\+\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+V\+O\+X\+E\+L\+\_\+\+S\+C\+A\+LE = 0.\+01\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_ac969341912922ec656527ffe8c6158ef}\label{test_2marching__cubes__tests_8cpp_ac969341912922ec656527ffe8c6158ef}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!DIPYRAMID\_MESH\_FILENAME@{DIPYRAMID\_MESH\_FILENAME}}
+\index{DIPYRAMID\_MESH\_FILENAME@{DIPYRAMID\_MESH\_FILENAME}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{DIPYRAMID\_MESH\_FILENAME}{DIPYRAMID\_MESH\_FILENAME}}
+{\footnotesize\ttfamily const std\+::string D\+I\+P\+Y\+R\+A\+M\+I\+D\+\_\+\+M\+E\+S\+H\+\_\+\+F\+I\+L\+E\+N\+A\+ME = \char`\"{}dipyramid\+\_\+ascii.\+ply\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{test_2marching__cubes__tests_8cpp_abb4db29ec01bc3038e5a90c1f0c1c739}\label{test_2marching__cubes__tests_8cpp_abb4db29ec01bc3038e5a90c1f0c1c739}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!OCTREE\_RESOLUTION\_MM@{OCTREE\_RESOLUTION\_MM}}
+\index{OCTREE\_RESOLUTION\_MM@{OCTREE\_RESOLUTION\_MM}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{OCTREE\_RESOLUTION\_MM}{OCTREE\_RESOLUTION\_MM}}
+{\footnotesize\ttfamily const double O\+C\+T\+R\+E\+E\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+MM = 0.\+001\hspace{0.3cm}{\ttfamily [static]}}
+

@@ -1,0 +1,103 @@
+\hypertarget{internal_8hpp}{}\doxysection{yak/include/yak/kfusion/internal.hpp File Reference}
+\label{internal_8hpp}\index{yak/include/yak/kfusion/internal.hpp@{yak/include/yak/kfusion/internal.hpp}}
+{\ttfamily \#include $<$cuda\+\_\+fp16.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}yak/kfusion/cuda/device\+\_\+array.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}yak/kfusion/safe\+\_\+call.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Mat3f}{kfusion\+::device\+::\+Mat3f}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{kfusion\+::device\+::\+Aff3f}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{kfusion\+::device\+::\+Tsdf\+Volume}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Projector}{kfusion\+::device\+::\+Projector}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1Reprojector}{kfusion\+::device\+::\+Reprojector}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper}{kfusion\+::device\+::\+Compute\+Icp\+Helper}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_1_1PageLockHelper}{kfusion\+::device\+::\+Compute\+Icp\+Helper\+::\+Page\+Lock\+Helper}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1float8}{kfusion\+::device\+::float8}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1float12}{kfusion\+::device\+::float12}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacekfusion}{kfusion}}
+\begin{DoxyCompactList}\small\item\em Utility. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacekfusion_1_1device}{kfusion\+::device}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float4 \mbox{\hyperlink{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}{kfusion\+::device\+::\+Normal}}
+\item 
+typedef float4 \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{kfusion\+::device\+::\+Point}}
+\item 
+typedef unsigned short \mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{kfusion\+::device\+::ushort}}
+\item 
+typedef unsigned char \mbox{\hyperlink{namespacekfusion_1_1device_a02b3bea1259e6123a42eaa127b365806}{kfusion\+::device\+::uchar}}
+\item 
+typedef Ptr\+Step\+Sz$<$ ushort $>$ \mbox{\hyperlink{namespacekfusion_1_1device_a7bdf3b09ae8dcdf23f775921a088c483}{kfusion\+::device\+::\+Dists}}
+\item 
+typedef Device\+Array2D$<$ ushort $>$ \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{kfusion\+::device\+::\+Depth}}
+\item 
+typedef Device\+Array2D$<$ Normal $>$ \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{kfusion\+::device\+::\+Normals}}
+\item 
+typedef Device\+Array2D$<$ Point $>$ \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{kfusion\+::device\+::\+Points}}
+\item 
+typedef Device\+Array2D$<$ uchar4 $>$ \mbox{\hyperlink{namespacekfusion_1_1device_a857c6fb7266b3177eddd8cb21b864609}{kfusion\+::device\+::\+Image}}
+\item 
+typedef int3 \mbox{\hyperlink{namespacekfusion_1_1device_ac1d4c1230e744822ec2f521905b7e044}{kfusion\+::device\+::\+Vec3i}}
+\item 
+typedef float3 \mbox{\hyperlink{namespacekfusion_1_1device_a3d2d21ce676decc9f11d22b2bf72c2b6}{kfusion\+::device\+::\+Vec3f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a7e9489116dcc61e9341c1c29be3f767c}{kfusion\+::device\+::clear\+\_\+volume}} (Tsdf\+Volume volume)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a35c21721aa5968bfca99b0806c9fa84b}{kfusion\+::device\+::integrate}} (const Dists \&depth, Tsdf\+Volume \&volume, const Aff3f \&aff, const Projector \&proj)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a13f778a3f483c8aa69374f27f8546593}{kfusion\+::device\+::raycast}} (const Tsdf\+Volume \&volume, const Aff3f \&aff, const Mat3f \&Rinv, const Reprojector \&reproj, Depth \&depth, Normals \&normals, float step\+\_\+factor, float delta\+\_\+factor)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a41d5cb4d77ffd7ad62476e492e8adce4}{kfusion\+::device\+::raycast}} (const Tsdf\+Volume \&volume, const Aff3f \&aff, const Mat3f \&Rinv, const Reprojector \&reproj, Points \&points, Normals \&normals, float step\+\_\+factor, float delta\+\_\+factor)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} Tsdf\+Volume\+::elem\+\_\+type \mbox{\hyperlink{namespacekfusion_1_1device_a86e9f8b34a2deafd1d0cb3cd83bf226b}{kfusion\+::device\+::pack\+\_\+tsdf}} (float tsdf, int weight)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_ab27c8c20bfb4d6be71bd7a927bdee1be}{kfusion\+::device\+::unpack\+\_\+tsdf}} (Tsdf\+Volume\+::elem\+\_\+type value, int \&weight)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float \mbox{\hyperlink{namespacekfusion_1_1device_aac8343c5ae06f6ca7ee500bd4b48edb0}{kfusion\+::device\+::unpack\+\_\+tsdf}} (Tsdf\+Volume\+::elem\+\_\+type value)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_af53c44835ad74f4d837e9e23c4e5da65}{kfusion\+::device\+::compute\+\_\+dists}} (const Depth \&depth, Dists dists, float2 f, float2 c)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_ae213aff9423027535c6a4304141a7819}{kfusion\+::device\+::truncate\+Depth}} (Depth \&depth, float max\+\_\+dist)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a48cb062243c892dab9ac075ed526411a}{kfusion\+::device\+::bilateral\+Filter}} (const Depth \&src, Depth \&dst, int kernel\+\_\+size, float sigma\+\_\+spatial, float sigma\+\_\+depth)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_aba18fbeed1c3ac73af8fa0da2aea1b98}{kfusion\+::device\+::depth\+Pyr}} (const Depth \&source, Depth \&pyramid, float sigma\+\_\+depth)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a90b970a57535ac54627ce88ccdb9f6d4}{kfusion\+::device\+::resize\+Depth\+Normals}} (const Depth \&depth, const Normals \&normals, Depth \&depth\+\_\+out, Normals \&normals\+\_\+out)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a7555c9fc52b631ae64d8616731b5735a}{kfusion\+::device\+::resize\+Points\+Normals}} (const Points \&points, const Normals \&normals, Points \&points\+\_\+out, Normals \&normals\+\_\+out)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a83fb94d108d71ea96f606fe83cc76fd7}{kfusion\+::device\+::compute\+Normals\+And\+Mask\+Depth}} (const Reprojector \&reproj, Depth \&depth, Normals \&normals)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a9d82d6f1743de079d36e7e6a6b547aec}{kfusion\+::device\+::compute\+Point\+Normals}} (const Reprojector \&reproj, const Depth \&depth, Points \&points, Normals \&normals)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a575fb0666534dce72e131a9ea8724c58}{kfusion\+::device\+::render\+Image}} (const Depth \&depth, const Normals \&normals, const Reprojector \&reproj, const Vec3f \&light\+\_\+pose, Image \&image)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a69ccfb3c8993370c9301ad8a56e2e25a}{kfusion\+::device\+::render\+Image}} (const Points \&points, const Normals \&normals, const Reprojector \&reproj, const Vec3f \&light\+\_\+pose, Image \&image)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a53c6f818a90dbcdfa47e1dc0357abd8c}{kfusion\+::device\+::render\+Tangent\+Colors}} (const Normals \&normals, Image \&image)
+\item 
+size\+\_\+t \mbox{\hyperlink{namespacekfusion_1_1device_af145e7c0eddfa948010de0a0f5517fce}{kfusion\+::device\+::extract\+Cloud}} (const Tsdf\+Volume \&volume, const Aff3f \&aff, Ptr\+Sz$<$ Point $>$ output)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a2f8a815f6e3bd6e81e1ce15375c97506}{kfusion\+::device\+::extract\+Normals}} (const Tsdf\+Volume \&volume, const Ptr\+Sz$<$ Point $>$ \&points, const Aff3f \&aff, const Mat3f \&Rinv, float gradient\+\_\+delta\+\_\+factor, float4 $\ast$output)
+\item 
+void \mbox{\hyperlink{namespacekfusion_1_1device_a6863159cf771c829daa9aaa9af3eb7e9}{kfusion\+::device\+::merge\+Point\+Normal}} (const Device\+Array$<$ Point $>$ \&cloud, const Device\+Array$<$ float8 $>$ \&normals, const Device\+Array$<$ float12 $>$ \&output)
+\end{DoxyCompactItemize}

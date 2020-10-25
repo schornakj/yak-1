@@ -1,0 +1,199 @@
+\hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper}{}\doxysection{kfusion\+::device\+::Compute\+Icp\+Helper Struct Reference}
+\label{structkfusion_1_1device_1_1ComputeIcpHelper}\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+
+
+{\ttfamily \#include $<$internal.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_1_1PageLockHelper}{Page\+Lock\+Helper}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a1bd582ec9301f82c1543e433dbed313b}{Compute\+Icp\+Helper}} (float dist\+\_\+thres, float angle\+\_\+thres)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper}{Compute\+Icp\+Helper}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a97f21713cec763a94abc87b78d351753}{set\+Level\+Intr}} (int level\+\_\+index, float fx, float fy, float cx, float cy)
+\item 
+void \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a47aa12115fa79ba25615a530b87e3ce0}{operator()}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&dprev, const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&nprev, \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ float $>$ \&buffer, float $\ast$data, cuda\+Stream\+\_\+t stream)
+\item 
+void \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a6c17d04d4bd1aaeec043f058c03278a3}{operator()}} (const \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&vprev, const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&nprev, \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ float $>$ \&buffer, float $\ast$data, cuda\+Stream\+\_\+t stream)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} int \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a9113ee7f757c5093e3c95e13ea78a67f}{find\+\_\+coresp}} (int x, int y, float3 \&n, float3 \&d, float3 \&s) const
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_ad417b65962e02c7972565bccd0848e95}{partial\+\_\+reduce}} (const float row\mbox{[}7\mbox{]}, \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$ float $>$ \&partial\+\_\+buffer) const
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float2 \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a15cf0372347b13bd96598ed3ddf26e71}{proj}} (const float3 \&p) const
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_af6b959754e0908890c0540f778068f3f}{reproj}} (float x, float y, float z) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_ac3bf778f1e16d78eb86b78e24699f07b}{allocate\+\_\+buffer}} (\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ float $>$ \&buffer, int partials\+\_\+count=-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_adb3f0b5fa62db911730e6d72bbacd2c2}{min\+\_\+cosine}}
+\item 
+float \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a3b3a35a17fe402c5b6ef156f764f9221}{dist2\+\_\+thres}}
+\item 
+\mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a3330a00558be4f8d6f8fa23bbcff21d3}{aff}}
+\item 
+float \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a6f0ed36a334f2347f7749aef9a5128c4}{rows}}
+\item 
+float \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a24e164b64a948207807b85fc07be0db5}{cols}}
+\item 
+float2 \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a639da764a128a098215a2502571e9f0e}{f}}
+\item 
+float2 \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a24f750e9fbddda9ee34cbe9ec30343f3}{c}}
+\item 
+float2 \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_aa439f79ce6421ebfa67aae7a3b8157ba}{finv}}
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{ushort}} $>$ \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a4b8af2fb146a53dbc9dce69062946f52}{dcurr}}
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}{Normal}} $>$ \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_a61e4601a22a49094b7cf8994180359da}{ncurr}}
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$ \mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}} $>$ \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_aa4de51e4650209e14c7f0546eb7e9ab1}{vcurr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a1bd582ec9301f82c1543e433dbed313b}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a1bd582ec9301f82c1543e433dbed313b}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!ComputeIcpHelper@{ComputeIcpHelper}}
+\index{ComputeIcpHelper@{ComputeIcpHelper}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{ComputeIcpHelper()}{ComputeIcpHelper()}}
+{\footnotesize\ttfamily kfusion\+::device\+::\+Compute\+Icp\+Helper\+::\+Compute\+Icp\+Helper (\begin{DoxyParamCaption}\item[{float}]{dist\+\_\+thres,  }\item[{float}]{angle\+\_\+thres }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper}{Compute\+Icp\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_ac3bf778f1e16d78eb86b78e24699f07b}\label{structkfusion_1_1device_1_1ComputeIcpHelper_ac3bf778f1e16d78eb86b78e24699f07b}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!allocate\_buffer@{allocate\_buffer}}
+\index{allocate\_buffer@{allocate\_buffer}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{allocate\_buffer()}{allocate\_buffer()}}
+{\footnotesize\ttfamily static void kfusion\+::device\+::\+Compute\+Icp\+Helper\+::allocate\+\_\+buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ float $>$ \&}]{buffer,  }\item[{int}]{partials\+\_\+count = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a9113ee7f757c5093e3c95e13ea78a67f}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a9113ee7f757c5093e3c95e13ea78a67f}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!find\_coresp@{find\_coresp}}
+\index{find\_coresp@{find\_coresp}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{find\_coresp()}{find\_coresp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} int kfusion\+::device\+::\+Compute\+Icp\+Helper\+::find\+\_\+coresp (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{float3 \&}]{n,  }\item[{float3 \&}]{d,  }\item[{float3 \&}]{s }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a47aa12115fa79ba25615a530b87e3ce0}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a47aa12115fa79ba25615a530b87e3ce0}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!operator()@{operator()}}
+\index{operator()@{operator()}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void kfusion\+::device\+::\+Compute\+Icp\+Helper\+::operator() (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aba74674d437376a94e51eca338dc3a2e}{Depth}} \&}]{dprev,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{nprev,  }\item[{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ float $>$ \&}]{buffer,  }\item[{float $\ast$}]{data,  }\item[{cuda\+Stream\+\_\+t}]{stream }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a6c17d04d4bd1aaeec043f058c03278a3}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a6c17d04d4bd1aaeec043f058c03278a3}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!operator()@{operator()}}
+\index{operator()@{operator()}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void kfusion\+::device\+::\+Compute\+Icp\+Helper\+::operator() (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_aa6ad4e5ac3fbcd13328d725922b90ff2}{Points}} \&}]{vprev,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1device_a776afa32c8808d8e86512534ed1a8657}{Normals}} \&}]{nprev,  }\item[{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ float $>$ \&}]{buffer,  }\item[{float $\ast$}]{data,  }\item[{cuda\+Stream\+\_\+t}]{stream }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_ad417b65962e02c7972565bccd0848e95}\label{structkfusion_1_1device_1_1ComputeIcpHelper_ad417b65962e02c7972565bccd0848e95}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!partial\_reduce@{partial\_reduce}}
+\index{partial\_reduce@{partial\_reduce}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{partial\_reduce()}{partial\_reduce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} void kfusion\+::device\+::\+Compute\+Icp\+Helper\+::partial\+\_\+reduce (\begin{DoxyParamCaption}\item[{const float}]{row\mbox{[}7\mbox{]},  }\item[{\mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$ float $>$ \&}]{partial\+\_\+buffer }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a15cf0372347b13bd96598ed3ddf26e71}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a15cf0372347b13bd96598ed3ddf26e71}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!proj@{proj}}
+\index{proj@{proj}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{proj()}{proj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float2 kfusion\+::device\+::\+Compute\+Icp\+Helper\+::proj (\begin{DoxyParamCaption}\item[{const float3 \&}]{p }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_af6b959754e0908890c0540f778068f3f}\label{structkfusion_1_1device_1_1ComputeIcpHelper_af6b959754e0908890c0540f778068f3f}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!reproj@{reproj}}
+\index{reproj@{reproj}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{reproj()}{reproj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} float3 kfusion\+::device\+::\+Compute\+Icp\+Helper\+::reproj (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a97f21713cec763a94abc87b78d351753}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a97f21713cec763a94abc87b78d351753}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!setLevelIntr@{setLevelIntr}}
+\index{setLevelIntr@{setLevelIntr}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{setLevelIntr()}{setLevelIntr()}}
+{\footnotesize\ttfamily void kfusion\+::device\+::\+Compute\+Icp\+Helper\+::set\+Level\+Intr (\begin{DoxyParamCaption}\item[{int}]{level\+\_\+index,  }\item[{float}]{fx,  }\item[{float}]{fy,  }\item[{float}]{cx,  }\item[{float}]{cy }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a3330a00558be4f8d6f8fa23bbcff21d3}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a3330a00558be4f8d6f8fa23bbcff21d3}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!aff@{aff}}
+\index{aff@{aff}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{aff}{aff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{Aff3f}} kfusion\+::device\+::\+Compute\+Icp\+Helper\+::aff}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a24f750e9fbddda9ee34cbe9ec30343f3}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a24f750e9fbddda9ee34cbe9ec30343f3}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!c@{c}}
+\index{c@{c}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily float2 kfusion\+::device\+::\+Compute\+Icp\+Helper\+::c}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a24e164b64a948207807b85fc07be0db5}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a24e164b64a948207807b85fc07be0db5}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!cols@{cols}}
+\index{cols@{cols}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily float kfusion\+::device\+::\+Compute\+Icp\+Helper\+::cols}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a4b8af2fb146a53dbc9dce69062946f52}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a4b8af2fb146a53dbc9dce69062946f52}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!dcurr@{dcurr}}
+\index{dcurr@{dcurr}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{dcurr}{dcurr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$\mbox{\hyperlink{namespacekfusion_1_1device_a865ff030cf8dceca308ece5936d68efa}{ushort}}$>$ kfusion\+::device\+::\+Compute\+Icp\+Helper\+::dcurr}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a3b3a35a17fe402c5b6ef156f764f9221}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a3b3a35a17fe402c5b6ef156f764f9221}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!dist2\_thres@{dist2\_thres}}
+\index{dist2\_thres@{dist2\_thres}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{dist2\_thres}{dist2\_thres}}
+{\footnotesize\ttfamily float kfusion\+::device\+::\+Compute\+Icp\+Helper\+::dist2\+\_\+thres}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a639da764a128a098215a2502571e9f0e}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a639da764a128a098215a2502571e9f0e}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!f@{f}}
+\index{f@{f}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily float2 kfusion\+::device\+::\+Compute\+Icp\+Helper\+::f}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_aa439f79ce6421ebfa67aae7a3b8157ba}\label{structkfusion_1_1device_1_1ComputeIcpHelper_aa439f79ce6421ebfa67aae7a3b8157ba}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!finv@{finv}}
+\index{finv@{finv}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{finv}{finv}}
+{\footnotesize\ttfamily float2 kfusion\+::device\+::\+Compute\+Icp\+Helper\+::finv}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_adb3f0b5fa62db911730e6d72bbacd2c2}\label{structkfusion_1_1device_1_1ComputeIcpHelper_adb3f0b5fa62db911730e6d72bbacd2c2}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!min\_cosine@{min\_cosine}}
+\index{min\_cosine@{min\_cosine}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{min\_cosine}{min\_cosine}}
+{\footnotesize\ttfamily float kfusion\+::device\+::\+Compute\+Icp\+Helper\+::min\+\_\+cosine}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a61e4601a22a49094b7cf8994180359da}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a61e4601a22a49094b7cf8994180359da}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!ncurr@{ncurr}}
+\index{ncurr@{ncurr}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{ncurr}{ncurr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$\mbox{\hyperlink{namespacekfusion_1_1device_addc4fd8c1d5643ab1f40d7e1d037f525}{Normal}}$>$ kfusion\+::device\+::\+Compute\+Icp\+Helper\+::ncurr}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_a6f0ed36a334f2347f7749aef9a5128c4}\label{structkfusion_1_1device_1_1ComputeIcpHelper_a6f0ed36a334f2347f7749aef9a5128c4}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!rows@{rows}}
+\index{rows@{rows}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily float kfusion\+::device\+::\+Compute\+Icp\+Helper\+::rows}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1ComputeIcpHelper_aa4de51e4650209e14c7f0546eb7e9ab1}\label{structkfusion_1_1device_1_1ComputeIcpHelper_aa4de51e4650209e14c7f0546eb7e9ab1}} 
+\index{kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}!vcurr@{vcurr}}
+\index{vcurr@{vcurr}!kfusion::device::ComputeIcpHelper@{kfusion::device::ComputeIcpHelper}}
+\doxysubsubsection{\texorpdfstring{vcurr}{vcurr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$\mbox{\hyperlink{namespacekfusion_1_1device_a02d9f9a8a511082d7e37493c42905022}{Point}}$>$ kfusion\+::device\+::\+Compute\+Icp\+Helper\+::vcurr}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/\mbox{\hyperlink{internal_8hpp}{internal.\+hpp}}\item 
+yak/src/kfusion/\mbox{\hyperlink{projective__icp_8cpp}{projective\+\_\+icp.\+cpp}}\end{DoxyCompactItemize}

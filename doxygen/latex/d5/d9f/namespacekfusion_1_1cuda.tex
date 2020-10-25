@@ -1,0 +1,261 @@
+\hypertarget{namespacekfusion_1_1cuda}{}\doxysection{kfusion\+::cuda Namespace Reference}
+\label{namespacekfusion_1_1cuda}\index{kfusion::cuda@{kfusion::cuda}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}}} class \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}}} class \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory}{Device\+Memory}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory}{Device\+Memory}}}} class \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}}}} class \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structkfusion_1_1cuda_1_1DevPtr}{Dev\+Ptr}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{Frame}}
+\item 
+class \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{Projective\+I\+CP}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStepSz}{Ptr\+Step\+Sz}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrSz}{Ptr\+Sz}}
+\item 
+class \mbox{\hyperlink{classkfusion_1_1cuda_1_1TextureBinder}{Texture\+Binder}}
+\item 
+class \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{Tsdf\+Volume}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory}{cuda\+::\+Device\+Memory}} \mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$ unsigned short $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$ unsigned short $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{Dists}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$ \mbox{\hyperlink{structkfusion_1_1RGB}{R\+GB}} $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{Image}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$ \mbox{\hyperlink{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}{Normal}} $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}}
+\item 
+typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$ \mbox{\hyperlink{structkfusion_1_1Point}{Point}} $>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a402d4d349e188f18cd1da017ff2b13f6}{error}} (const char $\ast$error\+\_\+string, const char $\ast$file, const int line, const char $\ast$func=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Error handler. All G\+PU functions from this subsystem call the function to report an error. For internal use only. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_ab64cae8427e61d9866f5856aa7d002fe}{depth\+Bilateral\+Filter}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&in, \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&out, int ksz, float sigma\+\_\+spatial, float sigma\+\_\+depth)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a00aa8e2577df796f54e3db8cdec93a7d}{depth\+Truncation}} (\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth, float threshold)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a4b34a44a6e08b497bb50b745b7cd805c}{depth\+Build\+Pyramid}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&pyramid, float sigma\+\_\+depth)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_af01f957ab567588b28e7fc83a506e581}{compute\+Normals\+And\+Mask\+Depth}} (const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_ae1115cff1ddbfefc13904e95f1e924a4}{compute\+Point\+Normals}} (const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&points, \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a402e2a0cf82de8fd4590eec47cdaa4b2}{compute\+Dists}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{Dists}} \&dists, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a403a4b31beffa806b4b6e5c61ff94930}{resize\+Depth\+Normals}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth, const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals, \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth\+\_\+out, \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals\+\_\+out)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a16036836c48645ffb5f837bbcaffcb3b}{resize\+Points\+Normals}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&points, const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals, \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&points\+\_\+out, \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals\+\_\+out)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a66949907dae65791c7f40bb4f3b05009}{wait\+All\+Default\+Stream}} ()
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a30621cfcaa11fc2c1a274806b235db68}{render\+Tangent\+Colors}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals, \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{Image}} \&image)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a721bb0b6a609baa6c867682d25a3473a}{render\+Image}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth, const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, const \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \&light\+\_\+pose, \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{Image}} \&image)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a3d5644103af4fe8f35eeaefe51731d8b}{render\+Image}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&points, const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, const \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \&light\+\_\+pose, \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{Image}} \&image)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} int \mbox{\hyperlink{namespacekfusion_1_1cuda_ac82f0a89938bbccf599958fa5ab3093f}{get\+Cuda\+Enabled\+Device\+Count}} ()
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a002b0c4d465f9cffa793c92d0d48a19f}{set\+Device}} (int device)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} std\+::string \mbox{\hyperlink{namespacekfusion_1_1cuda_aed4886100181940aedbff52e6b410897}{get\+Device\+Name}} (int device)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} bool \mbox{\hyperlink{namespacekfusion_1_1cuda_ae7f0303f266339132f89eb7de0b085cd}{check\+If\+Pre\+Fermi\+G\+PU}} (int device)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a55dde1c9735ea7a7ef8e7e1d87965ef6}{print\+Cuda\+Device\+Info}} (int device)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_aa924b17892b6929bc784c84bbd38c6e5}{print\+Short\+Cuda\+Device\+Info}} (int device)
+\item 
+static void \mbox{\hyperlink{namespacekfusion_1_1cuda_aab9e00a156d4f86cc32208e020596cd8}{\+\_\+\+\_\+\+\_\+cuda\+Safe\+Call}} (cuda\+Error\+\_\+t err, const char $\ast$file, const int line, const char $\ast$func=\char`\"{}\char`\"{})
+\item 
+static int \mbox{\hyperlink{namespacekfusion_1_1cuda_a9f1444fc48d197bb9df6419c52cc427b}{div\+Up}} (int total, int grain)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}\label{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}} 
+\index{kfusion::cuda@{kfusion::cuda}!Cloud@{Cloud}}
+\index{Cloud@{Cloud}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{Cloud}{Cloud}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$\mbox{\hyperlink{structkfusion_1_1Point}{Point}}$>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{kfusion\+::cuda\+::\+Cloud}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}\label{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}} 
+\index{kfusion::cuda@{kfusion::cuda}!CudaData@{CudaData}}
+\index{CudaData@{CudaData}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{CudaData}{CudaData}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory}{cuda\+::\+Device\+Memory}} \mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{kfusion\+::cuda\+::\+Cuda\+Data}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}\label{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}} 
+\index{kfusion::cuda@{kfusion::cuda}!Depth@{Depth}}
+\index{Depth@{Depth}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{Depth}{Depth}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$unsigned short$>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{kfusion\+::cuda\+::\+Depth}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}\label{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}} 
+\index{kfusion::cuda@{kfusion::cuda}!Dists@{Dists}}
+\index{Dists@{Dists}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{Dists}{Dists}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$unsigned short$>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{kfusion\+::cuda\+::\+Dists}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}\label{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}} 
+\index{kfusion::cuda@{kfusion::cuda}!Image@{Image}}
+\index{Image@{Image}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{Image}{Image}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$\mbox{\hyperlink{structkfusion_1_1RGB}{R\+GB}}$>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{kfusion\+::cuda\+::\+Image}}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}\label{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}} 
+\index{kfusion::cuda@{kfusion::cuda}!Normals@{Normals}}
+\index{Normals@{Normals}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{Normals}{Normals}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{cuda\+::\+Device\+Array2D}}$<$\mbox{\hyperlink{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}{Normal}}$>$ \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{kfusion\+::cuda\+::\+Normals}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_aab9e00a156d4f86cc32208e020596cd8}\label{namespacekfusion_1_1cuda_aab9e00a156d4f86cc32208e020596cd8}} 
+\index{kfusion::cuda@{kfusion::cuda}!\_\_\_cudaSafeCall@{\_\_\_cudaSafeCall}}
+\index{\_\_\_cudaSafeCall@{\_\_\_cudaSafeCall}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{\_\_\_cudaSafeCall()}{\_\_\_cudaSafeCall()}}
+{\footnotesize\ttfamily static void kfusion\+::cuda\+::\+\_\+\+\_\+\+\_\+cuda\+Safe\+Call (\begin{DoxyParamCaption}\item[{cuda\+Error\+\_\+t}]{err,  }\item[{const char $\ast$}]{file,  }\item[{const int}]{line,  }\item[{const char $\ast$}]{func = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_ae7f0303f266339132f89eb7de0b085cd}\label{namespacekfusion_1_1cuda_ae7f0303f266339132f89eb7de0b085cd}} 
+\index{kfusion::cuda@{kfusion::cuda}!checkIfPreFermiGPU@{checkIfPreFermiGPU}}
+\index{checkIfPreFermiGPU@{checkIfPreFermiGPU}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{checkIfPreFermiGPU()}{checkIfPreFermiGPU()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} bool kfusion\+::cuda\+::check\+If\+Pre\+Fermi\+G\+PU (\begin{DoxyParamCaption}\item[{int}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a402e2a0cf82de8fd4590eec47cdaa4b2}\label{namespacekfusion_1_1cuda_a402e2a0cf82de8fd4590eec47cdaa4b2}} 
+\index{kfusion::cuda@{kfusion::cuda}!computeDists@{computeDists}}
+\index{computeDists@{computeDists}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{computeDists()}{computeDists()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::compute\+Dists (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{Dists}} \&}]{dists,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_af01f957ab567588b28e7fc83a506e581}\label{namespacekfusion_1_1cuda_af01f957ab567588b28e7fc83a506e581}} 
+\index{kfusion::cuda@{kfusion::cuda}!computeNormalsAndMaskDepth@{computeNormalsAndMaskDepth}}
+\index{computeNormalsAndMaskDepth@{computeNormalsAndMaskDepth}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{computeNormalsAndMaskDepth()}{computeNormalsAndMaskDepth()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::compute\+Normals\+And\+Mask\+Depth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_ae1115cff1ddbfefc13904e95f1e924a4}\label{namespacekfusion_1_1cuda_ae1115cff1ddbfefc13904e95f1e924a4}} 
+\index{kfusion::cuda@{kfusion::cuda}!computePointNormals@{computePointNormals}}
+\index{computePointNormals@{computePointNormals}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{computePointNormals()}{computePointNormals()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::compute\+Point\+Normals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&}]{points,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_ab64cae8427e61d9866f5856aa7d002fe}\label{namespacekfusion_1_1cuda_ab64cae8427e61d9866f5856aa7d002fe}} 
+\index{kfusion::cuda@{kfusion::cuda}!depthBilateralFilter@{depthBilateralFilter}}
+\index{depthBilateralFilter@{depthBilateralFilter}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{depthBilateralFilter()}{depthBilateralFilter()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::depth\+Bilateral\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{in,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{out,  }\item[{int}]{ksz,  }\item[{float}]{sigma\+\_\+spatial,  }\item[{float}]{sigma\+\_\+depth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a4b34a44a6e08b497bb50b745b7cd805c}\label{namespacekfusion_1_1cuda_a4b34a44a6e08b497bb50b745b7cd805c}} 
+\index{kfusion::cuda@{kfusion::cuda}!depthBuildPyramid@{depthBuildPyramid}}
+\index{depthBuildPyramid@{depthBuildPyramid}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{depthBuildPyramid()}{depthBuildPyramid()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::depth\+Build\+Pyramid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{pyramid,  }\item[{float}]{sigma\+\_\+depth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a00aa8e2577df796f54e3db8cdec93a7d}\label{namespacekfusion_1_1cuda_a00aa8e2577df796f54e3db8cdec93a7d}} 
+\index{kfusion::cuda@{kfusion::cuda}!depthTruncation@{depthTruncation}}
+\index{depthTruncation@{depthTruncation}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{depthTruncation()}{depthTruncation()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::depth\+Truncation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth,  }\item[{float}]{threshold }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a9f1444fc48d197bb9df6419c52cc427b}\label{namespacekfusion_1_1cuda_a9f1444fc48d197bb9df6419c52cc427b}} 
+\index{kfusion::cuda@{kfusion::cuda}!divUp@{divUp}}
+\index{divUp@{divUp}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{divUp()}{divUp()}}
+{\footnotesize\ttfamily static int kfusion\+::cuda\+::div\+Up (\begin{DoxyParamCaption}\item[{int}]{total,  }\item[{int}]{grain }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a402d4d349e188f18cd1da017ff2b13f6}\label{namespacekfusion_1_1cuda_a402d4d349e188f18cd1da017ff2b13f6}} 
+\index{kfusion::cuda@{kfusion::cuda}!error@{error}}
+\index{error@{error}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{error\+\_\+string,  }\item[{const char $\ast$}]{file,  }\item[{const int}]{line,  }\item[{const char $\ast$}]{func = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Error handler. All G\+PU functions from this subsystem call the function to report an error. For internal use only. 
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_ac82f0a89938bbccf599958fa5ab3093f}\label{namespacekfusion_1_1cuda_ac82f0a89938bbccf599958fa5ab3093f}} 
+\index{kfusion::cuda@{kfusion::cuda}!getCudaEnabledDeviceCount@{getCudaEnabledDeviceCount}}
+\index{getCudaEnabledDeviceCount@{getCudaEnabledDeviceCount}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{getCudaEnabledDeviceCount()}{getCudaEnabledDeviceCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} int kfusion\+::cuda\+::get\+Cuda\+Enabled\+Device\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_aed4886100181940aedbff52e6b410897}\label{namespacekfusion_1_1cuda_aed4886100181940aedbff52e6b410897}} 
+\index{kfusion::cuda@{kfusion::cuda}!getDeviceName@{getDeviceName}}
+\index{getDeviceName@{getDeviceName}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{getDeviceName()}{getDeviceName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} std\+::string kfusion\+::cuda\+::get\+Device\+Name (\begin{DoxyParamCaption}\item[{int}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a55dde1c9735ea7a7ef8e7e1d87965ef6}\label{namespacekfusion_1_1cuda_a55dde1c9735ea7a7ef8e7e1d87965ef6}} 
+\index{kfusion::cuda@{kfusion::cuda}!printCudaDeviceInfo@{printCudaDeviceInfo}}
+\index{printCudaDeviceInfo@{printCudaDeviceInfo}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{printCudaDeviceInfo()}{printCudaDeviceInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void kfusion\+::cuda\+::print\+Cuda\+Device\+Info (\begin{DoxyParamCaption}\item[{int}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_aa924b17892b6929bc784c84bbd38c6e5}\label{namespacekfusion_1_1cuda_aa924b17892b6929bc784c84bbd38c6e5}} 
+\index{kfusion::cuda@{kfusion::cuda}!printShortCudaDeviceInfo@{printShortCudaDeviceInfo}}
+\index{printShortCudaDeviceInfo@{printShortCudaDeviceInfo}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{printShortCudaDeviceInfo()}{printShortCudaDeviceInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void kfusion\+::cuda\+::print\+Short\+Cuda\+Device\+Info (\begin{DoxyParamCaption}\item[{int}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a3d5644103af4fe8f35eeaefe51731d8b}\label{namespacekfusion_1_1cuda_a3d5644103af4fe8f35eeaefe51731d8b}} 
+\index{kfusion::cuda@{kfusion::cuda}!renderImage@{renderImage}}
+\index{renderImage@{renderImage}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{renderImage()}{renderImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::render\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&}]{points,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{const \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \&}]{light\+\_\+pose,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{Image}} \&}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a721bb0b6a609baa6c867682d25a3473a}\label{namespacekfusion_1_1cuda_a721bb0b6a609baa6c867682d25a3473a}} 
+\index{kfusion::cuda@{kfusion::cuda}!renderImage@{renderImage}}
+\index{renderImage@{renderImage}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{renderImage()}{renderImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::render\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{const \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \&}]{light\+\_\+pose,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{Image}} \&}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a30621cfcaa11fc2c1a274806b235db68}\label{namespacekfusion_1_1cuda_a30621cfcaa11fc2c1a274806b235db68}} 
+\index{kfusion::cuda@{kfusion::cuda}!renderTangentColors@{renderTangentColors}}
+\index{renderTangentColors@{renderTangentColors}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{renderTangentColors()}{renderTangentColors()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::render\+Tangent\+Colors (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{Image}} \&}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a403a4b31beffa806b4b6e5c61ff94930}\label{namespacekfusion_1_1cuda_a403a4b31beffa806b4b6e5c61ff94930}} 
+\index{kfusion::cuda@{kfusion::cuda}!resizeDepthNormals@{resizeDepthNormals}}
+\index{resizeDepthNormals@{resizeDepthNormals}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{resizeDepthNormals()}{resizeDepthNormals()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::resize\+Depth\+Normals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth\+\_\+out,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a16036836c48645ffb5f837bbcaffcb3b}\label{namespacekfusion_1_1cuda_a16036836c48645ffb5f837bbcaffcb3b}} 
+\index{kfusion::cuda@{kfusion::cuda}!resizePointsNormals@{resizePointsNormals}}
+\index{resizePointsNormals@{resizePointsNormals}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{resizePointsNormals()}{resizePointsNormals()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::resize\+Points\+Normals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&}]{points,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&}]{points\+\_\+out,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a002b0c4d465f9cffa793c92d0d48a19f}\label{namespacekfusion_1_1cuda_a002b0c4d465f9cffa793c92d0d48a19f}} 
+\index{kfusion::cuda@{kfusion::cuda}!setDevice@{setDevice}}
+\index{setDevice@{setDevice}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{setDevice()}{setDevice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void kfusion\+::cuda\+::set\+Device (\begin{DoxyParamCaption}\item[{int}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacekfusion_1_1cuda_a66949907dae65791c7f40bb4f3b05009}\label{namespacekfusion_1_1cuda_a66949907dae65791c7f40bb4f3b05009}} 
+\index{kfusion::cuda@{kfusion::cuda}!waitAllDefaultStream@{waitAllDefaultStream}}
+\index{waitAllDefaultStream@{waitAllDefaultStream}!kfusion::cuda@{kfusion::cuda}}
+\doxysubsubsection{\texorpdfstring{waitAllDefaultStream()}{waitAllDefaultStream()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::wait\+All\+Default\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

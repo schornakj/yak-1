@@ -1,0 +1,84 @@
+\hypertarget{classkfusion_1_1cuda_1_1TextureBinder}{}\doxysection{kfusion\+::cuda\+::Texture\+Binder Class Reference}
+\label{classkfusion_1_1cuda_1_1TextureBinder}\index{kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}}
+
+
+{\ttfamily \#include $<$texture\+\_\+binder.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ }\\\mbox{\hyperlink{classkfusion_1_1cuda_1_1TextureBinder_a6c754f351b6c479700f4f90d3a1ad664}{Texture\+Binder}} (const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ T $>$ \&arr, const struct texture$<$ T, 2, read\+Mode $>$ \&tex)
+\item 
+{\footnotesize template$<$class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ }\\\mbox{\hyperlink{classkfusion_1_1cuda_1_1TextureBinder_aae57c24f5b59e2f47d7342ee388409a9}{Texture\+Binder}} (const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ T $>$ \&arr, const struct texture$<$ T, 1, read\+Mode $>$ \&tex)
+\item 
+{\footnotesize template$<$class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ }\\\mbox{\hyperlink{classkfusion_1_1cuda_1_1TextureBinder_ae63d1206c153d24319653b620ec71dfa}{Texture\+Binder}} (const \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStepSz}{Ptr\+Step\+Sz}}$<$ T $>$ \&arr, const struct texture$<$ T, 2, read\+Mode $>$ \&tex)
+\item 
+{\footnotesize template$<$class A , class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ }\\\mbox{\hyperlink{classkfusion_1_1cuda_1_1TextureBinder_a964897043833945c22cf6e0bc249987d}{Texture\+Binder}} (const A \&arr, const struct texture$<$ T, 2, read\+Mode $>$ \&tex, const cuda\+Channel\+Format\+Desc \&desc)
+\item 
+{\footnotesize template$<$class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ }\\\mbox{\hyperlink{classkfusion_1_1cuda_1_1TextureBinder_a9a6b748a24a014d7215adce09433a0c5}{Texture\+Binder}} (const \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrSz}{Ptr\+Sz}}$<$ T $>$ \&arr, const struct texture$<$ T, 1, read\+Mode $>$ \&tex)
+\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1TextureBinder_a931680171baeb45c61100317b4e86a28}{$\sim$\+Texture\+Binder}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const struct texture\+Reference $\ast$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1TextureBinder_ad06dc8841cbc2d1d5425971b4133d724}{texref}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TextureBinder_a6c754f351b6c479700f4f90d3a1ad664}\label{classkfusion_1_1cuda_1_1TextureBinder_a6c754f351b6c479700f4f90d3a1ad664}} 
+\index{kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}!TextureBinder@{TextureBinder}}
+\index{TextureBinder@{TextureBinder}!kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}}
+\doxysubsubsection{\texorpdfstring{TextureBinder()}{TextureBinder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ \\
+kfusion\+::cuda\+::\+Texture\+Binder\+::\+Texture\+Binder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray2D}{Device\+Array2D}}$<$ T $>$ \&}]{arr,  }\item[{const struct texture$<$ T, 2, read\+Mode $>$ \&}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TextureBinder_aae57c24f5b59e2f47d7342ee388409a9}\label{classkfusion_1_1cuda_1_1TextureBinder_aae57c24f5b59e2f47d7342ee388409a9}} 
+\index{kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}!TextureBinder@{TextureBinder}}
+\index{TextureBinder@{TextureBinder}!kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}}
+\doxysubsubsection{\texorpdfstring{TextureBinder()}{TextureBinder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ \\
+kfusion\+::cuda\+::\+Texture\+Binder\+::\+Texture\+Binder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ T $>$ \&}]{arr,  }\item[{const struct texture$<$ T, 1, read\+Mode $>$ \&}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TextureBinder_ae63d1206c153d24319653b620ec71dfa}\label{classkfusion_1_1cuda_1_1TextureBinder_ae63d1206c153d24319653b620ec71dfa}} 
+\index{kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}!TextureBinder@{TextureBinder}}
+\index{TextureBinder@{TextureBinder}!kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}}
+\doxysubsubsection{\texorpdfstring{TextureBinder()}{TextureBinder()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ \\
+kfusion\+::cuda\+::\+Texture\+Binder\+::\+Texture\+Binder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStepSz}{Ptr\+Step\+Sz}}$<$ T $>$ \&}]{arr,  }\item[{const struct texture$<$ T, 2, read\+Mode $>$ \&}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TextureBinder_a964897043833945c22cf6e0bc249987d}\label{classkfusion_1_1cuda_1_1TextureBinder_a964897043833945c22cf6e0bc249987d}} 
+\index{kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}!TextureBinder@{TextureBinder}}
+\index{TextureBinder@{TextureBinder}!kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}}
+\doxysubsubsection{\texorpdfstring{TextureBinder()}{TextureBinder()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class A , class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ \\
+kfusion\+::cuda\+::\+Texture\+Binder\+::\+Texture\+Binder (\begin{DoxyParamCaption}\item[{const A \&}]{arr,  }\item[{const struct texture$<$ T, 2, read\+Mode $>$ \&}]{tex,  }\item[{const cuda\+Channel\+Format\+Desc \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TextureBinder_a9a6b748a24a014d7215adce09433a0c5}\label{classkfusion_1_1cuda_1_1TextureBinder_a9a6b748a24a014d7215adce09433a0c5}} 
+\index{kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}!TextureBinder@{TextureBinder}}
+\index{TextureBinder@{TextureBinder}!kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}}
+\doxysubsubsection{\texorpdfstring{TextureBinder()}{TextureBinder()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class T , enum cuda\+Texture\+Read\+Mode read\+Mode$>$ \\
+kfusion\+::cuda\+::\+Texture\+Binder\+::\+Texture\+Binder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrSz}{Ptr\+Sz}}$<$ T $>$ \&}]{arr,  }\item[{const struct texture$<$ T, 1, read\+Mode $>$ \&}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TextureBinder_a931680171baeb45c61100317b4e86a28}\label{classkfusion_1_1cuda_1_1TextureBinder_a931680171baeb45c61100317b4e86a28}} 
+\index{kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}!````~TextureBinder@{$\sim$TextureBinder}}
+\index{````~TextureBinder@{$\sim$TextureBinder}!kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}}
+\doxysubsubsection{\texorpdfstring{$\sim$TextureBinder()}{~TextureBinder()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Texture\+Binder\+::$\sim$\+Texture\+Binder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TextureBinder_ad06dc8841cbc2d1d5425971b4133d724}\label{classkfusion_1_1cuda_1_1TextureBinder_ad06dc8841cbc2d1d5425971b4133d724}} 
+\index{kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}!texref@{texref}}
+\index{texref@{texref}!kfusion::cuda::TextureBinder@{kfusion::cuda::TextureBinder}}
+\doxysubsubsection{\texorpdfstring{texref}{texref}}
+{\footnotesize\ttfamily const struct texture\+Reference$\ast$ kfusion\+::cuda\+::\+Texture\+Binder\+::texref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/cuda/\mbox{\hyperlink{texture__binder_8hpp}{texture\+\_\+binder.\+hpp}}\end{DoxyCompactItemize}

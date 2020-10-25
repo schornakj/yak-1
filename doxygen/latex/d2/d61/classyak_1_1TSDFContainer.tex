@@ -1,0 +1,126 @@
+\hypertarget{classyak_1_1TSDFContainer}{}\doxysection{yak\+::T\+S\+D\+F\+Container Class Reference}
+\label{classyak_1_1TSDFContainer}\index{yak::TSDFContainer@{yak::TSDFContainer}}
+
+
+A container for storing and reading from a dense T\+S\+DF grid comprised of 32-\/bit entries (16 bits of distance in half-\/format, 16 bits of weight).  
+
+
+
+
+{\ttfamily \#include $<$tsdf\+\_\+container.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyak_1_1TSDFContainer_a358b7ed3eef71d56e4fe6cf2af56833f}{T\+S\+D\+F\+Container}} (int x, int y, int z)
+\item 
+void \mbox{\hyperlink{classyak_1_1TSDFContainer_a22f870854802017c5cab9366afd00c00}{read}} (int index, \mbox{\hyperlink{classhalf__float_1_1half}{half\+\_\+float\+::half}} \&dist, uint16\+\_\+t \&weight) const
+\item 
+int \mbox{\hyperlink{classyak_1_1TSDFContainer_a9b4f280b65112f34f0559bccca9b6de1}{to\+Index}} (int x, int y, int z) const
+\item 
+void \mbox{\hyperlink{classyak_1_1TSDFContainer_ab9d495467c30d286d2051874d74c57b7}{from\+Index}} (int index, int \&x, int \&y, int \&z) const
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{classyak_1_1TSDFContainer_aa1e1c5011b262bf91258c7bfdcb8bd4a}{data}} ()
+\item 
+const uint32\+\_\+t $\ast$ \mbox{\hyperlink{classyak_1_1TSDFContainer_a933c6155938407504ad7773e7de4819d}{data}} () const
+\item 
+int \mbox{\hyperlink{classyak_1_1TSDFContainer_ad3524bc141a85f3451b5c97def3f03d3}{size}} () const
+\item 
+Eigen\+::\+Vector3i \mbox{\hyperlink{classyak_1_1TSDFContainer_ae68b80f20b912306902eb77597cf50ea}{dims}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classyak_1_1TSDFContainer_af2d7fb6030ea535f90b76ae21e7179d8}{unpack}} (uint32\+\_\+t \mbox{\hyperlink{classyak_1_1TSDFContainer_aa1e1c5011b262bf91258c7bfdcb8bd4a}{data}}, \mbox{\hyperlink{classhalf__float_1_1half}{half\+\_\+float\+::half}} \&dist, uint16\+\_\+t \&weight) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::vector$<$ uint32\+\_\+t $>$ $>$ \mbox{\hyperlink{classyak_1_1TSDFContainer_aac7b943e9ccc00ad7b1a298b36f66504}{data\+\_\+}}
+\item 
+Eigen\+::\+Vector3i \mbox{\hyperlink{classyak_1_1TSDFContainer_adcdc72ee444fc5931c225d56731da311}{dims\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A container for storing and reading from a dense T\+S\+DF grid comprised of 32-\/bit entries (16 bits of distance in half-\/format, 16 bits of weight). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_a358b7ed3eef71d56e4fe6cf2af56833f}\label{classyak_1_1TSDFContainer_a358b7ed3eef71d56e4fe6cf2af56833f}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!TSDFContainer@{TSDFContainer}}
+\index{TSDFContainer@{TSDFContainer}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{TSDFContainer()}{TSDFContainer()}}
+{\footnotesize\ttfamily yak\+::\+T\+S\+D\+F\+Container\+::\+T\+S\+D\+F\+Container (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_aa1e1c5011b262bf91258c7bfdcb8bd4a}\label{classyak_1_1TSDFContainer_aa1e1c5011b262bf91258c7bfdcb8bd4a}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!data@{data}}
+\index{data@{data}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ yak\+::\+T\+S\+D\+F\+Container\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_a933c6155938407504ad7773e7de4819d}\label{classyak_1_1TSDFContainer_a933c6155938407504ad7773e7de4819d}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!data@{data}}
+\index{data@{data}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const uint32\+\_\+t$\ast$ yak\+::\+T\+S\+D\+F\+Container\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_ae68b80f20b912306902eb77597cf50ea}\label{classyak_1_1TSDFContainer_ae68b80f20b912306902eb77597cf50ea}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!dims@{dims}}
+\index{dims@{dims}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{dims()}{dims()}}
+{\footnotesize\ttfamily Eigen\+::\+Vector3i yak\+::\+T\+S\+D\+F\+Container\+::dims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_ab9d495467c30d286d2051874d74c57b7}\label{classyak_1_1TSDFContainer_ab9d495467c30d286d2051874d74c57b7}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!fromIndex@{fromIndex}}
+\index{fromIndex@{fromIndex}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{fromIndex()}{fromIndex()}}
+{\footnotesize\ttfamily void yak\+::\+T\+S\+D\+F\+Container\+::from\+Index (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int \&}]{x,  }\item[{int \&}]{y,  }\item[{int \&}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_a22f870854802017c5cab9366afd00c00}\label{classyak_1_1TSDFContainer_a22f870854802017c5cab9366afd00c00}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!read@{read}}
+\index{read@{read}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void yak\+::\+T\+S\+D\+F\+Container\+::read (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classhalf__float_1_1half}{half\+\_\+float\+::half}} \&}]{dist,  }\item[{uint16\+\_\+t \&}]{weight }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_ad3524bc141a85f3451b5c97def3f03d3}\label{classyak_1_1TSDFContainer_ad3524bc141a85f3451b5c97def3f03d3}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!size@{size}}
+\index{size@{size}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int yak\+::\+T\+S\+D\+F\+Container\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_a9b4f280b65112f34f0559bccca9b6de1}\label{classyak_1_1TSDFContainer_a9b4f280b65112f34f0559bccca9b6de1}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!toIndex@{toIndex}}
+\index{toIndex@{toIndex}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{toIndex()}{toIndex()}}
+{\footnotesize\ttfamily int yak\+::\+T\+S\+D\+F\+Container\+::to\+Index (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_af2d7fb6030ea535f90b76ae21e7179d8}\label{classyak_1_1TSDFContainer_af2d7fb6030ea535f90b76ae21e7179d8}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!unpack@{unpack}}
+\index{unpack@{unpack}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{unpack()}{unpack()}}
+{\footnotesize\ttfamily void yak\+::\+T\+S\+D\+F\+Container\+::unpack (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data,  }\item[{\mbox{\hyperlink{classhalf__float_1_1half}{half\+\_\+float\+::half}} \&}]{dist,  }\item[{uint16\+\_\+t \&}]{weight }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_aac7b943e9ccc00ad7b1a298b36f66504}\label{classyak_1_1TSDFContainer_aac7b943e9ccc00ad7b1a298b36f66504}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!data\_@{data\_}}
+\index{data\_@{data\_}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{data\_}{data\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::vector$<$uint32\+\_\+t$>$ $>$ yak\+::\+T\+S\+D\+F\+Container\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyak_1_1TSDFContainer_adcdc72ee444fc5931c225d56731da311}\label{classyak_1_1TSDFContainer_adcdc72ee444fc5931c225d56731da311}} 
+\index{yak::TSDFContainer@{yak::TSDFContainer}!dims\_@{dims\_}}
+\index{dims\_@{dims\_}!yak::TSDFContainer@{yak::TSDFContainer}}
+\doxysubsubsection{\texorpdfstring{dims\_}{dims\_}}
+{\footnotesize\ttfamily Eigen\+::\+Vector3i yak\+::\+T\+S\+D\+F\+Container\+::dims\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/\mbox{\hyperlink{tsdf__container_8h}{tsdf\+\_\+container.\+h}}\item 
+yak/src/kfusion/\mbox{\hyperlink{tsdf__container_8cpp}{tsdf\+\_\+container.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\hypertarget{structkfusion_1_1device_1_1TsdfVolume}{}\doxysection{kfusion\+::device\+::Tsdf\+Volume Struct Reference}
+\label{structkfusion_1_1device_1_1TsdfVolume}\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+
+
+{\ttfamily \#include $<$internal.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef ushort2 \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a3e1b00fc279d13b489a148c1f9e54ef1}{Tsdf\+Volume}} (\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a876b20f5901eb53f154fa5a72ee185f6}{data}}, int3 \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a71728e521db2b322310b2371607268b9}{dims}}, float3 \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a6290d593134d0f224f74b7cf4f967fde}{voxel\+\_\+size}}, float \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a298ef85f93fe938bc7d50a19b6b3e7b1}{trunc\+\_\+dist}}, int \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a6dc53b78935cd459b1307402d154b9d7}{max\+\_\+weight}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} host implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a18daf6d58c9793b1cce217b4d7cc0136}{Tsdf\+Volume}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$ \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a431dc535a72e4136bd91b84dd50b749d}{operator()}} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$ \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_af26694b49b23e8f6a26b6c1fdd3648b7}{operator()}} (int x, int y, int z) const
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$ \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a584dbc2bde90f6ac1d687b5c379d2eb1}{beg}} (int x, int y) const
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$ \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a3cc279a91e67c1e5c245ace602ad347d}{zstep}} (\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$const ptr) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a876b20f5901eb53f154fa5a72ee185f6}{data}}
+\item 
+const int3 \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a71728e521db2b322310b2371607268b9}{dims}}
+\item 
+const float3 \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a6290d593134d0f224f74b7cf4f967fde}{voxel\+\_\+size}}
+\item 
+const float \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a298ef85f93fe938bc7d50a19b6b3e7b1}{trunc\+\_\+dist}}
+\item 
+const int \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_a6dc53b78935cd459b1307402d154b9d7}{max\+\_\+weight}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \& \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_adf85c4e3dcfc081bea2e6f33a8fad796}{operator=}} (const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}\label{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!elem\_type@{elem\_type}}
+\index{elem\_type@{elem\_type}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{elem\_type}{elem\_type}}
+{\footnotesize\ttfamily typedef ushort2 \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{kfusion\+::device\+::\+Tsdf\+Volume\+::elem\+\_\+type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a3e1b00fc279d13b489a148c1f9e54ef1}\label{structkfusion_1_1device_1_1TsdfVolume_a3e1b00fc279d13b489a148c1f9e54ef1}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!TsdfVolume@{TsdfVolume}}
+\index{TsdfVolume@{TsdfVolume}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{TsdfVolume()}{TsdfVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily kfusion\+::device\+::\+Tsdf\+Volume\+::\+Tsdf\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$}]{data,  }\item[{int3}]{dims,  }\item[{float3}]{voxel\+\_\+size,  }\item[{float}]{trunc\+\_\+dist,  }\item[{int}]{max\+\_\+weight }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} host implementation. 
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a18daf6d58c9793b1cce217b4d7cc0136}\label{structkfusion_1_1device_1_1TsdfVolume_a18daf6d58c9793b1cce217b4d7cc0136}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!TsdfVolume@{TsdfVolume}}
+\index{TsdfVolume@{TsdfVolume}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{TsdfVolume()}{TsdfVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily kfusion\+::device\+::\+Tsdf\+Volume\+::\+Tsdf\+Volume (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a584dbc2bde90f6ac1d687b5c379d2eb1}\label{structkfusion_1_1device_1_1TsdfVolume_a584dbc2bde90f6ac1d687b5c379d2eb1}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!beg@{beg}}
+\index{beg@{beg}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{beg()}{beg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{kfusion\+::device\+::\+Tsdf\+Volume\+::elem\+\_\+type}} $\ast$ kfusion\+::device\+::\+Tsdf\+Volume\+::beg (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a431dc535a72e4136bd91b84dd50b749d}\label{structkfusion_1_1device_1_1TsdfVolume_a431dc535a72e4136bd91b84dd50b749d}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!operator()@{operator()}}
+\index{operator()@{operator()}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{kfusion\+::device\+::\+Tsdf\+Volume\+::elem\+\_\+type}} $\ast$ kfusion\+::device\+::\+Tsdf\+Volume\+::operator() (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}}. 
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_af26694b49b23e8f6a26b6c1fdd3648b7}\label{structkfusion_1_1device_1_1TsdfVolume_af26694b49b23e8f6a26b6c1fdd3648b7}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!operator()@{operator()}}
+\index{operator()@{operator()}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{kfusion\+::device\+::\+Tsdf\+Volume\+::elem\+\_\+type}} $\ast$ kfusion\+::device\+::\+Tsdf\+Volume\+::operator() (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_adf85c4e3dcfc081bea2e6f33a8fad796}\label{structkfusion_1_1device_1_1TsdfVolume_adf85c4e3dcfc081bea2e6f33a8fad796}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!operator=@{operator=}}
+\index{operator=@{operator=}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}}\& kfusion\+::device\+::\+Tsdf\+Volume\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume}{Tsdf\+Volume}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a3cc279a91e67c1e5c245ace602ad347d}\label{structkfusion_1_1device_1_1TsdfVolume_a3cc279a91e67c1e5c245ace602ad347d}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!zstep@{zstep}}
+\index{zstep@{zstep}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{zstep()}{zstep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{kfusion\+::device\+::\+Tsdf\+Volume\+::elem\+\_\+type}} $\ast$ kfusion\+::device\+::\+Tsdf\+Volume\+::zstep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}} $\ast$const}]{ptr }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a876b20f5901eb53f154fa5a72ee185f6}\label{structkfusion_1_1device_1_1TsdfVolume_a876b20f5901eb53f154fa5a72ee185f6}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!data@{data}}
+\index{data@{data}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1device_1_1TsdfVolume_aac9aaa26e9c3cae200f7da79a6890960}{elem\+\_\+type}}$\ast$ const kfusion\+::device\+::\+Tsdf\+Volume\+::data}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a71728e521db2b322310b2371607268b9}\label{structkfusion_1_1device_1_1TsdfVolume_a71728e521db2b322310b2371607268b9}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!dims@{dims}}
+\index{dims@{dims}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{dims}{dims}}
+{\footnotesize\ttfamily const int3 kfusion\+::device\+::\+Tsdf\+Volume\+::dims}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a6dc53b78935cd459b1307402d154b9d7}\label{structkfusion_1_1device_1_1TsdfVolume_a6dc53b78935cd459b1307402d154b9d7}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!max\_weight@{max\_weight}}
+\index{max\_weight@{max\_weight}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{max\_weight}{max\_weight}}
+{\footnotesize\ttfamily const int kfusion\+::device\+::\+Tsdf\+Volume\+::max\+\_\+weight}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a298ef85f93fe938bc7d50a19b6b3e7b1}\label{structkfusion_1_1device_1_1TsdfVolume_a298ef85f93fe938bc7d50a19b6b3e7b1}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!trunc\_dist@{trunc\_dist}}
+\index{trunc\_dist@{trunc\_dist}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{trunc\_dist}{trunc\_dist}}
+{\footnotesize\ttfamily const float kfusion\+::device\+::\+Tsdf\+Volume\+::trunc\+\_\+dist}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1TsdfVolume_a6290d593134d0f224f74b7cf4f967fde}\label{structkfusion_1_1device_1_1TsdfVolume_a6290d593134d0f224f74b7cf4f967fde}} 
+\index{kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}!voxel\_size@{voxel\_size}}
+\index{voxel\_size@{voxel\_size}!kfusion::device::TsdfVolume@{kfusion::device::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{voxel\_size}{voxel\_size}}
+{\footnotesize\ttfamily const float3 kfusion\+::device\+::\+Tsdf\+Volume\+::voxel\+\_\+size}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/\mbox{\hyperlink{internal_8hpp}{internal.\+hpp}}\item 
+yak/include/yak/kfusion/cuda/\mbox{\hyperlink{device_8hpp}{device.\+hpp}}\item 
+yak/src/kfusion/\mbox{\hyperlink{precomp_8cpp}{precomp.\+cpp}}\end{DoxyCompactItemize}

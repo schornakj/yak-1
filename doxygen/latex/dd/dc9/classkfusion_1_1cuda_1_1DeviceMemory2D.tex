@@ -1,0 +1,416 @@
+\hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D}{}\doxysection{kfusion\+::cuda\+::Device\+Memory2D Class Reference}
+\label{classkfusion_1_1cuda_1_1DeviceMemory2D}\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+
+
+{\bfseries{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}}}} class  
+
+
+
+
+{\ttfamily \#include $<$device\+\_\+memory.\+hpp$>$}
+
+Inheritance diagram for kfusion\+::cuda\+::Device\+Memory2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.754209cm]{dd/dc9/classkfusion_1_1cuda_1_1DeviceMemory2D}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a1dd1c1233ecd5f4068ef1d61a08051bb}{Device\+Memory2D}} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a67596cfc868a1ad9574e47b21d4bd083}{$\sim$\+Device\+Memory2D}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a530bfdc01b0738fea9e1defe3ffa5972}{Device\+Memory2D}} (int rows\+\_\+arg, int cols\+Bytes\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Allocates internal buffer in G\+PU memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a30fdc4fb174dba3f7536953c32e5cdb4}{Device\+Memory2D}} (int rows\+\_\+arg, int cols\+Bytes\+\_\+arg, void $\ast$data\+\_\+arg, size\+\_\+t step\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Initializes with user allocated buffer. Reference counting is disabled in this case. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a89904e3aca0b933b77ce35043bf7f256}{Device\+Memory2D}} (const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \&other\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Copy constructor. Just increments reference counter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \& \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_af1f73352217266dfe6115d7b306ab9c3}{operator=}} (const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \&other\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Assigment operator. Just increments reference counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a1569bda3db881c0aedd121b66cabaa5f}{create}} (int rows\+\_\+arg, int cols\+Bytes\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Allocates internal buffer in G\+PU memory. If internal buffer was created before the function recreates it with new size. If new and old sizes are equal it does nothing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_afeba0b04383dc270ceeebaf685d9706a}{release}} ()
+\begin{DoxyCompactList}\small\item\em Decrements reference counter and releases internal buffer if needed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a690a6fecbe2c1713d5b59d42bf865ab3}{copy\+To}} (\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \&other) const
+\begin{DoxyCompactList}\small\item\em Performs data copying. If destination size differs it will be reallocated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_aa170e08ebf5e741eb82310f43cdd2801}{upload}} (const void $\ast$host\+\_\+ptr\+\_\+arg, size\+\_\+t host\+\_\+step\+\_\+arg, int rows\+\_\+arg, int cols\+Bytes\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Uploads data to internal buffer in G\+PU memory. It calls \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a1569bda3db881c0aedd121b66cabaa5f}{create()}} inside to ensure that intenal buffer size is enough. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a7a4cac9281ce2b3d5a54486f9fb8dd46}{download}} (void $\ast$host\+\_\+ptr\+\_\+arg, size\+\_\+t host\+\_\+step\+\_\+arg) const
+\begin{DoxyCompactList}\small\item\em Downloads data from internal buffer to C\+PU memory. User is resposible for correct host buffer size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_ae773cb1cfa483572b719f4e231036c2a}{swap}} (\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \&other\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Performs swap of data pointed with another device memory. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\T $\ast$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a63194c6b6f9d17f08301f71d0fa50bd0}{ptr}} (int y\+\_\+arg=0)
+\begin{DoxyCompactList}\small\item\em Returns pointer to given row in internal buffer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\const T $\ast$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a27789bdaf879534f8904becd4a6833eb}{ptr}} (int y\+\_\+arg=0) const
+\begin{DoxyCompactList}\small\item\em Returns constant pointer to given row in internal buffer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class U $>$ }\\\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a46b485ed75eda7f9654f69a0491a9f8d}{operator Ptr\+Step$<$ U $>$}} () const
+\begin{DoxyCompactList}\small\item\em Conversion to \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}} for passing to kernel functions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class U $>$ }\\\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a80ce07b6ab05816719026249b3ec2ade}{operator Ptr\+Step\+Sz$<$ U $>$}} () const
+\begin{DoxyCompactList}\small\item\em Conversion to \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStepSz}{Ptr\+Step\+Sz}} for passing to kernel functions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_ac38136b806eefda8a2590a7f3dddf169}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if unallocated otherwise false. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_aa81fc3661f0a34d14ce391f87ab10d35}{cols\+Bytes}} () const
+\begin{DoxyCompactList}\small\item\em Returns number of bytes in each row. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a9f2576c9922c5fc7179325d6fc078380}{rows}} () const
+\begin{DoxyCompactList}\small\item\em Returns number of rows. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_ad4ac1d2701e8bbb66525025f9f78bd1d}{step}} () const
+\begin{DoxyCompactList}\small\item\em Returns stride between two consecutive rows in bytes for internal buffer. Step is stored always and everywhere in bytes!!! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_ad5d2f8a6796b6383727362f78f47ed86}{data\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Device pointer. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_ab1a4d9db2a1ccbbd5ba4c504119e6ac5}{step\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Stride between two consecutive rows in bytes for internal buffer. Step is stored always and everywhere in bytes!!! \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a5c7d7a72b73ca9408a2e486bdf40ab69}{cols\+Bytes\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Width of the buffer in bytes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a86e496cf45a775208b09cbdf73fef526}{rows\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a57951da447ce997cfa214d7758274f57}{refcount\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to reference counter in C\+PU memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}}}} class 
+
+\begin{DoxyNote}{Note}
+This is a B\+L\+OB container class with reference counting for pitched G\+PU memory.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Anatoly Baksheev 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a1dd1c1233ecd5f4068ef1d61a08051bb}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a1dd1c1233ecd5f4068ef1d61a08051bb}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!DeviceMemory2D@{DeviceMemory2D}}
+\index{DeviceMemory2D@{DeviceMemory2D}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{DeviceMemory2D()}{DeviceMemory2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Device\+Memory2\+D\+::\+Device\+Memory2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty constructor. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a67596cfc868a1ad9574e47b21d4bd083}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a67596cfc868a1ad9574e47b21d4bd083}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!````~DeviceMemory2D@{$\sim$DeviceMemory2D}}
+\index{````~DeviceMemory2D@{$\sim$DeviceMemory2D}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$DeviceMemory2D()}{~DeviceMemory2D()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Device\+Memory2\+D\+::$\sim$\+Device\+Memory2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a530bfdc01b0738fea9e1defe3ffa5972}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a530bfdc01b0738fea9e1defe3ffa5972}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!DeviceMemory2D@{DeviceMemory2D}}
+\index{DeviceMemory2D@{DeviceMemory2D}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{DeviceMemory2D()}{DeviceMemory2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Device\+Memory2\+D\+::\+Device\+Memory2D (\begin{DoxyParamCaption}\item[{int}]{rows\+\_\+arg,  }\item[{int}]{cols\+Bytes\+\_\+arg }\end{DoxyParamCaption})}
+
+
+
+Allocates internal buffer in G\+PU memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows\+\_\+arg} & number of rows to allocate \\
+\hline
+{\em cols\+Bytes\+\_\+arg} & width of the buffer in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a30fdc4fb174dba3f7536953c32e5cdb4}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a30fdc4fb174dba3f7536953c32e5cdb4}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!DeviceMemory2D@{DeviceMemory2D}}
+\index{DeviceMemory2D@{DeviceMemory2D}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{DeviceMemory2D()}{DeviceMemory2D()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Device\+Memory2\+D\+::\+Device\+Memory2D (\begin{DoxyParamCaption}\item[{int}]{rows\+\_\+arg,  }\item[{int}]{cols\+Bytes\+\_\+arg,  }\item[{void $\ast$}]{data\+\_\+arg,  }\item[{size\+\_\+t}]{step\+\_\+arg }\end{DoxyParamCaption})}
+
+
+
+Initializes with user allocated buffer. Reference counting is disabled in this case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows\+\_\+arg} & number of rows \\
+\hline
+{\em cols\+Bytes\+\_\+arg} & width of the buffer in bytes \\
+\hline
+{\em data\+\_\+arg} & pointer to buffer \\
+\hline
+{\em step\+Bytes\+\_\+arg} & stride between two consecutive rows in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a89904e3aca0b933b77ce35043bf7f256}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a89904e3aca0b933b77ce35043bf7f256}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!DeviceMemory2D@{DeviceMemory2D}}
+\index{DeviceMemory2D@{DeviceMemory2D}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{DeviceMemory2D()}{DeviceMemory2D()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Device\+Memory2\+D\+::\+Device\+Memory2D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \&}]{other\+\_\+arg }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. Just increments reference counter. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_aa81fc3661f0a34d14ce391f87ab10d35}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_aa81fc3661f0a34d14ce391f87ab10d35}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!colsBytes@{colsBytes}}
+\index{colsBytes@{colsBytes}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{colsBytes()}{colsBytes()}}
+{\footnotesize\ttfamily int kfusion\+::cuda\+::\+Device\+Memory2\+D\+::cols\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns number of bytes in each row. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a690a6fecbe2c1713d5b59d42bf865ab3}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a690a6fecbe2c1713d5b59d42bf865ab3}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!copyTo@{copyTo}}
+\index{copyTo@{copyTo}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{copyTo()}{copyTo()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Device\+Memory2\+D\+::copy\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Performs data copying. If destination size differs it will be reallocated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+arg} & destination container \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a1569bda3db881c0aedd121b66cabaa5f}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a1569bda3db881c0aedd121b66cabaa5f}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!create@{create}}
+\index{create@{create}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Device\+Memory2\+D\+::create (\begin{DoxyParamCaption}\item[{int}]{rows\+\_\+arg,  }\item[{int}]{cols\+Bytes\+\_\+arg }\end{DoxyParamCaption})}
+
+
+
+Allocates internal buffer in G\+PU memory. If internal buffer was created before the function recreates it with new size. If new and old sizes are equal it does nothing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr\+\_\+arg} & number of rows to allocate\\
+\hline
+{\em size\+Bytes\+\_\+arg} & width of the buffer in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a7a4cac9281ce2b3d5a54486f9fb8dd46}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a7a4cac9281ce2b3d5a54486f9fb8dd46}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!download@{download}}
+\index{download@{download}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Device\+Memory2\+D\+::download (\begin{DoxyParamCaption}\item[{void $\ast$}]{host\+\_\+ptr\+\_\+arg,  }\item[{size\+\_\+t}]{host\+\_\+step\+\_\+arg }\end{DoxyParamCaption}) const}
+
+
+
+Downloads data from internal buffer to C\+PU memory. User is resposible for correct host buffer size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+\_\+ptr\+\_\+arg} & pointer to host buffer to download \\
+\hline
+{\em host\+\_\+step\+\_\+arg} & stride between two consecutive rows in bytes for host buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_ac38136b806eefda8a2590a7f3dddf169}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_ac38136b806eefda8a2590a7f3dddf169}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!empty@{empty}}
+\index{empty@{empty}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool kfusion\+::cuda\+::\+Device\+Memory2\+D\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if unallocated otherwise false. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a46b485ed75eda7f9654f69a0491a9f8d}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a46b485ed75eda7f9654f69a0491a9f8d}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!operator PtrStep$<$ U $>$@{operator PtrStep$<$ U $>$}}
+\index{operator PtrStep$<$ U $>$@{operator PtrStep$<$ U $>$}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{operator PtrStep$<$ U $>$()}{operator PtrStep< U >()}}
+{\footnotesize\ttfamily template$<$class U $>$ \\
+kfusion\+::cuda\+::\+Device\+Memory2\+D\+::operator \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}}$<$ U $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Conversion to \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}} for passing to kernel functions. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a80ce07b6ab05816719026249b3ec2ade}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a80ce07b6ab05816719026249b3ec2ade}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!operator PtrStepSz$<$ U $>$@{operator PtrStepSz$<$ U $>$}}
+\index{operator PtrStepSz$<$ U $>$@{operator PtrStepSz$<$ U $>$}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{operator PtrStepSz$<$ U $>$()}{operator PtrStepSz< U >()}}
+{\footnotesize\ttfamily template$<$class U $>$ \\
+kfusion\+::cuda\+::\+Device\+Memory2\+D\+::operator \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStepSz}{Ptr\+Step\+Sz}}$<$ U $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Conversion to \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStepSz}{Ptr\+Step\+Sz}} for passing to kernel functions. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_af1f73352217266dfe6115d7b306ab9c3}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_af1f73352217266dfe6115d7b306ab9c3}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!operator=@{operator=}}
+\index{operator=@{operator=}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{kfusion\+::cuda\+::\+Device\+Memory2D}} \& kfusion\+::cuda\+::\+Device\+Memory2\+D\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \&}]{other\+\_\+arg }\end{DoxyParamCaption})}
+
+
+
+Assigment operator. Just increments reference counter. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a63194c6b6f9d17f08301f71d0fa50bd0}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a63194c6b6f9d17f08301f71d0fa50bd0}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!ptr@{ptr}}
+\index{ptr@{ptr}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{ptr()}{ptr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T $\ast$ kfusion\+::cuda\+::\+Device\+Memory2\+D\+::ptr (\begin{DoxyParamCaption}\item[{int}]{y\+\_\+arg = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Returns pointer to given row in internal buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y\+\_\+arg} & row index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a27789bdaf879534f8904becd4a6833eb}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a27789bdaf879534f8904becd4a6833eb}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!ptr@{ptr}}
+\index{ptr@{ptr}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{ptr()}{ptr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T $\ast$ kfusion\+::cuda\+::\+Device\+Memory2\+D\+::ptr (\begin{DoxyParamCaption}\item[{int}]{y\+\_\+arg = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+
+
+Returns constant pointer to given row in internal buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y\+\_\+arg} & row index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_afeba0b04383dc270ceeebaf685d9706a}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_afeba0b04383dc270ceeebaf685d9706a}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!release@{release}}
+\index{release@{release}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Device\+Memory2\+D\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decrements reference counter and releases internal buffer if needed. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a9f2576c9922c5fc7179325d6fc078380}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a9f2576c9922c5fc7179325d6fc078380}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!rows@{rows}}
+\index{rows@{rows}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}}
+{\footnotesize\ttfamily int kfusion\+::cuda\+::\+Device\+Memory2\+D\+::rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns number of rows. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_ad4ac1d2701e8bbb66525025f9f78bd1d}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_ad4ac1d2701e8bbb66525025f9f78bd1d}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!step@{step}}
+\index{step@{step}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily size\+\_\+t kfusion\+::cuda\+::\+Device\+Memory2\+D\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns stride between two consecutive rows in bytes for internal buffer. Step is stored always and everywhere in bytes!!! 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_ae773cb1cfa483572b719f4e231036c2a}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_ae773cb1cfa483572b719f4e231036c2a}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!swap@{swap}}
+\index{swap@{swap}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Device\+Memory2\+D\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D}{Device\+Memory2D}} \&}]{other\+\_\+arg }\end{DoxyParamCaption})}
+
+
+
+Performs swap of data pointed with another device memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & device memory to swap with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_aa170e08ebf5e741eb82310f43cdd2801}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_aa170e08ebf5e741eb82310f43cdd2801}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!upload@{upload}}
+\index{upload@{upload}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{upload()}{upload()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Device\+Memory2\+D\+::upload (\begin{DoxyParamCaption}\item[{const void $\ast$}]{host\+\_\+ptr\+\_\+arg,  }\item[{size\+\_\+t}]{host\+\_\+step\+\_\+arg,  }\item[{int}]{rows\+\_\+arg,  }\item[{int}]{cols\+Bytes\+\_\+arg }\end{DoxyParamCaption})}
+
+
+
+Uploads data to internal buffer in G\+PU memory. It calls \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceMemory2D_a1569bda3db881c0aedd121b66cabaa5f}{create()}} inside to ensure that intenal buffer size is enough. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+\_\+ptr\+\_\+arg} & pointer to host buffer to upload\\
+\hline
+{\em host\+\_\+step\+\_\+arg} & stride between two consecutive rows in bytes for host buffer\\
+\hline
+{\em rows\+\_\+arg} & number of rows to upload\\
+\hline
+{\em size\+Bytes\+\_\+arg} & width of host buffer in bytes \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a5c7d7a72b73ca9408a2e486bdf40ab69}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a5c7d7a72b73ca9408a2e486bdf40ab69}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!colsBytes\_@{colsBytes\_}}
+\index{colsBytes\_@{colsBytes\_}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{colsBytes\_}{colsBytes\_}}
+{\footnotesize\ttfamily int kfusion\+::cuda\+::\+Device\+Memory2\+D\+::cols\+Bytes\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Width of the buffer in bytes. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_ad5d2f8a6796b6383727362f78f47ed86}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_ad5d2f8a6796b6383727362f78f47ed86}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!data\_@{data\_}}
+\index{data\_@{data\_}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{data\_}{data\_}}
+{\footnotesize\ttfamily void$\ast$ kfusion\+::cuda\+::\+Device\+Memory2\+D\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Device pointer. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a57951da447ce997cfa214d7758274f57}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a57951da447ce997cfa214d7758274f57}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!refcount\_@{refcount\_}}
+\index{refcount\_@{refcount\_}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{refcount\_}{refcount\_}}
+{\footnotesize\ttfamily int$\ast$ kfusion\+::cuda\+::\+Device\+Memory2\+D\+::refcount\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to reference counter in C\+PU memory. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_a86e496cf45a775208b09cbdf73fef526}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_a86e496cf45a775208b09cbdf73fef526}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!rows\_@{rows\_}}
+\index{rows\_@{rows\_}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{rows\_}{rows\_}}
+{\footnotesize\ttfamily int kfusion\+::cuda\+::\+Device\+Memory2\+D\+::rows\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of rows. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1DeviceMemory2D_ab1a4d9db2a1ccbbd5ba4c504119e6ac5}\label{classkfusion_1_1cuda_1_1DeviceMemory2D_ab1a4d9db2a1ccbbd5ba4c504119e6ac5}} 
+\index{kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}!step\_@{step\_}}
+\index{step\_@{step\_}!kfusion::cuda::DeviceMemory2D@{kfusion::cuda::DeviceMemory2D}}
+\doxysubsubsection{\texorpdfstring{step\_}{step\_}}
+{\footnotesize\ttfamily size\+\_\+t kfusion\+::cuda\+::\+Device\+Memory2\+D\+::step\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stride between two consecutive rows in bytes for internal buffer. Step is stored always and everywhere in bytes!!! 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/cuda/\mbox{\hyperlink{device__memory_8hpp}{device\+\_\+memory.\+hpp}}\item 
+yak/src/kfusion/\mbox{\hyperlink{device__memory_8cpp}{device\+\_\+memory.\+cpp}}\end{DoxyCompactItemize}

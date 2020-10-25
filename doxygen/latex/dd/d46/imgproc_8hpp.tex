@@ -1,0 +1,37 @@
+\hypertarget{imgproc_8hpp}{}\doxysection{yak/include/yak/kfusion/cuda/imgproc.hpp File Reference}
+\label{imgproc_8hpp}\index{yak/include/yak/kfusion/cuda/imgproc.hpp@{yak/include/yak/kfusion/cuda/imgproc.hpp}}
+{\ttfamily \#include $<$yak/kfusion/types.\+hpp$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacekfusion}{kfusion}}
+\begin{DoxyCompactList}\small\item\em Utility. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacekfusion_1_1cuda}{kfusion\+::cuda}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_ab64cae8427e61d9866f5856aa7d002fe}{kfusion\+::cuda\+::depth\+Bilateral\+Filter}} (const Depth \&in, Depth \&out, int ksz, float sigma\+\_\+spatial, float sigma\+\_\+depth)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a00aa8e2577df796f54e3db8cdec93a7d}{kfusion\+::cuda\+::depth\+Truncation}} (Depth \&depth, float threshold)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a4b34a44a6e08b497bb50b745b7cd805c}{kfusion\+::cuda\+::depth\+Build\+Pyramid}} (const Depth \&depth, Depth \&pyramid, float sigma\+\_\+depth)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_af01f957ab567588b28e7fc83a506e581}{kfusion\+::cuda\+::compute\+Normals\+And\+Mask\+Depth}} (const Intr \&intr, Depth \&depth, Normals \&normals)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_ae1115cff1ddbfefc13904e95f1e924a4}{kfusion\+::cuda\+::compute\+Point\+Normals}} (const Intr \&intr, const Depth \&depth, Cloud \&points, Normals \&normals)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a402e2a0cf82de8fd4590eec47cdaa4b2}{kfusion\+::cuda\+::compute\+Dists}} (const Depth \&depth, Dists \&dists, const Intr \&intr)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a403a4b31beffa806b4b6e5c61ff94930}{kfusion\+::cuda\+::resize\+Depth\+Normals}} (const Depth \&depth, const Normals \&normals, Depth \&depth\+\_\+out, Normals \&normals\+\_\+out)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a16036836c48645ffb5f837bbcaffcb3b}{kfusion\+::cuda\+::resize\+Points\+Normals}} (const Cloud \&points, const Normals \&normals, Cloud \&points\+\_\+out, Normals \&normals\+\_\+out)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a66949907dae65791c7f40bb4f3b05009}{kfusion\+::cuda\+::wait\+All\+Default\+Stream}} ()
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a30621cfcaa11fc2c1a274806b235db68}{kfusion\+::cuda\+::render\+Tangent\+Colors}} (const Normals \&normals, Image \&image)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a721bb0b6a609baa6c867682d25a3473a}{kfusion\+::cuda\+::render\+Image}} (const Depth \&depth, const Normals \&normals, const Intr \&intr, const Vec3f \&light\+\_\+pose, Image \&image)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a3d5644103af4fe8f35eeaefe51731d8b}{kfusion\+::cuda\+::render\+Image}} (const Cloud \&points, const Normals \&normals, const Intr \&intr, const Vec3f \&light\+\_\+pose, Image \&image)
+\end{DoxyCompactItemize}

@@ -1,0 +1,141 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ \href{https://github.com/ros-industrial/yak/actions}{\texttt{ }} \href{https://github.com/ros-industrial/yak/issues}{\texttt{ }} \href{https://opensource.org/licenses/MIT}{\texttt{ }} \href{http://rosindustrial.org/news/2016/10/7/better-supporting-a-growing-ros-industrial-software-platform}{\texttt{ }}
+
+Yak is a library for integrating depth images into Truncated Signed Distance Fields (T\+S\+D\+Fs). It is currently supported for Ubuntu 16.\+04 and Ubuntu 18.\+04. An example R\+OS node using Yak is provided in the \href{https://github.com/ros-industrial/yak_ros}{\texttt{ yak\+\_\+ros}} repository.\hypertarget{index_autotoc_md1}{}\doxysection{Technical Background}\label{index_autotoc_md1}
+A T\+S\+DF is a probabilistic representation of a solid surface in 3D space. It\textquotesingle{}s a useful tool for combining many noisy incomplete sensor readings into a single smooth and complete model.
+
+To break down the name\+:
+
+Distance Field\+: Each voxel in the volume contains a value that represents its metric distance from the closest point on the surface. Voxels very far from the surface have high-\/magnitude distance values, while those near the surface have values approaching zero.
+
+Signed\+: Voxels outside the surface have positive distances, while voxels inside the surface have negative distances. This allows the representation of solid objects. The distance field represents a gradient that shifts from positive to negative as it crosses the surface.
+
+Truncated\+: Voxels further than a specified distance from the isosurface have their values capped at +/-\/ 1 because we are only interested in precisely representing the region of the volume close to solid objects.
+
+The T\+S\+DF algorithm can be efficiently parallelized on a general-\/purpose graphics processor, which allows data from R\+G\+B-\/D cameras to be integrated into the volume in real time. Numerous observations of an object from different perspectives average out noise and errors due to specular highlights and interreflections, producing a smooth continuous surface. This is a key advantage over equivalent point-\/cloud-\/centric strategies, which require additional processing to distinguish between engineered features and erroneous artifacts in the scan data. The volume can be converted to a triangular mesh using the Marching Cubes algorithm for consumption by application-\/specific processes.
+
+Yak is intended as a flexible library that gives the end user (you!) a lot of freedom over when data gets integrated, which poses are used, whether Iterative Closest Point plays a role, etc.
+
+\hypertarget{index_autotoc_md2}{}\doxysection{Dependencies}\label{index_autotoc_md2}
+\hypertarget{index_autotoc_md3}{}\doxysubsection{C\+Make}\label{index_autotoc_md3}
+Yak requires C\+Make 3.\+10.\+0 or newer in order to take advantage of improved support for C\+U\+DA. If you\textquotesingle{}re using Ubuntu 18.\+04 or newer you should already have a suitable version. If you\textquotesingle{}re using an older distribution (e.\+g. 16.\+04) you will need to install a compatible version of C\+Make yourself.
+
+
+\begin{DoxyEnumerate}
+\item Install pip (if it isn\textquotesingle{}t already installed)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install python-\/pip}
+\end{DoxyCode}
+
+\item Use pip to install C\+Make locally, which will not overwrite the system installation of C\+Make. As of September 5 2019 this installs C\+Make 3.\+14.\+4 on Ubuntu 16.\+04. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{pip install -\/-\/user cmake -\/-\/upgrade}
+\end{DoxyCode}
+
+\item (Optional, depending on the specifics of your environment) Prepend the directory where C\+Make was just installed to the P\+A\+TH environment variable. You may also add this to {\ttfamily .bashrc}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{export PATH=:/home/YOUR\_USERNAME/.local/bin:\$PATH}
+\end{DoxyCode}
+
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md4}{}\doxysubsection{C\+U\+DA}\label{index_autotoc_md4}
+Yak requires an N\+Vidia G\+PU and C\+U\+DA 9.\+0 or newer.
+
+
+\begin{DoxyEnumerate}
+\item C\+U\+DA depends on Nvidia third-\/party drivers and will not work with the default Nouveau drivers. Determine which version of the Nvidia driver is compatible with your computer\textquotesingle{}s G\+PU by running {\ttfamily ubuntu-\/drivers devices}. Usually the driver version listed as \char`\"{}third-\/party free recommended\char`\"{} is suitable. You can install the recommended driver using {\ttfamily sudo ubuntu-\/drivers autoinstall}. Example output listed below\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{== /sys/devices/pci0000:00/0000:00:02.0/0000:02:00.0 ==}
+\DoxyCodeLine{modalias : pci:v000010DEd000017C8sv00001458sd000036CBbc03sc00i00}
+\DoxyCodeLine{vendor   : NVIDIA Corporation}
+\DoxyCodeLine{model    : GM200 [GeForce GTX 980 Ti]}
+\DoxyCodeLine{driver   : nvidia-\/driver-\/418 -\/ third-\/party free recommended}
+\DoxyCodeLine{driver   : nvidia-\/driver-\/410 -\/ third-\/party free}
+\DoxyCodeLine{driver   : nvidia-\/driver-\/390 -\/ distro non-\/free}
+\DoxyCodeLine{driver   : xserver-\/xorg-\/video-\/nouveau -\/ distro free builtin}
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Consult the chart below (copied from \href{https://docs.nvidia.com/deploy/cuda-compatibility/index.html\#binary-compatibility__table-toolkit-driver}{\texttt{ here}} as of September 5 2019) to find which C\+U\+DA version is compatible with the drivers supported by your G\+PU. Yak is currently not compatible with C\+U\+DA $<$= 8.\+0.
+\end{DoxyEnumerate}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ C\+U\+DA Toolkit  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Linux x86\+\_\+64 Driver Version   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ C\+U\+DA Toolkit  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Linux x86\+\_\+64 Driver Version   }\\\cline{1-2}
+\endhead
+C\+U\+DA 10.\+1 (10.\+1.\+105)  &$>$= 418.\+39   \\\cline{1-2}
+C\+U\+DA 10.\+0 (10.\+0.\+130)  &$>$= 410.\+48   \\\cline{1-2}
+C\+U\+DA 9.\+2 (9.\+2.\+88)  &$>$= 396.\+26   \\\cline{1-2}
+C\+U\+DA 9.\+1 (9.\+1.\+85)  &$>$= 390.\+46   \\\cline{1-2}
+C\+U\+DA 9.\+0 (9.\+0.\+76)  &$>$= 384.\+81   \\\cline{1-2}
+C\+U\+DA 8.\+0 (8.\+0.\+61 G\+A2)  &$>$= 375.\+26   \\\cline{1-2}
+C\+U\+DA 8.\+0 (8.\+0.\+44)  &$>$= 367.\+48   \\\cline{1-2}
+C\+U\+DA 7.\+5 (7.\+5.\+16)  &$>$= 352.\+31   \\\cline{1-2}
+C\+U\+DA 7.\+0 (7.\+0.\+28)  &$>$= 346.\+46   \\\cline{1-2}
+\end{longtabu}
+
+
+
+\begin{DoxyEnumerate}
+\item Specific installation instructions vary depending on the combination of Ubuntu version, C\+U\+DA version, and Nvidia driver version. Please read the linked instructions carefully\+: they are very important, and C\+U\+DA may not work correctly if you skip a step!
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item Package manager installation is usually the easiest method, especially if you have Ubuntu 18.\+04 and a new G\+PU. \href{https://developer.nvidia.com/cuda-toolkit-archive}{\texttt{ Download a compatible version of C\+U\+DA from here}} (pick \char`\"{}\+Installer Type\+: deb (network)\char`\"{}) and then \href{https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html\#ubuntu-x86_64-deb}{\texttt{ follow these instructions}}.
+\item Nvidia doesn\textquotesingle{}t release debians for every combination of Ubuntu release and C\+U\+DA version. If the package manager installation method fails to find a compatible .deb (e.\+g. you have Ubuntu 18.\+04 but your G\+PU only supports driver version 384), \href{https://developer.nvidia.com/cuda-toolkit-archive}{\texttt{ download the runfile version of the C\+U\+DA installer from here}} (pick \char`\"{}\+Installer Type\+: runfile (local)\char`\"{}) and then \href{https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html\#runfile}{\texttt{ follow the runfile installation instructions}}. Since you have already installed the N\+Vidia driver in step 1 you do not need to reboot your system into non-\/\+G\+UI mode, and when the runfile dialog asks if you would like to install these drivers you may decline.
+\end{DoxyItemize}
+\begin{DoxyEnumerate}
+\item Follow the instructions in \href{https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html\#post-installation-actions}{\texttt{ Post-\/installation Actions}}. It is not necessary to complete the steps listed under \char`\"{}\+P\+O\+W\+E\+R9 Setup\char`\"{} -- you probably do not have a P\+O\+W\+E\+R9-\/compatible system unless you work with supercomputers.
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md5}{}\doxysubsection{Open\+MP}\label{index_autotoc_md5}
+Yak requires Open\+MP for parallelization of the marching cubes surface reconstruction process. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install libomp-\/dev}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md6}{}\doxysubsection{Open\+CV}\label{index_autotoc_md6}
+Yak requires Open\+CV 3.\+0 or newer. If you are using R\+OS then this dependency is already satisfied. Otherwise you will need to install it yourself\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install libopencv-\/dev}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md7}{}\doxysubsection{Eigen}\label{index_autotoc_md7}
+Yak requires Eigen 3. If you are using R\+OS then this dependency is already satisfied. Otherwise you will need to install it yourself\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install libeigen3-\/dev}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md8}{}\doxysubsection{P\+CL}\label{index_autotoc_md8}
+Yak requires P\+CL 1.\+8 or newer. If you are using R\+OS then this dependency is already satisfied. Otherwise you will need to install it yourself\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install libpcl-\/dev}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md9}{}\doxysection{Installation}\label{index_autotoc_md9}
+\hypertarget{index_autotoc_md10}{}\doxysubsection{Build with R\+O\+S (recommended)}\label{index_autotoc_md10}
+Installing R\+OS is beyond the scope of this readme. There are installation instructions \href{http://wiki.ros.org/melodic/Installation/Ubuntu}{\texttt{ here for R\+O\+S1}} and \href{https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/}{\texttt{ here for R\+O\+S2}}.
+
+Clone this package into the {\ttfamily src} directory of a R\+OS workspace. For R\+O\+S1 use {\ttfamily catkin build} to build the workspace. For R\+O\+S2 use {\ttfamily colcon build} to build the workspace.
+
+Take a look at the \href{https://github.com/ros-industrial/yak_ros}{\texttt{ yak\+\_\+ros}} package for example implementations of R\+OS nodes using Yak.\hypertarget{index_autotoc_md11}{}\doxysubsection{Build Standalone (in development)}\label{index_autotoc_md11}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone https://github.com/ros-\/industrial/yak.git}
+\DoxyCodeLine{cd yak}
+\DoxyCodeLine{mkdir build}
+\DoxyCodeLine{cd build}
+\DoxyCodeLine{cmake ../yak}
+\DoxyCodeLine{make}
+\DoxyCodeLine{sudo make install}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md12}{}\doxysection{Readme T\+O\+D\+Os\+:}\label{index_autotoc_md12}
+
+\begin{DoxyItemize}
+\item Minimally-\/functional example
+\item Documentation of services, inputs, outputs, etc. 
+\end{DoxyItemize}

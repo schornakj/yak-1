@@ -1,0 +1,82 @@
+\hypertarget{structkfusion_1_1device_1_1Warp}{}\doxysection{kfusion\+::device\+::Warp Struct Reference}
+\label{structkfusion_1_1device_1_1Warp}\index{kfusion::device::Warp@{kfusion::device::Warp}}
+
+
+{\ttfamily \#include $<$temp\+\_\+utils.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9da658885d82e0c6d473f024ca3f6a3b25d}{L\+O\+G\+\_\+\+W\+A\+R\+P\+\_\+\+S\+I\+ZE}} = 5, 
+\mbox{\hyperlink{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9dab58141d30de9412db8fb2880a7a39f96}{W\+A\+R\+P\+\_\+\+S\+I\+ZE}} = 1 $<$$<$ L\+O\+G\+\_\+\+W\+A\+R\+P\+\_\+\+S\+I\+ZE, 
+\mbox{\hyperlink{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9da6ae2fb0a38a7bb4d73780715ff8239c1}{S\+T\+R\+I\+DE}} = W\+A\+R\+P\+\_\+\+S\+I\+ZE
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} unsigned int \mbox{\hyperlink{structkfusion_1_1device_1_1Warp_ad7291174ea0e8e90367a26c863fb7391}{lane\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the warp lane ID of the calling thread. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} unsigned int \mbox{\hyperlink{structkfusion_1_1device_1_1Warp_a21752cd5eeb3acbe8e5c911d5b546383}{id}} ()
+\item 
+static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} int \mbox{\hyperlink{structkfusion_1_1device_1_1Warp_a78ee2a979c57dc94a53753c6789e59e9}{lane\+Mask\+Lt}} ()
+\item 
+static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} int \mbox{\hyperlink{structkfusion_1_1device_1_1Warp_a5e5269df7405e8600de558c8eebc6fe7}{binary\+Excl\+Scan}} (int ballot\+\_\+mask)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9d}\label{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9d}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOG\_WARP\_SIZE@{LOG\_WARP\_SIZE}!kfusion::device::Warp@{kfusion::device::Warp}}\index{kfusion::device::Warp@{kfusion::device::Warp}!LOG\_WARP\_SIZE@{LOG\_WARP\_SIZE}}}\mbox{\Hypertarget{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9da658885d82e0c6d473f024ca3f6a3b25d}\label{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9da658885d82e0c6d473f024ca3f6a3b25d}} 
+L\+O\+G\+\_\+\+W\+A\+R\+P\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WARP\_SIZE@{WARP\_SIZE}!kfusion::device::Warp@{kfusion::device::Warp}}\index{kfusion::device::Warp@{kfusion::device::Warp}!WARP\_SIZE@{WARP\_SIZE}}}\mbox{\Hypertarget{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9dab58141d30de9412db8fb2880a7a39f96}\label{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9dab58141d30de9412db8fb2880a7a39f96}} 
+W\+A\+R\+P\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STRIDE@{STRIDE}!kfusion::device::Warp@{kfusion::device::Warp}}\index{kfusion::device::Warp@{kfusion::device::Warp}!STRIDE@{STRIDE}}}\mbox{\Hypertarget{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9da6ae2fb0a38a7bb4d73780715ff8239c1}\label{structkfusion_1_1device_1_1Warp_a13f9f5e1099e5a84cb6ec8bed909db9da6ae2fb0a38a7bb4d73780715ff8239c1}} 
+S\+T\+R\+I\+DE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Warp_a5e5269df7405e8600de558c8eebc6fe7}\label{structkfusion_1_1device_1_1Warp_a5e5269df7405e8600de558c8eebc6fe7}} 
+\index{kfusion::device::Warp@{kfusion::device::Warp}!binaryExclScan@{binaryExclScan}}
+\index{binaryExclScan@{binaryExclScan}!kfusion::device::Warp@{kfusion::device::Warp}}
+\doxysubsubsection{\texorpdfstring{binaryExclScan()}{binaryExclScan()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} int kfusion\+::device\+::\+Warp\+::binary\+Excl\+Scan (\begin{DoxyParamCaption}\item[{int}]{ballot\+\_\+mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Warp_a21752cd5eeb3acbe8e5c911d5b546383}\label{structkfusion_1_1device_1_1Warp_a21752cd5eeb3acbe8e5c911d5b546383}} 
+\index{kfusion::device::Warp@{kfusion::device::Warp}!id@{id}}
+\index{id@{id}!kfusion::device::Warp@{kfusion::device::Warp}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} unsigned int kfusion\+::device\+::\+Warp\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Warp_ad7291174ea0e8e90367a26c863fb7391}\label{structkfusion_1_1device_1_1Warp_ad7291174ea0e8e90367a26c863fb7391}} 
+\index{kfusion::device::Warp@{kfusion::device::Warp}!laneId@{laneId}}
+\index{laneId@{laneId}!kfusion::device::Warp@{kfusion::device::Warp}}
+\doxysubsubsection{\texorpdfstring{laneId()}{laneId()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} unsigned int kfusion\+::device\+::\+Warp\+::lane\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the warp lane ID of the calling thread. 
+
+\mbox{\Hypertarget{structkfusion_1_1device_1_1Warp_a78ee2a979c57dc94a53753c6789e59e9}\label{structkfusion_1_1device_1_1Warp_a78ee2a979c57dc94a53753c6789e59e9}} 
+\index{kfusion::device::Warp@{kfusion::device::Warp}!laneMaskLt@{laneMaskLt}}
+\index{laneMaskLt@{laneMaskLt}!kfusion::device::Warp@{kfusion::device::Warp}}
+\doxysubsubsection{\texorpdfstring{laneMaskLt()}{laneMaskLt()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{kernel__containers_8hpp_a2b5064ac3aee85a6ea465f8718660549}{\+\_\+\+\_\+kf\+\_\+device\+\_\+\+\_\+}} int kfusion\+::device\+::\+Warp\+::lane\+Mask\+Lt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/cuda/\mbox{\hyperlink{temp__utils_8hpp}{temp\+\_\+utils.\+hpp}}\end{DoxyCompactItemize}

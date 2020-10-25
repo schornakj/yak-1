@@ -1,0 +1,35 @@
+\hypertarget{safe__call_8hpp}{}\doxysection{yak/include/yak/kfusion/safe\+\_\+call.hpp File Reference}
+\label{safe__call_8hpp}\index{yak/include/yak/kfusion/safe\_call.hpp@{yak/include/yak/kfusion/safe\_call.hpp}}
+{\ttfamily \#include \char`\"{}cuda\+\_\+runtime\+\_\+api.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacekfusion}{kfusion}}
+\begin{DoxyCompactList}\small\item\em Utility. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacekfusion_1_1cuda}{kfusion\+::cuda}}
+\item 
+ \mbox{\hyperlink{namespacekfusion_1_1device}{kfusion\+::device}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{safe__call_8hpp_ab0e482bfa11c54c94f84397cddf55fb9}{cuda\+Safe\+Call}}(expr)~\mbox{\hyperlink{namespacekfusion_1_1cuda_aab9e00a156d4f86cc32208e020596cd8}{kfusion\+::cuda\+::\+\_\+\+\_\+\+\_\+cuda\+Safe\+Call}}(expr, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} void \mbox{\hyperlink{namespacekfusion_1_1cuda_a402d4d349e188f18cd1da017ff2b13f6}{kfusion\+::cuda\+::error}} (const char $\ast$error\+\_\+string, const char $\ast$file, const int line, const char $\ast$func=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Error handler. All G\+PU functions from this subsystem call the function to report an error. For internal use only. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{namespacekfusion_1_1cuda_aab9e00a156d4f86cc32208e020596cd8}{kfusion\+::cuda\+::\+\_\+\+\_\+\+\_\+cuda\+Safe\+Call}} (cuda\+Error\+\_\+t err, const char $\ast$file, const int line, const char $\ast$func=\char`\"{}\char`\"{})
+\item 
+static int \mbox{\hyperlink{namespacekfusion_1_1cuda_a9f1444fc48d197bb9df6419c52cc427b}{kfusion\+::cuda\+::div\+Up}} (int total, int grain)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{safe__call_8hpp_ab0e482bfa11c54c94f84397cddf55fb9}\label{safe__call_8hpp_ab0e482bfa11c54c94f84397cddf55fb9}} 
+\index{safe\_call.hpp@{safe\_call.hpp}!cudaSafeCall@{cudaSafeCall}}
+\index{cudaSafeCall@{cudaSafeCall}!safe\_call.hpp@{safe\_call.hpp}}
+\doxysubsubsection{\texorpdfstring{cudaSafeCall}{cudaSafeCall}}
+{\footnotesize\ttfamily \#define cuda\+Safe\+Call(\begin{DoxyParamCaption}\item[{}]{expr }\end{DoxyParamCaption})~\mbox{\hyperlink{namespacekfusion_1_1cuda_aab9e00a156d4f86cc32208e020596cd8}{kfusion\+::cuda\+::\+\_\+\+\_\+\+\_\+cuda\+Safe\+Call}}(expr, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)}
+

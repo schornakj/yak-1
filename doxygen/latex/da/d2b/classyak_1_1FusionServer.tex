@@ -1,0 +1,159 @@
+\hypertarget{classyak_1_1FusionServer}{}\doxysection{yak\+::Fusion\+Server Class Reference}
+\label{classyak_1_1FusionServer}\index{yak::FusionServer@{yak::FusionServer}}
+
+
+The Offline\+Fusion\+Server class.  
+
+
+
+
+{\ttfamily \#include $<$yak\+\_\+server.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyak_1_1FusionServer_a974512b4c9129bbfba7555ca619ee393}{Fusion\+Server}} (const \mbox{\hyperlink{structkfusion_1_1KinFuParams}{kfusion\+::\+Kin\+Fu\+Params}} \&params, const Eigen\+::\+Affine3f \&world\+\_\+to\+\_\+volume)
+\item 
+bool \mbox{\hyperlink{classyak_1_1FusionServer_af0a83b00a1a5cbcad2cb91db9a7e0043}{fuse}} (const cv\+::\+Mat \&depth\+\_\+data, const Eigen\+::\+Affine3f \&world\+\_\+to\+\_\+camera)
+\item 
+bool \mbox{\hyperlink{classyak_1_1FusionServer_aa4b2d532f5092b40a7809f8dbd171bdc}{reset}} ()
+\item 
+bool \mbox{\hyperlink{classyak_1_1FusionServer_a94090cff31ee7689bd7be23d241cacdb}{reset\+With\+New\+Params}} (const \mbox{\hyperlink{structkfusion_1_1KinFuParams}{kfusion\+::\+Kin\+Fu\+Params}} \&params)
+\item 
+\mbox{\hyperlink{classyak_1_1TSDFContainer}{yak\+::\+T\+S\+D\+F\+Container}} \mbox{\hyperlink{classyak_1_1FusionServer_ab02af6508523bf6ae7002fb3fece53aa}{download\+T\+S\+DF}} ()
+\item 
+void \mbox{\hyperlink{classyak_1_1FusionServer_a089da041a2ea70d713e63be4e20a677f}{display}} ()
+\item 
+void \mbox{\hyperlink{classyak_1_1FusionServer_a43402b3740dc6c3595a337a1e064f402}{display}} (const Eigen\+::\+Affine3f \&pose)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classyak_1_1FusionServer_af003d012c1e651e8385aa1747304cf9e}{step}} (const Eigen\+::\+Affine3f \&current\+\_\+pose, const Eigen\+::\+Affine3f \&last\+\_\+pose, const cv\+::\+Mat \&depth)
+\item 
+void \mbox{\hyperlink{classyak_1_1FusionServer_aa397e3a4a0691848d3eed69dd890d520}{download\+And\+Display\+View}} ()
+\begin{DoxyCompactList}\small\item\em Helper function for \mbox{\hyperlink{classyak_1_1FusionServer_a089da041a2ea70d713e63be4e20a677f}{display()}} members; Downloads the active view from G\+PU and shows it in debug window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classkfusion_1_1KinFu_a12e485feab4cd87e15caa9ddfa020452}{kfusion\+::\+Kin\+Fu\+::\+Ptr}} \mbox{\hyperlink{classyak_1_1FusionServer_a7a24af0dfead4930ba22c77858c2d5be}{kinfu\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{kfusion\+::cuda\+::\+Image}} \mbox{\hyperlink{classyak_1_1FusionServer_a26e72017ca9a33228606136707a5267d}{view\+Device\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{kfusion\+::cuda\+::\+Depth}} \mbox{\hyperlink{classyak_1_1FusionServer_af6051107c6d38f6101afb60e0228be1a}{depth\+Device\+\_\+}}
+\item 
+Eigen\+::\+Affine3f \mbox{\hyperlink{classyak_1_1FusionServer_a2322f8d0be6064f53bc3d3e525d9ca73}{volume\+\_\+to\+\_\+world\+\_\+}}
+\item 
+Eigen\+::\+Affine3f \mbox{\hyperlink{classyak_1_1FusionServer_abc9a2fa0940cf4464fdae126b6fbbdaa}{last\+\_\+camera\+\_\+pose\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Offline\+Fusion\+Server class. 
+
+\begin{DoxyNote}{Note}
+Absolutely nothing in here is thread safe 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyak_1_1FusionServer_a974512b4c9129bbfba7555ca619ee393}\label{classyak_1_1FusionServer_a974512b4c9129bbfba7555ca619ee393}} 
+\index{yak::FusionServer@{yak::FusionServer}!FusionServer@{FusionServer}}
+\index{FusionServer@{FusionServer}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{FusionServer()}{FusionServer()}}
+{\footnotesize\ttfamily yak\+::\+Fusion\+Server\+::\+Fusion\+Server (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1KinFuParams}{kfusion\+::\+Kin\+Fu\+Params}} \&}]{params,  }\item[{const Eigen\+::\+Affine3f \&}]{world\+\_\+to\+\_\+volume }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyak_1_1FusionServer_a089da041a2ea70d713e63be4e20a677f}\label{classyak_1_1FusionServer_a089da041a2ea70d713e63be4e20a677f}} 
+\index{yak::FusionServer@{yak::FusionServer}!display@{display}}
+\index{display@{display}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void yak\+::\+Fusion\+Server\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_a43402b3740dc6c3595a337a1e064f402}\label{classyak_1_1FusionServer_a43402b3740dc6c3595a337a1e064f402}} 
+\index{yak::FusionServer@{yak::FusionServer}!display@{display}}
+\index{display@{display}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void yak\+::\+Fusion\+Server\+::display (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Affine3f \&}]{pose }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_aa397e3a4a0691848d3eed69dd890d520}\label{classyak_1_1FusionServer_aa397e3a4a0691848d3eed69dd890d520}} 
+\index{yak::FusionServer@{yak::FusionServer}!downloadAndDisplayView@{downloadAndDisplayView}}
+\index{downloadAndDisplayView@{downloadAndDisplayView}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{downloadAndDisplayView()}{downloadAndDisplayView()}}
+{\footnotesize\ttfamily void yak\+::\+Fusion\+Server\+::download\+And\+Display\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Helper function for \mbox{\hyperlink{classyak_1_1FusionServer_a089da041a2ea70d713e63be4e20a677f}{display()}} members; Downloads the active view from G\+PU and shows it in debug window. 
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_ab02af6508523bf6ae7002fb3fece53aa}\label{classyak_1_1FusionServer_ab02af6508523bf6ae7002fb3fece53aa}} 
+\index{yak::FusionServer@{yak::FusionServer}!downloadTSDF@{downloadTSDF}}
+\index{downloadTSDF@{downloadTSDF}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{downloadTSDF()}{downloadTSDF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classyak_1_1TSDFContainer}{yak\+::\+T\+S\+D\+F\+Container}} yak\+::\+Fusion\+Server\+::download\+T\+S\+DF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_af0a83b00a1a5cbcad2cb91db9a7e0043}\label{classyak_1_1FusionServer_af0a83b00a1a5cbcad2cb91db9a7e0043}} 
+\index{yak::FusionServer@{yak::FusionServer}!fuse@{fuse}}
+\index{fuse@{fuse}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{fuse()}{fuse()}}
+{\footnotesize\ttfamily bool yak\+::\+Fusion\+Server\+::fuse (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{depth\+\_\+data,  }\item[{const Eigen\+::\+Affine3f \&}]{world\+\_\+to\+\_\+camera }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_aa4b2d532f5092b40a7809f8dbd171bdc}\label{classyak_1_1FusionServer_aa4b2d532f5092b40a7809f8dbd171bdc}} 
+\index{yak::FusionServer@{yak::FusionServer}!reset@{reset}}
+\index{reset@{reset}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily bool yak\+::\+Fusion\+Server\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_a94090cff31ee7689bd7be23d241cacdb}\label{classyak_1_1FusionServer_a94090cff31ee7689bd7be23d241cacdb}} 
+\index{yak::FusionServer@{yak::FusionServer}!resetWithNewParams@{resetWithNewParams}}
+\index{resetWithNewParams@{resetWithNewParams}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{resetWithNewParams()}{resetWithNewParams()}}
+{\footnotesize\ttfamily bool yak\+::\+Fusion\+Server\+::reset\+With\+New\+Params (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1KinFuParams}{kfusion\+::\+Kin\+Fu\+Params}} \&}]{params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_af003d012c1e651e8385aa1747304cf9e}\label{classyak_1_1FusionServer_af003d012c1e651e8385aa1747304cf9e}} 
+\index{yak::FusionServer@{yak::FusionServer}!step@{step}}
+\index{step@{step}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily bool yak\+::\+Fusion\+Server\+::step (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Affine3f \&}]{current\+\_\+pose,  }\item[{const Eigen\+::\+Affine3f \&}]{last\+\_\+pose,  }\item[{const cv\+::\+Mat \&}]{depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyak_1_1FusionServer_af6051107c6d38f6101afb60e0228be1a}\label{classyak_1_1FusionServer_af6051107c6d38f6101afb60e0228be1a}} 
+\index{yak::FusionServer@{yak::FusionServer}!depthDevice\_@{depthDevice\_}}
+\index{depthDevice\_@{depthDevice\_}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{depthDevice\_}{depthDevice\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{kfusion\+::cuda\+::\+Depth}} yak\+::\+Fusion\+Server\+::depth\+Device\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_a7a24af0dfead4930ba22c77858c2d5be}\label{classyak_1_1FusionServer_a7a24af0dfead4930ba22c77858c2d5be}} 
+\index{yak::FusionServer@{yak::FusionServer}!kinfu\_@{kinfu\_}}
+\index{kinfu\_@{kinfu\_}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{kinfu\_}{kinfu\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classkfusion_1_1KinFu_a12e485feab4cd87e15caa9ddfa020452}{kfusion\+::\+Kin\+Fu\+::\+Ptr}} yak\+::\+Fusion\+Server\+::kinfu\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_abc9a2fa0940cf4464fdae126b6fbbdaa}\label{classyak_1_1FusionServer_abc9a2fa0940cf4464fdae126b6fbbdaa}} 
+\index{yak::FusionServer@{yak::FusionServer}!last\_camera\_pose\_@{last\_camera\_pose\_}}
+\index{last\_camera\_pose\_@{last\_camera\_pose\_}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{last\_camera\_pose\_}{last\_camera\_pose\_}}
+{\footnotesize\ttfamily Eigen\+::\+Affine3f yak\+::\+Fusion\+Server\+::last\+\_\+camera\+\_\+pose\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_a26e72017ca9a33228606136707a5267d}\label{classyak_1_1FusionServer_a26e72017ca9a33228606136707a5267d}} 
+\index{yak::FusionServer@{yak::FusionServer}!viewDevice\_@{viewDevice\_}}
+\index{viewDevice\_@{viewDevice\_}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{viewDevice\_}{viewDevice\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{kfusion\+::cuda\+::\+Image}} yak\+::\+Fusion\+Server\+::view\+Device\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyak_1_1FusionServer_a2322f8d0be6064f53bc3d3e525d9ca73}\label{classyak_1_1FusionServer_a2322f8d0be6064f53bc3d3e525d9ca73}} 
+\index{yak::FusionServer@{yak::FusionServer}!volume\_to\_world\_@{volume\_to\_world\_}}
+\index{volume\_to\_world\_@{volume\_to\_world\_}!yak::FusionServer@{yak::FusionServer}}
+\doxysubsubsection{\texorpdfstring{volume\_to\_world\_}{volume\_to\_world\_}}
+{\footnotesize\ttfamily Eigen\+::\+Affine3f yak\+::\+Fusion\+Server\+::volume\+\_\+to\+\_\+world\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/\mbox{\hyperlink{yak__server_8h}{yak\+\_\+server.\+h}}\item 
+yak/src/\mbox{\hyperlink{yak__server_8cpp}{yak\+\_\+server.\+cpp}}\end{DoxyCompactItemize}

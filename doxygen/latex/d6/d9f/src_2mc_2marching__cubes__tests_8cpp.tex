@@ -1,0 +1,106 @@
+\hypertarget{src_2mc_2marching__cubes__tests_8cpp}{}\doxysection{yak/src/mc/marching\+\_\+cubes\+\_\+tests.cpp File Reference}
+\label{src_2mc_2marching__cubes__tests_8cpp}\index{yak/src/mc/marching\_cubes\_tests.cpp@{yak/src/mc/marching\_cubes\_tests.cpp}}
+{\ttfamily \#include \char`\"{}marching\+\_\+cubes\+\_\+tables.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pcl/\+Polygon\+Mesh.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/io/ply\+\_\+io.\+h$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structScalarField}{Scalar\+Field$<$ X, Y, Z $>$}}
+\item 
+struct \mbox{\hyperlink{structTriangle}{Triangle}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}} = \mbox{\hyperlink{structScalarField}{Scalar\+Field}}$<$ 256, 256, 256 $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}} $>$ \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_acce5e739129682f6b6ac84518c584b23}{make\+Scene}} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}} $>$ \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a1000e3bcbd1d28d272b2c2e3f79072c1}{make\+Scene2}} ()
+\item 
+float \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a90ab9a16a22eba787a322fc9ff08f09b}{get\+Offset}} (float value1, float value2, float value\+\_\+desired)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structTriangle}{Triangle}} $>$ \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_acf558a7909e90a3e5f490e0113301057}{process\+Cube}} (const \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}} \&grid, int x, int y, int z)
+\item 
+pcl\+::\+Polygon\+Mesh \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_ac056d0c40aaeec2897d7c80ecdd73cb8}{make\+Mesh}} (const \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}} \&grid)
+\item 
+int \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a70b59b425fcc3448f3efe6ab220337e8}{cube\+Offsets}} \mbox{[}8\mbox{]}\mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}\label{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!Grid@{Grid}}
+\index{Grid@{Grid}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{Grid}{Grid}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}} =  \mbox{\hyperlink{structScalarField}{Scalar\+Field}}$<$256, 256, 256$>$}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{src_2mc_2marching__cubes__tests_8cpp_a90ab9a16a22eba787a322fc9ff08f09b}\label{src_2mc_2marching__cubes__tests_8cpp_a90ab9a16a22eba787a322fc9ff08f09b}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!getOffset@{getOffset}}
+\index{getOffset@{getOffset}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{getOffset()}{getOffset()}}
+{\footnotesize\ttfamily float get\+Offset (\begin{DoxyParamCaption}\item[{float}]{value1,  }\item[{float}]{value2,  }\item[{float}]{value\+\_\+desired }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{src_2mc_2marching__cubes__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{src_2mc_2marching__cubes__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!main@{main}}
+\index{main@{main}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{src_2mc_2marching__cubes__tests_8cpp_ac056d0c40aaeec2897d7c80ecdd73cb8}\label{src_2mc_2marching__cubes__tests_8cpp_ac056d0c40aaeec2897d7c80ecdd73cb8}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!makeMesh@{makeMesh}}
+\index{makeMesh@{makeMesh}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{makeMesh()}{makeMesh()}}
+{\footnotesize\ttfamily pcl\+::\+Polygon\+Mesh make\+Mesh (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}} \&}]{grid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{src_2mc_2marching__cubes__tests_8cpp_acce5e739129682f6b6ac84518c584b23}\label{src_2mc_2marching__cubes__tests_8cpp_acce5e739129682f6b6ac84518c584b23}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!makeScene@{makeScene}}
+\index{makeScene@{makeScene}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{makeScene()}{makeScene()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}}$>$ make\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{src_2mc_2marching__cubes__tests_8cpp_a1000e3bcbd1d28d272b2c2e3f79072c1}\label{src_2mc_2marching__cubes__tests_8cpp_a1000e3bcbd1d28d272b2c2e3f79072c1}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!makeScene2@{makeScene2}}
+\index{makeScene2@{makeScene2}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{makeScene2()}{makeScene2()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}}$>$ make\+Scene2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{src_2mc_2marching__cubes__tests_8cpp_acf558a7909e90a3e5f490e0113301057}\label{src_2mc_2marching__cubes__tests_8cpp_acf558a7909e90a3e5f490e0113301057}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!processCube@{processCube}}
+\index{processCube@{processCube}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{processCube()}{processCube()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structTriangle}{Triangle}}$>$ process\+Cube (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2mc_2marching__cubes__tests_8cpp_a89f057d86c627cb30f8bcaf8e542fb2a}{Grid}} \&}]{grid,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{src_2mc_2marching__cubes__tests_8cpp_a70b59b425fcc3448f3efe6ab220337e8}\label{src_2mc_2marching__cubes__tests_8cpp_a70b59b425fcc3448f3efe6ab220337e8}} 
+\index{marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}!cubeOffsets@{cubeOffsets}}
+\index{cubeOffsets@{cubeOffsets}!marching\_cubes\_tests.cpp@{marching\_cubes\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{cubeOffsets}{cubeOffsets}}
+{\footnotesize\ttfamily const int cube\+Offsets\mbox{[}8\mbox{]}\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  \{ 1, 1, 0 \}, \{ 1, 0, 0 \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \{ 0, 0, 0 \}, \{ 0, 1, 0 \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \{ 1, 1, 1 \}, \{ 1, 0, 1 \}, \{ 0, 0, 1 \}, \{ 0, 1, 1 \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

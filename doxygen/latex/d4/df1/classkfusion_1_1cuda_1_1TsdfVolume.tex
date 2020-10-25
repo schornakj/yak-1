@@ -1,0 +1,332 @@
+\hypertarget{classkfusion_1_1cuda_1_1TsdfVolume}{}\doxysection{kfusion\+::cuda\+::Tsdf\+Volume Class Reference}
+\label{classkfusion_1_1cuda_1_1TsdfVolume}\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+
+
+{\ttfamily \#include $<$tsdf\+\_\+volume.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1cuda_1_1TsdfVolume_1_1Entry}{Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a9008374c3a919476af17c605dcdef26b}{Tsdf\+Volume}} (const cv\+::\+Vec3i \&dims)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{Tsdf\+Volume}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a10920d6932c3f4bb664167f087633e61}{$\sim$\+Tsdf\+Volume}} ()
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a817a66a5f70aea76481c881a8c94e68e}{create}} (const \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} \&dims)
+\item 
+\mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_ad1c810c04caeccdaef35c8c02717b1d6}{get\+Dims}} () const
+\item 
+\mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a62e6cb4972eba9a6b480da2662581248}{get\+Voxel\+Size}} () const
+\item 
+const \mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a560a4560d964439afc15ac8b7c3f7429}{data}} () const
+\item 
+\mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a3742f6c2499c120abc7430e83ddd8f9a}{data}} ()
+\item 
+\mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a21a1965f5862e281f64b6473c0fb5924}{get\+Size}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a7a0e8711b3da82a111273e2b8ed8bbb7}{set\+Size}} (const \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \&size)
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_aae1fe7d6d4083f76809cda989d49b4a8}{get\+Trunc\+Dist}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a562eea2c04f78514ed9870ad0f72bd00}{set\+Trunc\+Dist}} (float distance)
+\item 
+int \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a2cb2cc468766fa5f488a03812d02d596}{get\+Max\+Weight}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a07b2eea3b55cb4d45af7679a45da5f04}{set\+Max\+Weight}} (int weight)
+\item 
+\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a73969baf5b8d2dbf1a18d9a603f2e79f}{get\+Pose}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a39d46479caacfd2e87a18596b8d97b20}{set\+Pose}} (const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&pose)
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_ad2686dcecb850ea2db97f85da003e116}{get\+Raycast\+Step\+Factor}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a709abce46a03c0d9b34f2577aca0091e}{set\+Raycast\+Step\+Factor}} (float factor)
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a95f9d725a52df877d0fb527691e793e5}{get\+Gradient\+Delta\+Factor}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a9898a8c35fb73a0a1e21e52aa04a9219}{set\+Gradient\+Delta\+Factor}} (float factor)
+\item 
+\mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_af5301a220d3e332f1759df6e92fa54fd}{get\+Grid\+Origin}} () const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a6bc028a7d497d9671c75c2434318c8b8}{set\+Grid\+Origin}} (const \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} \&origin)
+\item 
+virtual void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a2c12bdb777937a8ce0393df1a38a89be}{clear}} ()
+\item 
+virtual void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_abc002924a811559d8e2f212dcd44cc11}{apply\+Affine}} (const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&affine)
+\item 
+virtual void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a503cfc8e5faa4687159bf86bb329c98f}{integrate}} (const \mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{Dists}} \&dists, const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&camera\+\_\+motion\+\_\+tform, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr)
+\item 
+virtual void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a70e2eac949c963a9e79c945d63d7b27d}{raycast}} (const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&camera\+\_\+pose, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&depth, \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals)
+\item 
+virtual void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a40579e4bb0ac983ee0aefe6b2be12285}{raycast}} (const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&camera\+\_\+pose, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr, \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&points, \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&normals)
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a8c33fd1b57e621c5aa32742a370cd573}{swap}} (\mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}} \&\mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a560a4560d964439afc15ac8b7c3f7429}{data}})
+\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1Point}{Point}} $>$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a2faadff7e03090caf7bfe4f711fe2f5f}{fetch\+Cloud}} (\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1Point}{Point}} $>$ \&cloud\+\_\+buffer) const
+\item 
+void \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a405f7356bdd03c03336bdfde6969cb42}{fetch\+Normals}} (const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1Point}{Point}} $>$ \&cloud, \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}{Normal}} $>$ \&normals) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a683c95b1a7d490b70ba491dc03148c45}{data\+\_\+}}
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a4827cb032960f0d74a19aa7395577d7e}{trunc\+\_\+dist\+\_\+}}
+\item 
+int \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a314eb3f5fed78d41f80f927baa387f73}{max\+\_\+weight\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a6958b0f57e5b1605206818b973286239}{dims\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_add7efbbbdef42985591799f99a192054}{size\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a96e0616c6abffc6f35e517819fbe5926}{pose\+\_\+}}
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_ac7a2f1dd58286464d07ba6894082cb89}{gradient\+\_\+delta\+\_\+factor\+\_\+}}
+\item 
+float \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume_a76b0dd0408fd75727132b11824c2d47e}{raycast\+\_\+step\+\_\+factor\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a9008374c3a919476af17c605dcdef26b}\label{classkfusion_1_1cuda_1_1TsdfVolume_a9008374c3a919476af17c605dcdef26b}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!TsdfVolume@{TsdfVolume}}
+\index{TsdfVolume@{TsdfVolume}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{TsdfVolume()}{TsdfVolume()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Tsdf\+Volume\+::\+Tsdf\+Volume (\begin{DoxyParamCaption}\item[{const cv\+::\+Vec3i \&}]{dims }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{Tsdf\+Volume}}. 
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a10920d6932c3f4bb664167f087633e61}\label{classkfusion_1_1cuda_1_1TsdfVolume_a10920d6932c3f4bb664167f087633e61}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!````~TsdfVolume@{$\sim$TsdfVolume}}
+\index{````~TsdfVolume@{$\sim$TsdfVolume}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{$\sim$TsdfVolume()}{~TsdfVolume()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Tsdf\+Volume\+::$\sim$\+Tsdf\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_abc002924a811559d8e2f212dcd44cc11}\label{classkfusion_1_1cuda_1_1TsdfVolume_abc002924a811559d8e2f212dcd44cc11}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!applyAffine@{applyAffine}}
+\index{applyAffine@{applyAffine}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{applyAffine()}{applyAffine()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::apply\+Affine (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{affine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a2c12bdb777937a8ce0393df1a38a89be}\label{classkfusion_1_1cuda_1_1TsdfVolume_a2c12bdb777937a8ce0393df1a38a89be}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!clear@{clear}}
+\index{clear@{clear}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a817a66a5f70aea76481c881a8c94e68e}\label{classkfusion_1_1cuda_1_1TsdfVolume_a817a66a5f70aea76481c881a8c94e68e}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!create@{create}}
+\index{create@{create}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} \&}]{dims }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a3742f6c2499c120abc7430e83ddd8f9a}\label{classkfusion_1_1cuda_1_1TsdfVolume_a3742f6c2499c120abc7430e83ddd8f9a}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!data@{data}}
+\index{data@{data}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a560a4560d964439afc15ac8b7c3f7429}\label{classkfusion_1_1cuda_1_1TsdfVolume_a560a4560d964439afc15ac8b7c3f7429}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!data@{data}}
+\index{data@{data}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a2faadff7e03090caf7bfe4f711fe2f5f}\label{classkfusion_1_1cuda_1_1TsdfVolume_a2faadff7e03090caf7bfe4f711fe2f5f}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!fetchCloud@{fetchCloud}}
+\index{fetchCloud@{fetchCloud}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{fetchCloud()}{fetchCloud()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1Point}{Point}} $>$ kfusion\+::cuda\+::\+Tsdf\+Volume\+::fetch\+Cloud (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1Point}{Point}} $>$ \&}]{cloud\+\_\+buffer }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a405f7356bdd03c03336bdfde6969cb42}\label{classkfusion_1_1cuda_1_1TsdfVolume_a405f7356bdd03c03336bdfde6969cb42}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!fetchNormals@{fetchNormals}}
+\index{fetchNormals@{fetchNormals}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{fetchNormals()}{fetchNormals()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::fetch\+Normals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{structkfusion_1_1Point}{Point}} $>$ \&}]{cloud,  }\item[{\mbox{\hyperlink{classkfusion_1_1cuda_1_1DeviceArray}{Device\+Array}}$<$ \mbox{\hyperlink{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}{Normal}} $>$ \&}]{normals }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_ad1c810c04caeccdaef35c8c02717b1d6}\label{classkfusion_1_1cuda_1_1TsdfVolume_ad1c810c04caeccdaef35c8c02717b1d6}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getDims@{getDims}}
+\index{getDims@{getDims}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getDims()}{getDims()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Dims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a95f9d725a52df877d0fb527691e793e5}\label{classkfusion_1_1cuda_1_1TsdfVolume_a95f9d725a52df877d0fb527691e793e5}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getGradientDeltaFactor@{getGradientDeltaFactor}}
+\index{getGradientDeltaFactor@{getGradientDeltaFactor}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getGradientDeltaFactor()}{getGradientDeltaFactor()}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Gradient\+Delta\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_af5301a220d3e332f1759df6e92fa54fd}\label{classkfusion_1_1cuda_1_1TsdfVolume_af5301a220d3e332f1759df6e92fa54fd}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getGridOrigin@{getGridOrigin}}
+\index{getGridOrigin@{getGridOrigin}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getGridOrigin()}{getGridOrigin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Grid\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a2cb2cc468766fa5f488a03812d02d596}\label{classkfusion_1_1cuda_1_1TsdfVolume_a2cb2cc468766fa5f488a03812d02d596}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getMaxWeight@{getMaxWeight}}
+\index{getMaxWeight@{getMaxWeight}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getMaxWeight()}{getMaxWeight()}}
+{\footnotesize\ttfamily int kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Max\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a73969baf5b8d2dbf1a18d9a603f2e79f}\label{classkfusion_1_1cuda_1_1TsdfVolume_a73969baf5b8d2dbf1a18d9a603f2e79f}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getPose@{getPose}}
+\index{getPose@{getPose}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getPose()}{getPose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_ad2686dcecb850ea2db97f85da003e116}\label{classkfusion_1_1cuda_1_1TsdfVolume_ad2686dcecb850ea2db97f85da003e116}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getRaycastStepFactor@{getRaycastStepFactor}}
+\index{getRaycastStepFactor@{getRaycastStepFactor}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getRaycastStepFactor()}{getRaycastStepFactor()}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Raycast\+Step\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a21a1965f5862e281f64b6473c0fb5924}\label{classkfusion_1_1cuda_1_1TsdfVolume_a21a1965f5862e281f64b6473c0fb5924}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getSize@{getSize}}
+\index{getSize@{getSize}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_aae1fe7d6d4083f76809cda989d49b4a8}\label{classkfusion_1_1cuda_1_1TsdfVolume_aae1fe7d6d4083f76809cda989d49b4a8}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getTruncDist@{getTruncDist}}
+\index{getTruncDist@{getTruncDist}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getTruncDist()}{getTruncDist()}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Trunc\+Dist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a62e6cb4972eba9a6b480da2662581248}\label{classkfusion_1_1cuda_1_1TsdfVolume_a62e6cb4972eba9a6b480da2662581248}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!getVoxelSize@{getVoxelSize}}
+\index{getVoxelSize@{getVoxelSize}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{getVoxelSize()}{getVoxelSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::get\+Voxel\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a503cfc8e5faa4687159bf86bb329c98f}\label{classkfusion_1_1cuda_1_1TsdfVolume_a503cfc8e5faa4687159bf86bb329c98f}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!integrate@{integrate}}
+\index{integrate@{integrate}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{integrate()}{integrate()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::integrate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{Dists}} \&}]{dists,  }\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{camera\+\_\+motion\+\_\+tform,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a40579e4bb0ac983ee0aefe6b2be12285}\label{classkfusion_1_1cuda_1_1TsdfVolume_a40579e4bb0ac983ee0aefe6b2be12285}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!raycast@{raycast}}
+\index{raycast@{raycast}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{raycast()}{raycast()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::raycast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{camera\+\_\+pose,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{Cloud}} \&}]{points,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a70e2eac949c963a9e79c945d63d7b27d}\label{classkfusion_1_1cuda_1_1TsdfVolume_a70e2eac949c963a9e79c945d63d7b27d}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!raycast@{raycast}}
+\index{raycast@{raycast}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{raycast()}{raycast()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::raycast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{camera\+\_\+pose,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{Depth}} \&}]{depth,  }\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{Normals}} \&}]{normals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a9898a8c35fb73a0a1e21e52aa04a9219}\label{classkfusion_1_1cuda_1_1TsdfVolume_a9898a8c35fb73a0a1e21e52aa04a9219}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!setGradientDeltaFactor@{setGradientDeltaFactor}}
+\index{setGradientDeltaFactor@{setGradientDeltaFactor}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{setGradientDeltaFactor()}{setGradientDeltaFactor()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::set\+Gradient\+Delta\+Factor (\begin{DoxyParamCaption}\item[{float}]{factor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a6bc028a7d497d9671c75c2434318c8b8}\label{classkfusion_1_1cuda_1_1TsdfVolume_a6bc028a7d497d9671c75c2434318c8b8}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!setGridOrigin@{setGridOrigin}}
+\index{setGridOrigin@{setGridOrigin}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{setGridOrigin()}{setGridOrigin()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::set\+Grid\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} \&}]{origin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a07b2eea3b55cb4d45af7679a45da5f04}\label{classkfusion_1_1cuda_1_1TsdfVolume_a07b2eea3b55cb4d45af7679a45da5f04}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!setMaxWeight@{setMaxWeight}}
+\index{setMaxWeight@{setMaxWeight}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{setMaxWeight()}{setMaxWeight()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::set\+Max\+Weight (\begin{DoxyParamCaption}\item[{int}]{weight }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a39d46479caacfd2e87a18596b8d97b20}\label{classkfusion_1_1cuda_1_1TsdfVolume_a39d46479caacfd2e87a18596b8d97b20}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!setPose@{setPose}}
+\index{setPose@{setPose}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{setPose()}{setPose()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::set\+Pose (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{pose }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a709abce46a03c0d9b34f2577aca0091e}\label{classkfusion_1_1cuda_1_1TsdfVolume_a709abce46a03c0d9b34f2577aca0091e}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!setRaycastStepFactor@{setRaycastStepFactor}}
+\index{setRaycastStepFactor@{setRaycastStepFactor}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{setRaycastStepFactor()}{setRaycastStepFactor()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::set\+Raycast\+Step\+Factor (\begin{DoxyParamCaption}\item[{float}]{factor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a7a0e8711b3da82a111273e2b8ed8bbb7}\label{classkfusion_1_1cuda_1_1TsdfVolume_a7a0e8711b3da82a111273e2b8ed8bbb7}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!setSize@{setSize}}
+\index{setSize@{setSize}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::set\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} \&}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a562eea2c04f78514ed9870ad0f72bd00}\label{classkfusion_1_1cuda_1_1TsdfVolume_a562eea2c04f78514ed9870ad0f72bd00}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!setTruncDist@{setTruncDist}}
+\index{setTruncDist@{setTruncDist}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{setTruncDist()}{setTruncDist()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::set\+Trunc\+Dist (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a8c33fd1b57e621c5aa32742a370cd573}\label{classkfusion_1_1cuda_1_1TsdfVolume_a8c33fd1b57e621c5aa32742a370cd573}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!swap@{swap}}
+\index{swap@{swap}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void kfusion\+::cuda\+::\+Tsdf\+Volume\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a683c95b1a7d490b70ba491dc03148c45}\label{classkfusion_1_1cuda_1_1TsdfVolume_a683c95b1a7d490b70ba491dc03148c45}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!data\_@{data\_}}
+\index{data\_@{data\_}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{data\_}{data\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_a53aebbdb89053a62820b1210e71aae87}{Cuda\+Data}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a6958b0f57e5b1605206818b973286239}\label{classkfusion_1_1cuda_1_1TsdfVolume_a6958b0f57e5b1605206818b973286239}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!dims\_@{dims\_}}
+\index{dims\_@{dims\_}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{dims\_}{dims\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::dims\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_ac7a2f1dd58286464d07ba6894082cb89}\label{classkfusion_1_1cuda_1_1TsdfVolume_ac7a2f1dd58286464d07ba6894082cb89}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!gradient\_delta\_factor\_@{gradient\_delta\_factor\_}}
+\index{gradient\_delta\_factor\_@{gradient\_delta\_factor\_}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{gradient\_delta\_factor\_}{gradient\_delta\_factor\_}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Tsdf\+Volume\+::gradient\+\_\+delta\+\_\+factor\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a314eb3f5fed78d41f80f927baa387f73}\label{classkfusion_1_1cuda_1_1TsdfVolume_a314eb3f5fed78d41f80f927baa387f73}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!max\_weight\_@{max\_weight\_}}
+\index{max\_weight\_@{max\_weight\_}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{max\_weight\_}{max\_weight\_}}
+{\footnotesize\ttfamily int kfusion\+::cuda\+::\+Tsdf\+Volume\+::max\+\_\+weight\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a96e0616c6abffc6f35e517819fbe5926}\label{classkfusion_1_1cuda_1_1TsdfVolume_a96e0616c6abffc6f35e517819fbe5926}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!pose\_@{pose\_}}
+\index{pose\_@{pose\_}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{pose\_}{pose\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::pose\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a76b0dd0408fd75727132b11824c2d47e}\label{classkfusion_1_1cuda_1_1TsdfVolume_a76b0dd0408fd75727132b11824c2d47e}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!raycast\_step\_factor\_@{raycast\_step\_factor\_}}
+\index{raycast\_step\_factor\_@{raycast\_step\_factor\_}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{raycast\_step\_factor\_}{raycast\_step\_factor\_}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Tsdf\+Volume\+::raycast\+\_\+step\+\_\+factor\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_add7efbbbdef42985591799f99a192054}\label{classkfusion_1_1cuda_1_1TsdfVolume_add7efbbbdef42985591799f99a192054}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!size\_@{size\_}}
+\index{size\_@{size\_}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{size\_}{size\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}} kfusion\+::cuda\+::\+Tsdf\+Volume\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1cuda_1_1TsdfVolume_a4827cb032960f0d74a19aa7395577d7e}\label{classkfusion_1_1cuda_1_1TsdfVolume_a4827cb032960f0d74a19aa7395577d7e}} 
+\index{kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}!trunc\_dist\_@{trunc\_dist\_}}
+\index{trunc\_dist\_@{trunc\_dist\_}!kfusion::cuda::TsdfVolume@{kfusion::cuda::TsdfVolume}}
+\doxysubsubsection{\texorpdfstring{trunc\_dist\_}{trunc\_dist\_}}
+{\footnotesize\ttfamily float kfusion\+::cuda\+::\+Tsdf\+Volume\+::trunc\+\_\+dist\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/cuda/\mbox{\hyperlink{tsdf__volume_8hpp}{tsdf\+\_\+volume.\+hpp}}\item 
+yak/src/kfusion/\mbox{\hyperlink{tsdf__volume_8cpp}{tsdf\+\_\+volume.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{namespacekfusion}{}\doxysection{kfusion Namespace Reference}
+\label{namespacekfusion}\index{kfusion@{kfusion}}
+
+
+Utility.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacekfusion_1_1cuda}{cuda}}
+\item 
+ \mbox{\hyperlink{namespacekfusion_1_1device}{device}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}}
+\item 
+class \mbox{\hyperlink{classkfusion_1_1KinFu}{Kin\+Fu}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1KinFuParams}{Kin\+Fu\+Params}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1PixelRGB}{Pixel\+R\+GB}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1Point}{Point}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1RGB}{R\+GB}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1SampledScopeTime}{Sampled\+Scope\+Time}}
+\item 
+struct \mbox{\hyperlink{structkfusion_1_1ScopeTime}{Scope\+Time}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef cv\+::\+Matx33f \mbox{\hyperlink{namespacekfusion_ad207da04a98c4ba81ef46b10d7582044}{Mat3f}}
+\item 
+typedef cv\+::\+Vec3f \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{Vec3f}}
+\item 
+typedef cv\+::\+Vec3i \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{Vec3i}}
+\item 
+typedef cv\+::\+Affine3f \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}}
+\item 
+typedef \mbox{\hyperlink{structkfusion_1_1Point}{Point}} \mbox{\hyperlink{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}{Normal}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename D , typename S $>$ }\\D \mbox{\hyperlink{namespacekfusion_a748cfbc97ea2cf9725c1a9099493e110}{device\+\_\+cast}} (const S \&source)
+\item 
+template$<$$>$ \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{device\+::\+Aff3f}} \mbox{\hyperlink{namespacekfusion_ab3f4153dcbe88d1f71e55167c178ee72}{device\+\_\+cast$<$ device\+::\+Aff3f, Affine3f $>$}} (const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&source)
+\item 
+\mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} std\+::ostream \& \mbox{\hyperlink{namespacekfusion_aaad51ce7c355809c88678d715c1b2541}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&intr)
+\item 
+float \mbox{\hyperlink{namespacekfusion_a7847f32c5c2806dd9dcea7c36998697c}{deg2rad}} (float alpha)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacekfusion_ab70af4758054aff748631b8de8e163af}\label{namespacekfusion_ab70af4758054aff748631b8de8e163af}} 
+\index{kfusion@{kfusion}!Affine3f@{Affine3f}}
+\index{Affine3f@{Affine3f}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{Affine3f}{Affine3f}}
+{\footnotesize\ttfamily typedef cv\+::\+Affine3f \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{kfusion\+::\+Affine3f}}}
+
+\mbox{\Hypertarget{namespacekfusion_ad207da04a98c4ba81ef46b10d7582044}\label{namespacekfusion_ad207da04a98c4ba81ef46b10d7582044}} 
+\index{kfusion@{kfusion}!Mat3f@{Mat3f}}
+\index{Mat3f@{Mat3f}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{Mat3f}{Mat3f}}
+{\footnotesize\ttfamily typedef cv\+::\+Matx33f \mbox{\hyperlink{namespacekfusion_ad207da04a98c4ba81ef46b10d7582044}{kfusion\+::\+Mat3f}}}
+
+\mbox{\Hypertarget{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}\label{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}} 
+\index{kfusion@{kfusion}!Normal@{Normal}}
+\index{Normal@{Normal}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{Normal}{Normal}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structkfusion_1_1Point}{Point}} \mbox{\hyperlink{namespacekfusion_a3f2b1131bf7fdeca65a1503278dfe997}{kfusion\+::\+Normal}}}
+
+\mbox{\Hypertarget{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}\label{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}} 
+\index{kfusion@{kfusion}!Vec3f@{Vec3f}}
+\index{Vec3f@{Vec3f}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{Vec3f}{Vec3f}}
+{\footnotesize\ttfamily typedef cv\+::\+Vec3f \mbox{\hyperlink{namespacekfusion_a2c34a137e4bc606d6126428ff2c4e315}{kfusion\+::\+Vec3f}}}
+
+\mbox{\Hypertarget{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}\label{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}} 
+\index{kfusion@{kfusion}!Vec3i@{Vec3i}}
+\index{Vec3i@{Vec3i}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{Vec3i}{Vec3i}}
+{\footnotesize\ttfamily typedef cv\+::\+Vec3i \mbox{\hyperlink{namespacekfusion_a6e08167218c0bf14bac1b6d621a3f4ab}{kfusion\+::\+Vec3i}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacekfusion_a7847f32c5c2806dd9dcea7c36998697c}\label{namespacekfusion_a7847f32c5c2806dd9dcea7c36998697c}} 
+\index{kfusion@{kfusion}!deg2rad@{deg2rad}}
+\index{deg2rad@{deg2rad}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{deg2rad()}{deg2rad()}}
+{\footnotesize\ttfamily float kfusion\+::deg2rad (\begin{DoxyParamCaption}\item[{float}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacekfusion_a748cfbc97ea2cf9725c1a9099493e110}\label{namespacekfusion_a748cfbc97ea2cf9725c1a9099493e110}} 
+\index{kfusion@{kfusion}!device\_cast@{device\_cast}}
+\index{device\_cast@{device\_cast}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{device\_cast()}{device\_cast()}}
+{\footnotesize\ttfamily template$<$typename D , typename S $>$ \\
+D kfusion\+::device\+\_\+cast (\begin{DoxyParamCaption}\item[{const S \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacekfusion_ab3f4153dcbe88d1f71e55167c178ee72}\label{namespacekfusion_ab3f4153dcbe88d1f71e55167c178ee72}} 
+\index{kfusion@{kfusion}!device\_cast$<$ device::Aff3f, Affine3f $>$@{device\_cast$<$ device::Aff3f, Affine3f $>$}}
+\index{device\_cast$<$ device::Aff3f, Affine3f $>$@{device\_cast$<$ device::Aff3f, Affine3f $>$}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{device\_cast$<$ device::Aff3f, Affine3f $>$()}{device\_cast< device::Aff3f, Affine3f >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{device\+::\+Aff3f}} \mbox{\hyperlink{namespacekfusion_a748cfbc97ea2cf9725c1a9099493e110}{kfusion\+::device\+\_\+cast}}$<$ \mbox{\hyperlink{structkfusion_1_1device_1_1Aff3f}{device\+::\+Aff3f}}, \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} $>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacekfusion_aaad51ce7c355809c88678d715c1b2541}\label{namespacekfusion_aaad51ce7c355809c88678d715c1b2541}} 
+\index{kfusion@{kfusion}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!kfusion@{kfusion}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{exports_8hpp_a211eebaf64f078bd7841c17c31fca96d}{K\+F\+\_\+\+E\+X\+P\+O\+R\+TS}} std\+::ostream\& kfusion\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structkfusion_1_1Intr}{Intr}} \&}]{intr }\end{DoxyParamCaption})}
+

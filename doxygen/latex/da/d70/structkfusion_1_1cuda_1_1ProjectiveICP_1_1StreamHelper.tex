@@ -1,0 +1,116 @@
+\hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper}{}\doxysection{kfusion\+::cuda\+::Projective\+I\+CP\+::Stream\+Helper Struct Reference}
+\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper}\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+
+
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper}{Projective\+I\+C\+P\+::\+Stream\+Helper}}.  
+
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_1_1PageLockHelper}{device\+::\+Compute\+Icp\+Helper\+::\+Page\+Lock\+Helper}} \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a14896aaf38a135e696fd57b9a6897b8e}{Page\+Lock\+Helper}}
+\item 
+typedef cv\+::\+Matx66f \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_aee7e1daa9019d0907f1c1ad8ed165a6e}{Mat6f}}
+\item 
+typedef cv\+::\+Vec6f \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a406ffe0c24e0526d887ca0b5c5c14c01}{Vec6f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_adc7fe054512b3d93f67dc6c324479f7c}{Stream\+Helper}} ()
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_af0f749bf3cfe443246484ec3eb09624a}{$\sim$\+Stream\+Helper}} ()
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ab365328220f036c6b9fa648e51e744bd}{operator float $\ast$}} ()
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a8062cab48cfbb7087131d2aad575e089}{operator cuda\+Stream\+\_\+t}} ()
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_aee7e1daa9019d0907f1c1ad8ed165a6e}{Mat6f}} \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a68044d9e2c9906b1fd90b4b05728cda0}{get}} (\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a406ffe0c24e0526d887ca0b5c5c14c01}{Vec6f}} \&b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cuda\+Stream\+\_\+t \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ad013d98433d87462ad6f7cbfaf36c5cf}{stream}}
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a14896aaf38a135e696fd57b9a6897b8e}{Page\+Lock\+Helper}} \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ae6795228aaec46c1405f0bfefeabcb13}{locked\+\_\+buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper}{Projective\+I\+C\+P\+::\+Stream\+Helper}}. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_aee7e1daa9019d0907f1c1ad8ed165a6e}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_aee7e1daa9019d0907f1c1ad8ed165a6e}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!Mat6f@{Mat6f}}
+\index{Mat6f@{Mat6f}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{Mat6f}{Mat6f}}
+{\footnotesize\ttfamily typedef cv\+::\+Matx66f \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_aee7e1daa9019d0907f1c1ad8ed165a6e}{kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::\+Mat6f}}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a14896aaf38a135e696fd57b9a6897b8e}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a14896aaf38a135e696fd57b9a6897b8e}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!PageLockHelper@{PageLockHelper}}
+\index{PageLockHelper@{PageLockHelper}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{PageLockHelper}{PageLockHelper}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structkfusion_1_1device_1_1ComputeIcpHelper_1_1PageLockHelper}{device\+::\+Compute\+Icp\+Helper\+::\+Page\+Lock\+Helper}} \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a14896aaf38a135e696fd57b9a6897b8e}{kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::\+Page\+Lock\+Helper}}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a406ffe0c24e0526d887ca0b5c5c14c01}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a406ffe0c24e0526d887ca0b5c5c14c01}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!Vec6f@{Vec6f}}
+\index{Vec6f@{Vec6f}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{Vec6f}{Vec6f}}
+{\footnotesize\ttfamily typedef cv\+::\+Vec6f \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a406ffe0c24e0526d887ca0b5c5c14c01}{kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::\+Vec6f}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_adc7fe054512b3d93f67dc6c324479f7c}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_adc7fe054512b3d93f67dc6c324479f7c}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!StreamHelper@{StreamHelper}}
+\index{StreamHelper@{StreamHelper}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{StreamHelper()}{StreamHelper()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::\+Stream\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_af0f749bf3cfe443246484ec3eb09624a}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_af0f749bf3cfe443246484ec3eb09624a}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!````~StreamHelper@{$\sim$StreamHelper}}
+\index{````~StreamHelper@{$\sim$StreamHelper}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$StreamHelper()}{~StreamHelper()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::$\sim$\+Stream\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a68044d9e2c9906b1fd90b4b05728cda0}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a68044d9e2c9906b1fd90b4b05728cda0}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!get@{get}}
+\index{get@{get}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_aee7e1daa9019d0907f1c1ad8ed165a6e}{Mat6f}} kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a406ffe0c24e0526d887ca0b5c5c14c01}{Vec6f}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a8062cab48cfbb7087131d2aad575e089}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a8062cab48cfbb7087131d2aad575e089}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!operator cudaStream\_t@{operator cudaStream\_t}}
+\index{operator cudaStream\_t@{operator cudaStream\_t}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{operator cudaStream\_t()}{operator cudaStream\_t()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::operator cuda\+Stream\+\_\+t (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ab365328220f036c6b9fa648e51e744bd}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ab365328220f036c6b9fa648e51e744bd}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!operator float $\ast$@{operator float $\ast$}}
+\index{operator float $\ast$@{operator float $\ast$}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{operator float $\ast$()}{operator float *()}}
+{\footnotesize\ttfamily kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::operator float $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ae6795228aaec46c1405f0bfefeabcb13}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ae6795228aaec46c1405f0bfefeabcb13}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!locked\_buffer@{locked\_buffer}}
+\index{locked\_buffer@{locked\_buffer}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{locked\_buffer}{locked\_buffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_a14896aaf38a135e696fd57b9a6897b8e}{Page\+Lock\+Helper}} kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::locked\+\_\+buffer}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ad013d98433d87462ad6f7cbfaf36c5cf}\label{structkfusion_1_1cuda_1_1ProjectiveICP_1_1StreamHelper_ad013d98433d87462ad6f7cbfaf36c5cf}} 
+\index{kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}!stream@{stream}}
+\index{stream@{stream}!kfusion::cuda::ProjectiveICP::StreamHelper@{kfusion::cuda::ProjectiveICP::StreamHelper}}
+\doxysubsubsection{\texorpdfstring{stream}{stream}}
+{\footnotesize\ttfamily cuda\+Stream\+\_\+t kfusion\+::cuda\+::\+Projective\+I\+C\+P\+::\+Stream\+Helper\+::stream}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+yak/src/kfusion/\mbox{\hyperlink{projective__icp_8cpp}{projective\+\_\+icp.\+cpp}}\end{DoxyCompactItemize}

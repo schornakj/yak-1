@@ -1,0 +1,100 @@
+\hypertarget{structkfusion_1_1cuda_1_1PtrStep}{}\doxysection{kfusion\+::cuda\+::Ptr\+Step$<$ T $>$ Struct Template Reference}
+\label{structkfusion_1_1cuda_1_1PtrStep}\index{kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}}
+
+
+{\ttfamily \#include $<$kernel\+\_\+containers.\+hpp$>$}
+
+Inheritance diagram for kfusion\+::cuda\+::Ptr\+Step$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d3/d0e/structkfusion_1_1cuda_1_1PtrStep}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep_aba66bb7617620edae638899565946cf3}{Ptr\+Step}} ()
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep_a627fe02a0f4ca40b35c0ccf139de4b63}{Ptr\+Step}} (T $\ast$data\+\_\+arg, size\+\_\+t step\+\_\+arg)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} T $\ast$ \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep_a8646ec761f95dc12e6a97eb1052dc39a}{ptr}} (int y=0)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} const T $\ast$ \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep_a0143f0c88df151e691a9c88268b9ec3c}{ptr}} (int y=0) const
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} T \& \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep_a438984fd3b9286b7d4a492955ae0f079}{operator()}} (int y, int x)
+\item 
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} const T \& \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep_ae863ed1f689f0fb2b427d33e433b6a09}{operator()}} (int y, int x) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep_a5d869b2120ad9d12b7fc17119b9dcdbe}{step}}
+\begin{DoxyCompactList}\small\item\em stride between two consecutive rows in bytes. Step is stored always and everywhere in bytes!!! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1PtrStep_aba66bb7617620edae638899565946cf3}\label{structkfusion_1_1cuda_1_1PtrStep_aba66bb7617620edae638899565946cf3}} 
+\index{kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}!PtrStep@{PtrStep}}
+\index{PtrStep@{PtrStep}!kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PtrStep()}{PtrStep()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{kfusion\+::cuda\+::\+Ptr\+Step}}$<$ T $>$\+::\mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1PtrStep_a627fe02a0f4ca40b35c0ccf139de4b63}\label{structkfusion_1_1cuda_1_1PtrStep_a627fe02a0f4ca40b35c0ccf139de4b63}} 
+\index{kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}!PtrStep@{PtrStep}}
+\index{PtrStep@{PtrStep}!kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PtrStep()}{PtrStep()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{kfusion\+::cuda\+::\+Ptr\+Step}}$<$ T $>$\+::\mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{Ptr\+Step}} (\begin{DoxyParamCaption}\item[{T $\ast$}]{data\+\_\+arg,  }\item[{size\+\_\+t}]{step\+\_\+arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1PtrStep_a438984fd3b9286b7d4a492955ae0f079}\label{structkfusion_1_1cuda_1_1PtrStep_a438984fd3b9286b7d4a492955ae0f079}} 
+\index{kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} T\& \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{kfusion\+::cuda\+::\+Ptr\+Step}}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1PtrStep_ae863ed1f689f0fb2b427d33e433b6a09}\label{structkfusion_1_1cuda_1_1PtrStep_ae863ed1f689f0fb2b427d33e433b6a09}} 
+\index{kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} const T\& \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{kfusion\+::cuda\+::\+Ptr\+Step}}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1PtrStep_a8646ec761f95dc12e6a97eb1052dc39a}\label{structkfusion_1_1cuda_1_1PtrStep_a8646ec761f95dc12e6a97eb1052dc39a}} 
+\index{kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}!ptr@{ptr}}
+\index{ptr@{ptr}!kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ptr()}{ptr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} T$\ast$ \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{kfusion\+::cuda\+::\+Ptr\+Step}}$<$ T $>$\+::ptr (\begin{DoxyParamCaption}\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1PtrStep_a0143f0c88df151e691a9c88268b9ec3c}\label{structkfusion_1_1cuda_1_1PtrStep_a0143f0c88df151e691a9c88268b9ec3c}} 
+\index{kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}!ptr@{ptr}}
+\index{ptr@{ptr}!kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ptr()}{ptr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{kernel__containers_8hpp_a06fab17232a0ab11a11705bd08c6fd28}{\+\_\+\+\_\+kf\+\_\+hdevice\+\_\+\+\_\+}} const T$\ast$ \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{kfusion\+::cuda\+::\+Ptr\+Step}}$<$ T $>$\+::ptr (\begin{DoxyParamCaption}\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structkfusion_1_1cuda_1_1PtrStep_a5d869b2120ad9d12b7fc17119b9dcdbe}\label{structkfusion_1_1cuda_1_1PtrStep_a5d869b2120ad9d12b7fc17119b9dcdbe}} 
+\index{kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}!step@{step}}
+\index{step@{step}!kfusion::cuda::PtrStep$<$ T $>$@{kfusion::cuda::PtrStep$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{structkfusion_1_1cuda_1_1PtrStep}{kfusion\+::cuda\+::\+Ptr\+Step}}$<$ T $>$\+::step}
+
+
+
+stride between two consecutive rows in bytes. Step is stored always and everywhere in bytes!!! 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/cuda/\mbox{\hyperlink{kernel__containers_8hpp}{kernel\+\_\+containers.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,252 @@
+\hypertarget{classkfusion_1_1KinFu}{}\doxysection{kfusion\+::Kin\+Fu Class Reference}
+\label{classkfusion_1_1KinFu}\index{kfusion::KinFu@{kfusion::KinFu}}
+
+
+{\ttfamily \#include $<$kinfu.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkfusion_1_1KinFu}{Kin\+Fu}} $>$ \mbox{\hyperlink{classkfusion_1_1KinFu_a12e485feab4cd87e15caa9ddfa020452}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classkfusion_1_1KinFu_a714e2e84d3868c131dcf6b45494b15fd}{Kin\+Fu}} (const \mbox{\hyperlink{structkfusion_1_1KinFuParams}{Kin\+Fu\+Params}} \&\mbox{\hyperlink{classkfusion_1_1KinFu_a0374b0f66be71a2e4dcd3bce1decacff}{params}})
+\item 
+const \mbox{\hyperlink{structkfusion_1_1KinFuParams}{Kin\+Fu\+Params}} \& \mbox{\hyperlink{classkfusion_1_1KinFu_a0374b0f66be71a2e4dcd3bce1decacff}{params}} () const
+\item 
+\mbox{\hyperlink{structkfusion_1_1KinFuParams}{Kin\+Fu\+Params}} \& \mbox{\hyperlink{classkfusion_1_1KinFu_aa47039ceb13225b09b5d2b504dc7193b}{params}} ()
+\item 
+const \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{cuda\+::\+Tsdf\+Volume}} \& \mbox{\hyperlink{classkfusion_1_1KinFu_a9b828a3a6e145947679f58a57859b546}{tsdf}} () const
+\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{cuda\+::\+Tsdf\+Volume}} \& \mbox{\hyperlink{classkfusion_1_1KinFu_a27b7e7e016b4cbab1e160f56db124c29}{tsdf}} ()
+\item 
+const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{cuda\+::\+Projective\+I\+CP}} \& \mbox{\hyperlink{classkfusion_1_1KinFu_aea53e2834a3ad30cf7136ad5f19e67eb}{icp}} () const
+\item 
+\mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{cuda\+::\+Projective\+I\+CP}} \& \mbox{\hyperlink{classkfusion_1_1KinFu_ad0bb7e9906663e58cd68294e4d20880e}{icp}} ()
+\item 
+void \mbox{\hyperlink{classkfusion_1_1KinFu_aaca5ec9dc78d3f304bc69bb15f27949a}{reset\+Pose}} ()
+\item 
+void \mbox{\hyperlink{classkfusion_1_1KinFu_afb42b8315cf524f6cbcd3a9fdaceac76}{reset\+Volume}} ()
+\item 
+bool \mbox{\hyperlink{classkfusion_1_1KinFu_a7c73e643f265b04c719e71f3037849fa}{operator()}} (const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&input\+Camera\+Motion, const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&current\+Camera\+Pose, const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&previous\+Camera\+Pose, const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{cuda\+::\+Depth}} \&depth, const \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{cuda\+::\+Image}} \&image=\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{cuda\+::\+Image}}())
+\item 
+void \mbox{\hyperlink{classkfusion_1_1KinFu_a6b906c9d3303313e79b0c40a4540dba6}{render\+Image}} (\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{cuda\+::\+Image}} \&image, int flags=0)
+\item 
+void \mbox{\hyperlink{classkfusion_1_1KinFu_ad8cca939db04aeab926a8fed7e380d0c}{render\+Image}} (\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{cuda\+::\+Image}} \&image, const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&pose, int flags=0)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structkfusion_1_1Point}{kfusion\+::\+Point}} $>$ \mbox{\hyperlink{classkfusion_1_1KinFu_abeb4842cbb6a23b4eb0007b04d6bfee0}{download\+Cloud}} () const
+\item 
+\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \mbox{\hyperlink{classkfusion_1_1KinFu_a4709dbf05fd7394391bb5d88ec4620b5}{get\+Camera\+Pose}} (int time=-\/1) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classkfusion_1_1KinFu_a721f7ecb4af39c3b1434db42a95a9f4e}{allocate\+\_\+buffers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classkfusion_1_1KinFu_ad4133acec00a12555949d6d123992e2c}{frame\+\_\+counter\+\_\+}}
+\item 
+\mbox{\hyperlink{structkfusion_1_1KinFuParams}{Kin\+Fu\+Params}} \mbox{\hyperlink{classkfusion_1_1KinFu_a49182e4a44c53ee07dff32b541a3551b}{params\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}}, Eigen\+::aligned\+\_\+allocator$<$ \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} $>$ $>$ \mbox{\hyperlink{classkfusion_1_1KinFu_aac6b5604e90cfe37b9da731b3097f5d6}{poses\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{cuda\+::\+Dists}} \mbox{\hyperlink{classkfusion_1_1KinFu_a683e4337585174a9cc58dd3f67fbd256}{dists\+\_\+}}
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{cuda\+::\+Frame}} \mbox{\hyperlink{classkfusion_1_1KinFu_ae0b6413529318dc214a0716434891402}{curr\+\_\+}}
+\item 
+\mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{cuda\+::\+Frame}} \mbox{\hyperlink{classkfusion_1_1KinFu_a449e7b4c48b901c0962f6c84d561075f}{prev\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{cuda\+::\+Cloud}} \mbox{\hyperlink{classkfusion_1_1KinFu_a8513549b9136906300bd1335fa223f67}{points\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{cuda\+::\+Normals}} \mbox{\hyperlink{classkfusion_1_1KinFu_a295d01598c73cc9ada1edaa111fbfff4}{normals\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{cuda\+::\+Depth}} \mbox{\hyperlink{classkfusion_1_1KinFu_a7c6ff17d6894cd58024c5a78eabd1cf5}{depths\+\_\+}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{cuda\+::\+Tsdf\+Volume}} $>$ \mbox{\hyperlink{classkfusion_1_1KinFu_a057c59f20e9e5c55a2df712a75ba6974}{volume\+\_\+}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{cuda\+::\+Projective\+I\+CP}} $>$ \mbox{\hyperlink{classkfusion_1_1KinFu_aafe72d5c2d46274efdaa9ec8ad98adcc}{icp\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a12e485feab4cd87e15caa9ddfa020452}\label{classkfusion_1_1KinFu_a12e485feab4cd87e15caa9ddfa020452}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classkfusion_1_1KinFu}{Kin\+Fu}}$>$ \mbox{\hyperlink{classkfusion_1_1KinFu_a12e485feab4cd87e15caa9ddfa020452}{kfusion\+::\+Kin\+Fu\+::\+Ptr}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a714e2e84d3868c131dcf6b45494b15fd}\label{classkfusion_1_1KinFu_a714e2e84d3868c131dcf6b45494b15fd}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!KinFu@{KinFu}}
+\index{KinFu@{KinFu}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{KinFu()}{KinFu()}}
+{\footnotesize\ttfamily kfusion\+::\+Kin\+Fu\+::\+Kin\+Fu (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structkfusion_1_1KinFuParams}{Kin\+Fu\+Params}} \&}]{params }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a721f7ecb4af39c3b1434db42a95a9f4e}\label{classkfusion_1_1KinFu_a721f7ecb4af39c3b1434db42a95a9f4e}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!allocate\_buffers@{allocate\_buffers}}
+\index{allocate\_buffers@{allocate\_buffers}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{allocate\_buffers()}{allocate\_buffers()}}
+{\footnotesize\ttfamily void kfusion\+::\+Kin\+Fu\+::allocate\+\_\+buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_abeb4842cbb6a23b4eb0007b04d6bfee0}\label{classkfusion_1_1KinFu_abeb4842cbb6a23b4eb0007b04d6bfee0}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!downloadCloud@{downloadCloud}}
+\index{downloadCloud@{downloadCloud}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{downloadCloud()}{downloadCloud()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structkfusion_1_1Point}{Point}} $>$ Kin\+Fu\+::download\+Cloud (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a4709dbf05fd7394391bb5d88ec4620b5}\label{classkfusion_1_1KinFu_a4709dbf05fd7394391bb5d88ec4620b5}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!getCameraPose@{getCameraPose}}
+\index{getCameraPose@{getCameraPose}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{getCameraPose()}{getCameraPose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{kfusion\+::\+Affine3f}} kfusion\+::\+Kin\+Fu\+::get\+Camera\+Pose (\begin{DoxyParamCaption}\item[{int}]{time = {\ttfamily -\/1} }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_ad0bb7e9906663e58cd68294e4d20880e}\label{classkfusion_1_1KinFu_ad0bb7e9906663e58cd68294e4d20880e}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!icp@{icp}}
+\index{icp@{icp}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{icp()}{icp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{kfusion\+::cuda\+::\+Projective\+I\+CP}} \& kfusion\+::\+Kin\+Fu\+::icp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_aea53e2834a3ad30cf7136ad5f19e67eb}\label{classkfusion_1_1KinFu_aea53e2834a3ad30cf7136ad5f19e67eb}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!icp@{icp}}
+\index{icp@{icp}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{icp()}{icp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{kfusion\+::cuda\+::\+Projective\+I\+CP}} \& kfusion\+::\+Kin\+Fu\+::icp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a7c73e643f265b04c719e71f3037849fa}\label{classkfusion_1_1KinFu_a7c73e643f265b04c719e71f3037849fa}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!operator()@{operator()}}
+\index{operator()@{operator()}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool kfusion\+::\+Kin\+Fu\+::operator() (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{input\+Camera\+Motion,  }\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{current\+Camera\+Pose,  }\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{previous\+Camera\+Pose,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{cuda\+::\+Depth}} \&}]{depth,  }\item[{const \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{cuda\+::\+Image}} \&}]{image = {\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{cuda\+::\+Image}}()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_aa47039ceb13225b09b5d2b504dc7193b}\label{classkfusion_1_1KinFu_aa47039ceb13225b09b5d2b504dc7193b}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!params@{params}}
+\index{params@{params}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{params()}{params()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1KinFuParams}{kfusion\+::\+Kin\+Fu\+Params}} \& kfusion\+::\+Kin\+Fu\+::params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a0374b0f66be71a2e4dcd3bce1decacff}\label{classkfusion_1_1KinFu_a0374b0f66be71a2e4dcd3bce1decacff}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!params@{params}}
+\index{params@{params}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{params()}{params()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structkfusion_1_1KinFuParams}{kfusion\+::\+Kin\+Fu\+Params}} \& kfusion\+::\+Kin\+Fu\+::params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_ad8cca939db04aeab926a8fed7e380d0c}\label{classkfusion_1_1KinFu_ad8cca939db04aeab926a8fed7e380d0c}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!renderImage@{renderImage}}
+\index{renderImage@{renderImage}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{renderImage()}{renderImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void kfusion\+::\+Kin\+Fu\+::render\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{cuda\+::\+Image}} \&}]{image,  }\item[{const \mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}} \&}]{pose,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a6b906c9d3303313e79b0c40a4540dba6}\label{classkfusion_1_1KinFu_a6b906c9d3303313e79b0c40a4540dba6}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!renderImage@{renderImage}}
+\index{renderImage@{renderImage}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{renderImage()}{renderImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void kfusion\+::\+Kin\+Fu\+::render\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekfusion_1_1cuda_a2b512d707ba7b172a314509053d1e48f}{cuda\+::\+Image}} \&}]{image,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_aaca5ec9dc78d3f304bc69bb15f27949a}\label{classkfusion_1_1KinFu_aaca5ec9dc78d3f304bc69bb15f27949a}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!resetPose@{resetPose}}
+\index{resetPose@{resetPose}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{resetPose()}{resetPose()}}
+{\footnotesize\ttfamily void kfusion\+::\+Kin\+Fu\+::reset\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_afb42b8315cf524f6cbcd3a9fdaceac76}\label{classkfusion_1_1KinFu_afb42b8315cf524f6cbcd3a9fdaceac76}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!resetVolume@{resetVolume}}
+\index{resetVolume@{resetVolume}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{resetVolume()}{resetVolume()}}
+{\footnotesize\ttfamily void kfusion\+::\+Kin\+Fu\+::reset\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a27b7e7e016b4cbab1e160f56db124c29}\label{classkfusion_1_1KinFu_a27b7e7e016b4cbab1e160f56db124c29}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!tsdf@{tsdf}}
+\index{tsdf@{tsdf}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{tsdf()}{tsdf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{kfusion\+::cuda\+::\+Tsdf\+Volume}} \& kfusion\+::\+Kin\+Fu\+::tsdf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a9b828a3a6e145947679f58a57859b546}\label{classkfusion_1_1KinFu_a9b828a3a6e145947679f58a57859b546}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!tsdf@{tsdf}}
+\index{tsdf@{tsdf}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{tsdf()}{tsdf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{kfusion\+::cuda\+::\+Tsdf\+Volume}} \& kfusion\+::\+Kin\+Fu\+::tsdf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classkfusion_1_1KinFu_ae0b6413529318dc214a0716434891402}\label{classkfusion_1_1KinFu_ae0b6413529318dc214a0716434891402}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!curr\_@{curr\_}}
+\index{curr\_@{curr\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{curr\_}{curr\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{cuda\+::\+Frame}} kfusion\+::\+Kin\+Fu\+::curr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a7c6ff17d6894cd58024c5a78eabd1cf5}\label{classkfusion_1_1KinFu_a7c6ff17d6894cd58024c5a78eabd1cf5}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!depths\_@{depths\_}}
+\index{depths\_@{depths\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{depths\_}{depths\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_ac29dc950abe6e4c81d5b317a1b29572d}{cuda\+::\+Depth}} kfusion\+::\+Kin\+Fu\+::depths\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a683e4337585174a9cc58dd3f67fbd256}\label{classkfusion_1_1KinFu_a683e4337585174a9cc58dd3f67fbd256}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!dists\_@{dists\_}}
+\index{dists\_@{dists\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{dists\_}{dists\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_a6f4586ea37f875c1ffa7b0ce8a5cb327}{cuda\+::\+Dists}} kfusion\+::\+Kin\+Fu\+::dists\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_ad4133acec00a12555949d6d123992e2c}\label{classkfusion_1_1KinFu_ad4133acec00a12555949d6d123992e2c}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!frame\_counter\_@{frame\_counter\_}}
+\index{frame\_counter\_@{frame\_counter\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{frame\_counter\_}{frame\_counter\_}}
+{\footnotesize\ttfamily int kfusion\+::\+Kin\+Fu\+::frame\+\_\+counter\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_aafe72d5c2d46274efdaa9ec8ad98adcc}\label{classkfusion_1_1KinFu_aafe72d5c2d46274efdaa9ec8ad98adcc}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!icp\_@{icp\_}}
+\index{icp\_@{icp\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{icp\_}{icp\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classkfusion_1_1cuda_1_1ProjectiveICP}{cuda\+::\+Projective\+I\+CP}}$>$ kfusion\+::\+Kin\+Fu\+::icp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a295d01598c73cc9ada1edaa111fbfff4}\label{classkfusion_1_1KinFu_a295d01598c73cc9ada1edaa111fbfff4}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!normals\_@{normals\_}}
+\index{normals\_@{normals\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{normals\_}{normals\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_a63812f1a86dd55f57aa6c840223a93c4}{cuda\+::\+Normals}} kfusion\+::\+Kin\+Fu\+::normals\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a49182e4a44c53ee07dff32b541a3551b}\label{classkfusion_1_1KinFu_a49182e4a44c53ee07dff32b541a3551b}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!params\_@{params\_}}
+\index{params\_@{params\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{params\_}{params\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1KinFuParams}{Kin\+Fu\+Params}} kfusion\+::\+Kin\+Fu\+::params\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a8513549b9136906300bd1335fa223f67}\label{classkfusion_1_1KinFu_a8513549b9136906300bd1335fa223f67}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!points\_@{points\_}}
+\index{points\_@{points\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{points\_}{points\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekfusion_1_1cuda_a98227c36b32416a194ee2b7e2725ef4d}{cuda\+::\+Cloud}} kfusion\+::\+Kin\+Fu\+::points\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_aac6b5604e90cfe37b9da731b3097f5d6}\label{classkfusion_1_1KinFu_aac6b5604e90cfe37b9da731b3097f5d6}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!poses\_@{poses\_}}
+\index{poses\_@{poses\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{poses\_}{poses\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}}, Eigen\+::aligned\+\_\+allocator$<$\mbox{\hyperlink{namespacekfusion_ab70af4758054aff748631b8de8e163af}{Affine3f}}$>$ $>$ kfusion\+::\+Kin\+Fu\+::poses\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a449e7b4c48b901c0962f6c84d561075f}\label{classkfusion_1_1KinFu_a449e7b4c48b901c0962f6c84d561075f}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!prev\_@{prev\_}}
+\index{prev\_@{prev\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{prev\_}{prev\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkfusion_1_1cuda_1_1Frame}{cuda\+::\+Frame}} kfusion\+::\+Kin\+Fu\+::prev\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classkfusion_1_1KinFu_a057c59f20e9e5c55a2df712a75ba6974}\label{classkfusion_1_1KinFu_a057c59f20e9e5c55a2df712a75ba6974}} 
+\index{kfusion::KinFu@{kfusion::KinFu}!volume\_@{volume\_}}
+\index{volume\_@{volume\_}!kfusion::KinFu@{kfusion::KinFu}}
+\doxysubsubsection{\texorpdfstring{volume\_}{volume\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classkfusion_1_1cuda_1_1TsdfVolume}{cuda\+::\+Tsdf\+Volume}}$>$ kfusion\+::\+Kin\+Fu\+::volume\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+yak/include/yak/kfusion/\mbox{\hyperlink{kinfu_8hpp}{kinfu.\+hpp}}\item 
+yak/src/kfusion/\mbox{\hyperlink{kinfu_8cpp}{kinfu.\+cpp}}\end{DoxyCompactItemize}
