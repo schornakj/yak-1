@@ -3,7 +3,7 @@ name: DeployDocumentation
 on:
   push:
     branches:
-      - devel
+      - test-devel
 
 jobs:
   deploy_documentation:
